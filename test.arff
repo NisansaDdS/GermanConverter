@@ -1,0 +1,26 @@
+@relation german
+@attribute CHK_ACCT {'<0','0<=X<200','>=200','unknown'}
+@attribute DURATION real
+@attribute HISTORY {'no credits taken','all credits at this bank paid back duly','existing credits paid back duly till now','delay in paying off in the past','critical account'}
+@attribute PURPOSE {'EMPTY','NEW_CAR','USED_CAR','FURNITURE','RADIO/TV','EDUCATION','RETRAINING'}
+@attribute AMOUNT real
+@attribute SAV_ACCT {'<100','100<=X<500','500<=X<1000','>=1000','unknown'}
+@attribute EMPLOYMENT {'unemployed','<1','1<=X<4','4<=X<7','>=7'}
+@attribute INSTALL_RATE real
+@attribute MARITIAL {'EMPTY','MALE_DIV','MALE_SINGLE','MALE_MAR'}
+@attribute CO-APPLICANT { y , n }
+@attribute GUARANTOR { y , n }
+@attribute TIME_RES {'Dummy','<=1','1<X<=2','2<X<=3','>=4'}
+@attribute REAL_ESTATE { y , n }
+@attribute PROP_NONE { y , n }
+@attribute AGE real
+@attribute OTHER_INSTALL { y , n }
+@attribute HOUSE {'EMPTY','RENT','OWN_RES'}
+@attribute NUM_CREDITS real
+@attribute JOB {'unemployed/ unskilled  - non-resident','unskilled - resident','skilled employee / official','management/ self-employed/highly qualified employee/ officer'}
+@attribute NUM_DEPEND real
+@attribute TELEPHONE { y , n }
+@attribute FOREIGN { y , n }
+@attribute class { good , bad }
+@data
+'0<=X<200',20,'delay in paying off in the past',?,?,?,?,?,?,?,?,?,n,?,?,?,?,?,'skilled employee / official',?,?,?,good

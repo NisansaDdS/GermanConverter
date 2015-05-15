@@ -1,0 +1,1008 @@
+@relation german
+@attribute CHK_ACCT {'<0','0<=X<200','>=200','unknown'}
+@attribute DURATION real
+@attribute HISTORY {'no credits taken','all credits at this bank paid back duly','existing credits paid back duly till now','delay in paying off in the past','critical account'}
+@attribute EMPLOYMENT {'unemployed','<1','1<=X<4','4<=X<7','>=7'}
+@attribute REAL_ESTATE { y , n }
+@attribute class { good , bad }
+@data
+'<0',6,'critical account','>=7',y,good
+'0<=X<200',48,'existing credits paid back duly till now','1<=X<4',y,bad
+'unknown',12,'critical account','4<=X<7',y,good
+'<0',42,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',24,'delay in paying off in the past','1<=X<4',n,bad
+'unknown',36,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',24,'existing credits paid back duly till now','>=7',n,good
+'0<=X<200',36,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',12,'existing credits paid back duly till now','4<=X<7',y,good
+'0<=X<200',30,'critical account','unemployed',n,bad
+'0<=X<200',12,'existing credits paid back duly till now','<1',n,bad
+'<0',48,'existing credits paid back duly till now','<1',n,bad
+'0<=X<200',12,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',24,'critical account','>=7',n,bad
+'<0',15,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',24,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',24,'critical account','>=7',n,good
+'<0',30,'no credits taken','<1',n,good
+'0<=X<200',24,'existing credits paid back duly till now','>=7',n,bad
+'unknown',24,'existing credits paid back duly till now','>=7',n,good
+'unknown',9,'critical account','1<=X<4',n,good
+'<0',6,'existing credits paid back duly till now','1<=X<4',y,good
+'<0',10,'critical account','<1',y,good
+'0<=X<200',12,'critical account','<1',n,good
+'unknown',10,'critical account','1<=X<4',n,good
+'<0',6,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',6,'no credits taken','>=7',n,good
+'>=200',12,'all credits at this bank paid back duly','1<=X<4',y,good
+'0<=X<200',7,'existing credits paid back duly till now','1<=X<4',y,good
+'<0',60,'delay in paying off in the past','>=7',n,bad
+'0<=X<200',18,'existing credits paid back duly till now','<1',y,good
+'<0',24,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',18,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',12,'critical account','>=7',n,good
+'>=200',12,'existing credits paid back duly till now','<1',n,good
+'0<=X<200',45,'critical account','<1',n,bad
+'unknown',48,'critical account','1<=X<4',n,good
+'>=200',18,'existing credits paid back duly till now','1<=X<4',y,bad
+'>=200',10,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',9,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',30,'existing credits paid back duly till now','>=7',n,good
+'0<=X<200',12,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',18,'delay in paying off in the past','1<=X<4',y,good
+'<0',30,'critical account','4<=X<7',n,good
+'<0',48,'critical account','>=7',n,bad
+'unknown',11,'critical account','<1',n,good
+'unknown',36,'existing credits paid back duly till now','>=7',n,good
+'<0',6,'existing credits paid back duly till now','unemployed',n,good
+'unknown',11,'critical account','1<=X<4',n,good
+'unknown',12,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',24,'delay in paying off in the past','<1',n,good
+'0<=X<200',27,'delay in paying off in the past','>=7',n,good
+'unknown',12,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',18,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',36,'delay in paying off in the past','>=7',n,bad
+'unknown',6,'all credits at this bank paid back duly','1<=X<4',y,good
+'0<=X<200',12,'existing credits paid back duly till now','unemployed',n,bad
+'unknown',36,'critical account','1<=X<4',n,good
+'>=200',18,'existing credits paid back duly till now','>=7',n,good
+'<0',36,'critical account','<1',n,bad
+'0<=X<200',9,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',15,'critical account','>=7',y,good
+'0<=X<200',36,'no credits taken','>=7',n,bad
+'0<=X<200',48,'no credits taken','1<=X<4',n,bad
+'unknown',24,'existing credits paid back duly till now','<1',n,good
+'unknown',27,'existing credits paid back duly till now','>=7',n,good
+'unknown',12,'existing credits paid back duly till now','<1',n,good
+'0<=X<200',12,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',36,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',36,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',36,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',7,'critical account','>=7',n,good
+'<0',8,'critical account','>=7',n,good
+'0<=X<200',42,'critical account','4<=X<7',y,good
+'<0',36,'existing credits paid back duly till now','>=7',n,bad
+'<0',12,'critical account','>=7',n,good
+'<0',42,'existing credits paid back duly till now','<1',n,bad
+'0<=X<200',11,'delay in paying off in the past','4<=X<7',n,good
+'unknown',54,'no credits taken','1<=X<4',n,good
+'0<=X<200',30,'existing credits paid back duly till now','<1',n,good
+'unknown',24,'existing credits paid back duly till now','<1',n,bad
+'unknown',15,'existing credits paid back duly till now','>=7',n,good
+'unknown',18,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',24,'existing credits paid back duly till now','>=7',y,good
+'<0',10,'existing credits paid back duly till now','>=7',y,good
+'unknown',12,'critical account','1<=X<4',y,good
+'0<=X<200',18,'critical account','<1',n,good
+'0<=X<200',36,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',18,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',12,'no credits taken','4<=X<7',y,bad
+'unknown',12,'critical account','>=7',y,good
+'<0',12,'critical account','>=7',y,good
+'unknown',12,'critical account','>=7',n,bad
+'>=200',24,'critical account','>=7',n,good
+'0<=X<200',12,'existing credits paid back duly till now','>=7',y,good
+'0<=X<200',54,'no credits taken','<1',n,bad
+'unknown',12,'critical account','4<=X<7',n,good
+'0<=X<200',18,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',36,'critical account','>=7',y,good
+'0<=X<200',20,'delay in paying off in the past','4<=X<7',n,good
+'unknown',24,'existing credits paid back duly till now','>=7',y,good
+'0<=X<200',36,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',6,'delay in paying off in the past','1<=X<4',y,good
+'0<=X<200',9,'critical account','4<=X<7',n,good
+'unknown',12,'existing credits paid back duly till now','<1',n,good
+'0<=X<200',24,'critical account','1<=X<4',n,bad
+'unknown',18,'all credits at this bank paid back duly','>=7',n,bad
+'0<=X<200',12,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',24,'existing credits paid back duly till now','<1',n,good
+'0<=X<200',14,'existing credits paid back duly till now','>=7',y,good
+'0<=X<200',6,'delay in paying off in the past','>=7',n,good
+'>=200',15,'existing credits paid back duly till now','<1',n,good
+'0<=X<200',18,'existing credits paid back duly till now','4<=X<7',y,good
+'unknown',36,'critical account','1<=X<4',y,bad
+'<0',12,'existing credits paid back duly till now','>=7',y,good
+'unknown',48,'critical account','>=7',y,good
+'<0',42,'existing credits paid back duly till now','4<=X<7',n,bad
+'<0',10,'critical account','<1',y,good
+'<0',33,'critical account','1<=X<4',n,bad
+'0<=X<200',12,'critical account','4<=X<7',n,good
+'<0',21,'existing credits paid back duly till now','1<=X<4',y,bad
+'unknown',24,'critical account','>=7',n,good
+'unknown',12,'existing credits paid back duly till now','1<=X<4',y,good
+'>=200',10,'critical account','>=7',n,good
+'0<=X<200',18,'existing credits paid back duly till now','<1',y,bad
+'<0',12,'critical account','1<=X<4',n,good
+'<0',12,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',12,'existing credits paid back duly till now','1<=X<4',n,bad
+'0<=X<200',12,'critical account','unemployed',n,good
+'<0',12,'critical account','1<=X<4',y,bad
+'0<=X<200',48,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',36,'delay in paying off in the past','1<=X<4',n,bad
+'unknown',15,'existing credits paid back duly till now','<1',n,good
+'unknown',18,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',60,'existing credits paid back duly till now','4<=X<7',y,good
+'unknown',12,'critical account','>=7',y,good
+'unknown',27,'delay in paying off in the past','1<=X<4',n,good
+'0<=X<200',12,'existing credits paid back duly till now','1<=X<4',y,bad
+'0<=X<200',15,'critical account','4<=X<7',y,good
+'>=200',12,'existing credits paid back duly till now','1<=X<4',n,good
+'>=200',6,'existing credits paid back duly till now','<1',y,good
+'0<=X<200',36,'existing credits paid back duly till now','<1',n,good
+'<0',27,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',18,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',21,'critical account','<1',n,good
+'0<=X<200',48,'all credits at this bank paid back duly','4<=X<7',n,good
+'<0',6,'critical account','>=7',n,good
+'unknown',12,'critical account','4<=X<7',n,good
+'<0',36,'critical account','1<=X<4',n,good
+'unknown',18,'critical account','>=7',n,good
+'unknown',6,'existing credits paid back duly till now','>=7',n,good
+'unknown',10,'existing credits paid back duly till now','1<=X<4',n,good
+'>=200',36,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',24,'critical account','>=7',n,good
+'0<=X<200',24,'delay in paying off in the past','4<=X<7',n,good
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',9,'critical account','>=7',y,good
+'<0',12,'all credits at this bank paid back duly','>=7',n,good
+'0<=X<200',24,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',6,'critical account','1<=X<4',y,good
+'unknown',24,'critical account','>=7',y,good
+'unknown',18,'critical account','<1',n,good
+'unknown',15,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',10,'existing credits paid back duly till now','unemployed',n,good
+'unknown',36,'existing credits paid back duly till now','>=7',n,good
+'unknown',6,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',18,'existing credits paid back duly till now','unemployed',n,bad
+'0<=X<200',11,'existing credits paid back duly till now','<1',y,good
+'unknown',24,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',24,'critical account','>=7',y,bad
+'<0',15,'no credits taken','>=7',n,bad
+'unknown',12,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',24,'delay in paying off in the past','unemployed',n,bad
+'0<=X<200',8,'existing credits paid back duly till now','1<=X<4',y,good
+'<0',21,'delay in paying off in the past','<1',n,bad
+'unknown',30,'all credits at this bank paid back duly','unemployed',y,bad
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',6,'critical account','>=7',n,good
+'unknown',12,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',21,'critical account','>=7',y,good
+'unknown',36,'delay in paying off in the past','<1',n,bad
+'0<=X<200',36,'delay in paying off in the past','1<=X<4',y,bad
+'<0',21,'all credits at this bank paid back duly','1<=X<4',n,bad
+'unknown',24,'critical account','1<=X<4',y,good
+'0<=X<200',18,'critical account','>=7',n,bad
+'unknown',15,'critical account','1<=X<4',n,good
+'0<=X<200',9,'all credits at this bank paid back duly','>=7',n,bad
+'0<=X<200',16,'critical account','unemployed',n,good
+'<0',12,'existing credits paid back duly till now','4<=X<7',n,bad
+'0<=X<200',18,'no credits taken','1<=X<4',n,good
+'unknown',24,'existing credits paid back duly till now','1<=X<4',n,bad
+'0<=X<200',48,'no credits taken','4<=X<7',n,bad
+'0<=X<200',27,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',6,'existing credits paid back duly till now','4<=X<7',y,good
+'0<=X<200',45,'existing credits paid back duly till now','1<=X<4',n,bad
+'0<=X<200',9,'critical account','>=7',n,bad
+'unknown',6,'critical account','1<=X<4',n,good
+'0<=X<200',12,'existing credits paid back duly till now','<1',n,bad
+'0<=X<200',24,'existing credits paid back duly till now','>=7',n,good
+'0<=X<200',18,'delay in paying off in the past','>=7',n,bad
+'unknown',9,'critical account','>=7',n,good
+'<0',12,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',27,'delay in paying off in the past','4<=X<7',n,good
+'<0',12,'existing credits paid back duly till now','4<=X<7',n,bad
+'unknown',12,'critical account','>=7',y,good
+'<0',30,'critical account','>=7',n,good
+'unknown',12,'critical account','>=7',y,good
+'0<=X<200',12,'critical account','4<=X<7',n,good
+'<0',24,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',12,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',9,'critical account','1<=X<4',y,good
+'unknown',36,'existing credits paid back duly till now','>=7',y,good
+'<0',27,'no credits taken','unemployed',n,bad
+'>=200',30,'delay in paying off in the past','>=7',y,bad
+'unknown',36,'critical account','>=7',n,good
+'0<=X<200',6,'critical account','4<=X<7',n,good
+'<0',18,'no credits taken','4<=X<7',n,good
+'>=200',36,'existing credits paid back duly till now','1<=X<4',y,good
+'<0',24,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',10,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',12,'existing credits paid back duly till now','<1',y,good
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',12,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',24,'delay in paying off in the past','1<=X<4',y,good
+'unknown',15,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',36,'no credits taken','1<=X<4',n,good
+'0<=X<200',48,'existing credits paid back duly till now','4<=X<7',n,bad
+'<0',12,'existing credits paid back duly till now','>=7',n,bad
+'unknown',9,'existing credits paid back duly till now','4<=X<7',n,bad
+'<0',24,'existing credits paid back duly till now','<1',n,good
+'>=200',36,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',9,'existing credits paid back duly till now','>=7',n,good
+'unknown',12,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',18,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',4,'critical account','4<=X<7',y,good
+'<0',24,'existing credits paid back duly till now','unemployed',n,bad
+'0<=X<200',6,'existing credits paid back duly till now','unemployed',n,bad
+'0<=X<200',21,'existing credits paid back duly till now','>=7',n,bad
+'unknown',12,'critical account','1<=X<4',n,good
+'<0',30,'existing credits paid back duly till now','>=7',n,good
+'<0',24,'existing credits paid back duly till now','>=7',n,bad
+'unknown',6,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',48,'no credits taken','>=7',n,bad
+'unknown',12,'critical account','1<=X<4',y,good
+'unknown',12,'all credits at this bank paid back duly','1<=X<4',y,good
+'unknown',24,'existing credits paid back duly till now','4<=X<7',y,good
+'unknown',12,'critical account','>=7',y,good
+'unknown',6,'no credits taken','1<=X<4',n,good
+'>=200',24,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',18,'existing credits paid back duly till now','unemployed',y,bad
+'<0',6,'critical account','4<=X<7',y,good
+'>=200',12,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',30,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',24,'delay in paying off in the past','1<=X<4',n,good
+'0<=X<200',9,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',60,'delay in paying off in the past','1<=X<4',y,good
+'unknown',24,'critical account','1<=X<4',y,good
+'<0',12,'all credits at this bank paid back duly','1<=X<4',n,bad
+'unknown',15,'existing credits paid back duly till now','<1',n,good
+'unknown',11,'critical account','unemployed',y,good
+'<0',12,'existing credits paid back duly till now','1<=X<4',y,good
+'<0',24,'existing credits paid back duly till now','>=7',n,good
+'<0',18,'critical account','>=7',n,good
+'unknown',12,'critical account','>=7',n,good
+'unknown',10,'critical account','>=7',y,good
+'0<=X<200',15,'existing credits paid back duly till now','>=7',n,bad
+'unknown',36,'critical account','>=7',y,good
+'unknown',24,'existing credits paid back duly till now','<1',n,good
+'<0',14,'existing credits paid back duly till now','>=7',n,bad
+'unknown',24,'existing credits paid back duly till now','>=7',n,good
+'unknown',18,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',12,'critical account','4<=X<7',n,good
+'0<=X<200',48,'all credits at this bank paid back duly','unemployed',n,good
+'0<=X<200',48,'existing credits paid back duly till now','4<=X<7',y,bad
+'<0',30,'existing credits paid back duly till now','<1',n,bad
+'unknown',9,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',18,'critical account','1<=X<4',n,good
+'<0',12,'existing credits paid back duly till now','>=7',n,good
+'unknown',6,'existing credits paid back duly till now','<1',n,bad
+'unknown',24,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',15,'critical account','>=7',n,good
+'unknown',12,'existing credits paid back duly till now','1<=X<4',y,good
+'>=200',18,'all credits at this bank paid back duly','4<=X<7',n,good
+'unknown',15,'critical account','>=7',n,good
+'0<=X<200',24,'critical account','<1',n,good
+'<0',47,'existing credits paid back duly till now','<1',y,good
+'<0',48,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',48,'delay in paying off in the past','unemployed',n,good
+'0<=X<200',12,'existing credits paid back duly till now','1<=X<4',y,good
+'<0',24,'delay in paying off in the past','<1',y,bad
+'unknown',12,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',36,'existing credits paid back duly till now','<1',n,bad
+'<0',24,'critical account','>=7',n,good
+'>=200',42,'critical account','>=7',n,good
+'unknown',48,'critical account','>=7',n,good
+'0<=X<200',48,'existing credits paid back duly till now','<1',n,bad
+'unknown',12,'existing credits paid back duly till now','<1',n,good
+'unknown',10,'existing credits paid back duly till now','>=7',n,good
+'unknown',18,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',21,'critical account','4<=X<7',n,good
+'unknown',6,'existing credits paid back duly till now','unemployed',y,good
+'0<=X<200',36,'no credits taken','1<=X<4',n,bad
+'>=200',24,'critical account','4<=X<7',y,bad
+'<0',10,'critical account','4<=X<7',n,good
+'unknown',48,'critical account','1<=X<4',n,bad
+'unknown',6,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',30,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',12,'existing credits paid back duly till now','<1',n,bad
+'0<=X<200',8,'existing credits paid back duly till now','1<=X<4',y,bad
+'0<=X<200',9,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',48,'existing credits paid back duly till now','unemployed',n,good
+'unknown',24,'existing credits paid back duly till now','1<=X<4',n,good
+'>=200',24,'existing credits paid back duly till now','<1',n,good
+'0<=X<200',12,'existing credits paid back duly till now','4<=X<7',n,bad
+'>=200',4,'existing credits paid back duly till now','<1',y,good
+'<0',36,'all credits at this bank paid back duly','>=7',n,bad
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',24,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',12,'critical account','1<=X<4',n,good
+'<0',15,'delay in paying off in the past','>=7',n,good
+'0<=X<200',30,'critical account','unemployed',n,bad
+'<0',24,'existing credits paid back duly till now','<1',n,bad
+'<0',24,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',18,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',18,'critical account','1<=X<4',y,good
+'<0',8,'critical account','4<=X<7',y,good
+'unknown',12,'critical account','>=7',n,good
+'unknown',24,'existing credits paid back duly till now','4<=X<7',n,good
+'>=200',36,'existing credits paid back duly till now','>=7',n,good
+'0<=X<200',6,'existing credits paid back duly till now','>=7',n,good
+'<0',24,'critical account','unemployed',n,good
+'unknown',18,'critical account','1<=X<4',y,bad
+'0<=X<200',60,'existing credits paid back duly till now','<1',n,bad
+'unknown',48,'critical account','1<=X<4',n,bad
+'<0',24,'no credits taken','>=7',n,bad
+'<0',6,'critical account','1<=X<4',y,bad
+'0<=X<200',13,'existing credits paid back duly till now','<1',n,good
+'<0',15,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',24,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',10,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',24,'critical account','<1',n,good
+'<0',21,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',18,'existing credits paid back duly till now','<1',y,good
+'0<=X<200',18,'existing credits paid back duly till now','>=7',y,good
+'>=200',10,'existing credits paid back duly till now','<1',n,good
+'unknown',15,'critical account','1<=X<4',n,good
+'0<=X<200',13,'critical account','<1',y,good
+'0<=X<200',24,'existing credits paid back duly till now','unemployed',n,good
+'unknown',6,'delay in paying off in the past','1<=X<4',y,good
+'0<=X<200',9,'critical account','>=7',n,bad
+'unknown',9,'existing credits paid back duly till now','<1',y,good
+'0<=X<200',9,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',18,'critical account','unemployed',n,good
+'<0',12,'no credits taken','1<=X<4',n,bad
+'unknown',10,'existing credits paid back duly till now','>=7',n,good
+'0<=X<200',24,'existing credits paid back duly till now','<1',y,bad
+'unknown',12,'critical account','>=7',y,good
+'unknown',36,'delay in paying off in the past','1<=X<4',n,bad
+'unknown',12,'existing credits paid back duly till now','1<=X<4',y,good
+'<0',30,'existing credits paid back duly till now','4<=X<7',y,bad
+'0<=X<200',18,'existing credits paid back duly till now','1<=X<4',n,good
+'>=200',12,'existing credits paid back duly till now','>=7',n,good
+'>=200',12,'delay in paying off in the past','1<=X<4',n,good
+'unknown',6,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',18,'existing credits paid back duly till now','unemployed',n,bad
+'unknown',12,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',18,'critical account','4<=X<7',n,good
+'<0',18,'existing credits paid back duly till now','<1',n,good
+'<0',36,'existing credits paid back duly till now','>=7',n,bad
+'0<=X<200',18,'existing credits paid back duly till now','4<=X<7',y,good
+'unknown',36,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',18,'critical account','>=7',n,good
+'unknown',10,'critical account','<1',y,good
+'unknown',60,'critical account','>=7',n,good
+'0<=X<200',60,'all credits at this bank paid back duly','>=7',n,bad
+'<0',48,'all credits at this bank paid back duly','4<=X<7',n,bad
+'unknown',18,'delay in paying off in the past','unemployed',y,good
+'unknown',7,'delay in paying off in the past','>=7',n,good
+'0<=X<200',36,'existing credits paid back duly till now','>=7',n,bad
+'unknown',6,'critical account','1<=X<4',n,good
+'<0',20,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',18,'existing credits paid back duly till now','unemployed',n,bad
+'unknown',22,'existing credits paid back duly till now','4<=X<7',n,good
+'>=200',12,'existing credits paid back duly till now','<1',y,good
+'unknown',30,'delay in paying off in the past','1<=X<4',n,good
+'unknown',18,'critical account','1<=X<4',n,good
+'unknown',18,'existing credits paid back duly till now','<1',y,good
+'0<=X<200',18,'critical account','unemployed',n,good
+'0<=X<200',15,'critical account','1<=X<4',n,good
+'unknown',9,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',18,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',12,'existing credits paid back duly till now','<1',y,good
+'<0',36,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',6,'critical account','4<=X<7',n,good
+'unknown',9,'critical account','unemployed',n,good
+'0<=X<200',39,'delay in paying off in the past','4<=X<7',n,good
+'<0',12,'existing credits paid back duly till now','unemployed',n,good
+'<0',36,'critical account','1<=X<4',n,good
+'0<=X<200',12,'existing credits paid back duly till now','>=7',y,bad
+'unknown',24,'critical account','1<=X<4',y,good
+'unknown',18,'existing credits paid back duly till now','<1',y,good
+'0<=X<200',18,'critical account','1<=X<4',y,good
+'unknown',24,'delay in paying off in the past','<1',n,bad
+'unknown',14,'delay in paying off in the past','1<=X<4',n,good
+'0<=X<200',18,'delay in paying off in the past','>=7',n,good
+'0<=X<200',24,'existing credits paid back duly till now','<1',n,bad
+'unknown',24,'critical account','4<=X<7',n,good
+'<0',15,'existing credits paid back duly till now','<1',y,good
+'unknown',24,'existing credits paid back duly till now','>=7',n,good
+'>=200',12,'critical account','4<=X<7',y,bad
+'0<=X<200',24,'existing credits paid back duly till now','>=7',n,good
+'unknown',33,'critical account','4<=X<7',n,good
+'unknown',12,'critical account','unemployed',n,bad
+'unknown',10,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',24,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',36,'critical account','>=7',n,good
+'<0',12,'existing credits paid back duly till now','<1',y,bad
+'<0',18,'delay in paying off in the past','1<=X<4',n,good
+'unknown',21,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',18,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',15,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',12,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',12,'critical account','4<=X<7',y,good
+'unknown',21,'delay in paying off in the past','4<=X<7',y,good
+'0<=X<200',12,'existing credits paid back duly till now','>=7',n,bad
+'0<=X<200',18,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',28,'critical account','>=7',n,good
+'unknown',18,'critical account','1<=X<4',y,good
+'unknown',9,'existing credits paid back duly till now','>=7',n,good
+'<0',18,'critical account','unemployed',n,bad
+'unknown',5,'existing credits paid back duly till now','4<=X<7',y,good
+'0<=X<200',24,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',6,'critical account','unemployed',n,good
+'unknown',24,'critical account','1<=X<4',y,good
+'<0',9,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',12,'existing credits paid back duly till now','1<=X<4',y,bad
+'unknown',6,'existing credits paid back duly till now','4<=X<7',y,good
+'unknown',24,'critical account','>=7',y,good
+'<0',42,'critical account','unemployed',n,good
+'>=200',12,'all credits at this bank paid back duly','<1',y,bad
+'unknown',12,'existing credits paid back duly till now','>=7',n,good
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',20,'delay in paying off in the past','1<=X<4',n,good
+'unknown',12,'existing credits paid back duly till now','>=7',n,bad
+'0<=X<200',48,'critical account','1<=X<4',n,bad
+'unknown',9,'critical account','>=7',n,good
+'<0',36,'existing credits paid back duly till now','<1',n,bad
+'0<=X<200',7,'existing credits paid back duly till now','1<=X<4',y,good
+'>=200',12,'existing credits paid back duly till now','>=7',y,good
+'0<=X<200',15,'delay in paying off in the past','1<=X<4',n,bad
+'unknown',36,'critical account','1<=X<4',n,good
+'unknown',6,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',12,'no credits taken','>=7',n,good
+'unknown',24,'existing credits paid back duly till now','>=7',n,good
+'<0',24,'existing credits paid back duly till now','4<=X<7',n,bad
+'unknown',24,'existing credits paid back duly till now','<1',n,good
+'<0',11,'critical account','1<=X<4',y,good
+'<0',12,'existing credits paid back duly till now','>=7',n,bad
+'<0',6,'existing credits paid back duly till now','<1',y,good
+'unknown',18,'existing credits paid back duly till now','<1',n,good
+'<0',36,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',15,'existing credits paid back duly till now','<1',y,good
+'0<=X<200',12,'existing credits paid back duly till now','<1',y,good
+'0<=X<200',12,'existing credits paid back duly till now','>=7',n,good
+'unknown',18,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',24,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',24,'delay in paying off in the past','<1',n,bad
+'unknown',48,'delay in paying off in the past','>=7',n,good
+'unknown',33,'delay in paying off in the past','1<=X<4',n,good
+'unknown',24,'delay in paying off in the past','4<=X<7',n,good
+'0<=X<200',24,'existing credits paid back duly till now','<1',n,bad
+'<0',6,'existing credits paid back duly till now','<1',n,bad
+'<0',9,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',6,'existing credits paid back duly till now','unemployed',n,good
+'0<=X<200',18,'critical account','1<=X<4',n,bad
+'<0',18,'no credits taken','<1',n,bad
+'unknown',39,'existing credits paid back duly till now','1<=X<4',n,good
+'>=200',24,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',12,'existing credits paid back duly till now','4<=X<7',y,good
+'<0',15,'critical account','>=7',n,good
+'0<=X<200',12,'critical account','1<=X<4',y,good
+'0<=X<200',24,'existing credits paid back duly till now','<1',n,good
+'<0',30,'existing credits paid back duly till now','>=7',n,good
+'unknown',15,'delay in paying off in the past','4<=X<7',n,good
+'unknown',12,'critical account','1<=X<4',y,good
+'0<=X<200',6,'delay in paying off in the past','unemployed',n,bad
+'unknown',12,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',24,'existing credits paid back duly till now','>=7',n,good
+'unknown',10,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',6,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',12,'critical account','>=7',n,good
+'0<=X<200',27,'no credits taken','>=7',n,bad
+'unknown',6,'critical account','1<=X<4',n,good
+'0<=X<200',6,'existing credits paid back duly till now','>=7',n,good
+'<0',12,'critical account','1<=X<4',y,good
+'<0',24,'existing credits paid back duly till now','1<=X<4',n,bad
+'0<=X<200',36,'existing credits paid back duly till now','<1',n,bad
+'unknown',24,'critical account','4<=X<7',n,good
+'0<=X<200',18,'existing credits paid back duly till now','>=7',y,good
+'>=200',6,'critical account','>=7',n,good
+'<0',24,'existing credits paid back duly till now','<1',n,bad
+'<0',36,'existing credits paid back duly till now','>=7',n,good
+'>=200',9,'existing credits paid back duly till now','>=7',y,good
+'0<=X<200',24,'critical account','<1',n,bad
+'<0',24,'existing credits paid back duly till now','<1',n,bad
+'unknown',10,'existing credits paid back duly till now','1<=X<4',n,bad
+'>=200',15,'critical account','1<=X<4',n,good
+'0<=X<200',15,'all credits at this bank paid back duly','unemployed',n,bad
+'unknown',24,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',39,'existing credits paid back duly till now','>=7',n,good
+'<0',12,'existing credits paid back duly till now','4<=X<7',y,bad
+'unknown',36,'existing credits paid back duly till now','1<=X<4',n,good
+'>=200',15,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',12,'delay in paying off in the past','1<=X<4',y,good
+'unknown',24,'existing credits paid back duly till now','<1',n,good
+'<0',6,'critical account','4<=X<7',n,good
+'<0',6,'critical account','<1',y,good
+'unknown',36,'critical account','<1',n,bad
+'<0',6,'existing credits paid back duly till now','>=7',n,good
+'unknown',6,'critical account','>=7',n,good
+'unknown',24,'critical account','>=7',n,good
+'<0',18,'existing credits paid back duly till now','1<=X<4',y,bad
+'<0',48,'no credits taken','1<=X<4',n,bad
+'unknown',24,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',18,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',26,'existing credits paid back duly till now','<1',n,good
+'unknown',15,'critical account','1<=X<4',n,good
+'unknown',4,'critical account','4<=X<7',y,good
+'<0',36,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',6,'existing credits paid back duly till now','<1',y,good
+'0<=X<200',36,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',15,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',12,'delay in paying off in the past','1<=X<4',y,good
+'unknown',24,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',24,'existing credits paid back duly till now','<1',n,good
+'>=200',21,'critical account','<1',n,bad
+'<0',6,'existing credits paid back duly till now','unemployed',n,good
+'0<=X<200',18,'critical account','>=7',n,good
+'<0',48,'existing credits paid back duly till now','>=7',n,bad
+'>=200',18,'existing credits paid back duly till now','<1',n,good
+'0<=X<200',12,'existing credits paid back duly till now','<1',y,bad
+'unknown',24,'delay in paying off in the past','>=7',n,good
+'<0',30,'existing credits paid back duly till now','>=7',n,bad
+'>=200',18,'existing credits paid back duly till now','1<=X<4',y,bad
+'unknown',12,'critical account','>=7',y,good
+'<0',24,'delay in paying off in the past','unemployed',y,bad
+'unknown',24,'critical account','1<=X<4',n,good
+'unknown',24,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',12,'all credits at this bank paid back duly','1<=X<4',y,bad
+'unknown',48,'critical account','4<=X<7',n,good
+'unknown',12,'critical account','4<=X<7',y,good
+'unknown',6,'all credits at this bank paid back duly','>=7',n,good
+'<0',48,'existing credits paid back duly till now','4<=X<7',y,bad
+'0<=X<200',12,'critical account','<1',n,good
+'0<=X<200',9,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',12,'existing credits paid back duly till now','<1',n,bad
+'0<=X<200',18,'no credits taken','<1',n,bad
+'unknown',21,'no credits taken','1<=X<4',n,bad
+'<0',24,'all credits at this bank paid back duly','4<=X<7',n,bad
+'0<=X<200',18,'critical account','<1',y,bad
+'<0',24,'existing credits paid back duly till now','>=7',n,good
+'<0',24,'all credits at this bank paid back duly','4<=X<7',n,bad
+'>=200',6,'delay in paying off in the past','<1',n,good
+'0<=X<200',36,'existing credits paid back duly till now','1<=X<4',n,bad
+'0<=X<200',24,'delay in paying off in the past','1<=X<4',n,good
+'0<=X<200',24,'delay in paying off in the past','4<=X<7',n,good
+'<0',12,'existing credits paid back duly till now','4<=X<7',n,bad
+'unknown',24,'critical account','>=7',n,good
+'0<=X<200',48,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',48,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',24,'existing credits paid back duly till now','<1',y,bad
+'unknown',30,'critical account','4<=X<7',n,good
+'unknown',24,'existing credits paid back duly till now','unemployed',n,good
+'<0',15,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',9,'existing credits paid back duly till now','>=7',n,good
+'unknown',15,'critical account','4<=X<7',n,good
+'0<=X<200',12,'existing credits paid back duly till now','4<=X<7',y,good
+'unknown',24,'critical account','1<=X<4',n,good
+'0<=X<200',36,'critical account','<1',n,bad
+'unknown',24,'existing credits paid back duly till now','<1',n,good
+'0<=X<200',18,'critical account','>=7',y,bad
+'0<=X<200',12,'critical account','<1',y,good
+'unknown',9,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',36,'existing credits paid back duly till now','<1',n,bad
+'unknown',12,'existing credits paid back duly till now','>=7',n,good
+'<0',18,'existing credits paid back duly till now','1<=X<4',y,bad
+'<0',9,'critical account','1<=X<4',y,good
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',18,'existing credits paid back duly till now','1<=X<4',y,bad
+'<0',12,'critical account','>=7',n,bad
+'<0',12,'critical account','4<=X<7',y,good
+'0<=X<200',24,'delay in paying off in the past','1<=X<4',n,good
+'unknown',21,'existing credits paid back duly till now','>=7',y,good
+'0<=X<200',24,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',24,'all credits at this bank paid back duly','>=7',n,bad
+'0<=X<200',6,'all credits at this bank paid back duly','<1',n,bad
+'<0',24,'existing credits paid back duly till now','4<=X<7',n,bad
+'0<=X<200',24,'no credits taken','1<=X<4',y,bad
+'unknown',18,'critical account','4<=X<7',n,bad
+'unknown',24,'delay in paying off in the past','1<=X<4',n,good
+'0<=X<200',7,'existing credits paid back duly till now','<1',y,good
+'0<=X<200',9,'existing credits paid back duly till now','1<=X<4',n,bad
+'0<=X<200',24,'all credits at this bank paid back duly','4<=X<7',n,bad
+'unknown',36,'existing credits paid back duly till now','1<=X<4',n,bad
+'>=200',10,'existing credits paid back duly till now','<1',n,good
+'<0',24,'all credits at this bank paid back duly','1<=X<4',y,good
+'unknown',24,'critical account','1<=X<4',y,good
+'0<=X<200',36,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',18,'existing credits paid back duly till now','<1',y,good
+'unknown',15,'existing credits paid back duly till now','>=7',n,good
+'<0',12,'existing credits paid back duly till now','unemployed',n,bad
+'>=200',10,'existing credits paid back duly till now','>=7',n,bad
+'<0',21,'existing credits paid back duly till now','<1',n,good
+'<0',24,'all credits at this bank paid back duly','1<=X<4',n,good
+'unknown',18,'delay in paying off in the past','4<=X<7',y,bad
+'0<=X<200',48,'no credits taken','1<=X<4',n,good
+'0<=X<200',60,'delay in paying off in the past','1<=X<4',n,good
+'<0',6,'critical account','1<=X<4',y,good
+'0<=X<200',30,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',12,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',21,'critical account','4<=X<7',n,good
+'unknown',18,'critical account','1<=X<4',n,bad
+'unknown',48,'existing credits paid back duly till now','1<=X<4',y,bad
+'<0',12,'existing credits paid back duly till now','<1',n,good
+'<0',18,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',15,'existing credits paid back duly till now','>=7',n,good
+'>=200',6,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',9,'all credits at this bank paid back duly','4<=X<7',n,bad
+'unknown',42,'critical account','1<=X<4',y,good
+'unknown',9,'existing credits paid back duly till now','>=7',y,good
+'<0',24,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',18,'all credits at this bank paid back duly','1<=X<4',n,bad
+'0<=X<200',15,'existing credits paid back duly till now','<1',n,good
+'unknown',9,'existing credits paid back duly till now','<1',n,bad
+'0<=X<200',24,'existing credits paid back duly till now','<1',n,bad
+'unknown',12,'existing credits paid back duly till now','>=7',n,good
+'unknown',24,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',60,'delay in paying off in the past','4<=X<7',n,good
+'unknown',12,'existing credits paid back duly till now','<1',n,good
+'<0',42,'delay in paying off in the past','4<=X<7',n,bad
+'<0',18,'existing credits paid back duly till now','unemployed',y,bad
+'0<=X<200',15,'existing credits paid back duly till now','>=7',n,good
+'unknown',15,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',24,'critical account','4<=X<7',n,good
+'<0',18,'critical account','4<=X<7',n,good
+'unknown',36,'delay in paying off in the past','<1',n,bad
+'<0',30,'no credits taken','1<=X<4',y,good
+'unknown',12,'existing credits paid back duly till now','1<=X<4',n,bad
+'>=200',24,'existing credits paid back duly till now','4<=X<7',n,bad
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',48,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',12,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',24,'existing credits paid back duly till now','>=7',y,bad
+'0<=X<200',36,'delay in paying off in the past','>=7',n,bad
+'unknown',24,'critical account','4<=X<7',n,good
+'<0',14,'existing credits paid back duly till now','unemployed',n,good
+'0<=X<200',12,'existing credits paid back duly till now','>=7',n,bad
+'unknown',48,'existing credits paid back duly till now','4<=X<7',n,good
+'0<=X<200',30,'no credits taken','1<=X<4',n,good
+'0<=X<200',18,'critical account','>=7',n,good
+'>=200',12,'existing credits paid back duly till now','1<=X<4',y,good
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',21,'existing credits paid back duly till now','>=7',y,good
+'0<=X<200',6,'delay in paying off in the past','unemployed',n,good
+'>=200',6,'critical account','1<=X<4',n,good
+'unknown',24,'critical account','unemployed',n,good
+'0<=X<200',30,'all credits at this bank paid back duly','1<=X<4',n,good
+'unknown',48,'all credits at this bank paid back duly','1<=X<4',y,good
+'<0',12,'critical account','>=7',n,bad
+'>=200',30,'critical account','>=7',n,good
+'unknown',24,'critical account','1<=X<4',n,good
+'unknown',36,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',60,'existing credits paid back duly till now','>=7',n,good
+'unknown',6,'critical account','1<=X<4',n,good
+'unknown',21,'delay in paying off in the past','<1',y,bad
+'unknown',30,'critical account','4<=X<7',n,good
+'unknown',24,'critical account','>=7',n,good
+'0<=X<200',72,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',24,'existing credits paid back duly till now','>=7',y,good
+'unknown',18,'existing credits paid back duly till now','<1',y,good
+'unknown',6,'existing credits paid back duly till now','<1',n,good
+'unknown',12,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',15,'delay in paying off in the past','1<=X<4',y,good
+'unknown',24,'critical account','<1',n,good
+'0<=X<200',36,'delay in paying off in the past','4<=X<7',n,good
+'unknown',60,'existing credits paid back duly till now','1<=X<4',n,good
+'>=200',10,'critical account','4<=X<7',n,good
+'0<=X<200',36,'delay in paying off in the past','>=7',n,good
+'unknown',9,'existing credits paid back duly till now','>=7',n,good
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',15,'critical account','1<=X<4',n,good
+'0<=X<200',15,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',24,'existing credits paid back duly till now','<1',n,good
+'<0',6,'critical account','<1',y,good
+'unknown',24,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',6,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',12,'existing credits paid back duly till now','4<=X<7',y,good
+'unknown',12,'critical account','unemployed',n,good
+'unknown',18,'critical account','1<=X<4',n,good
+'>=200',15,'existing credits paid back duly till now','>=7',n,good
+'unknown',12,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',48,'critical account','>=7',n,bad
+'>=200',24,'existing credits paid back duly till now','>=7',n,good
+'0<=X<200',30,'delay in paying off in the past','>=7',n,good
+'0<=X<200',27,'existing credits paid back duly till now','<1',n,good
+'unknown',15,'existing credits paid back duly till now','>=7',n,good
+'0<=X<200',48,'existing credits paid back duly till now','4<=X<7',n,bad
+'0<=X<200',12,'no credits taken','<1',n,bad
+'0<=X<200',9,'existing credits paid back duly till now','>=7',y,good
+'0<=X<200',9,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',18,'critical account','>=7',n,good
+'<0',6,'all credits at this bank paid back duly','>=7',n,bad
+'unknown',21,'existing credits paid back duly till now','>=7',y,good
+'<0',9,'critical account','1<=X<4',y,good
+'0<=X<200',60,'existing credits paid back duly till now','4<=X<7',n,bad
+'unknown',30,'critical account','>=7',n,good
+'unknown',30,'critical account','>=7',n,good
+'unknown',18,'existing credits paid back duly till now','1<=X<4',n,good
+'>=200',24,'critical account','1<=X<4',n,good
+'0<=X<200',20,'no credits taken','>=7',n,good
+'>=200',9,'no credits taken','<1',n,bad
+'0<=X<200',6,'all credits at this bank paid back duly','<1',n,bad
+'<0',12,'existing credits paid back duly till now','1<=X<4',y,bad
+'0<=X<200',9,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',27,'existing credits paid back duly till now','1<=X<4',y,bad
+'unknown',6,'critical account','1<=X<4',y,good
+'unknown',15,'critical account','1<=X<4',n,good
+'<0',18,'existing credits paid back duly till now','1<=X<4',n,bad
+'0<=X<200',48,'all credits at this bank paid back duly','>=7',n,bad
+'>=200',24,'critical account','1<=X<4',y,good
+'0<=X<200',24,'delay in paying off in the past','<1',n,good
+'<0',24,'existing credits paid back duly till now','1<=X<4',y,bad
+'0<=X<200',8,'existing credits paid back duly till now','4<=X<7',y,good
+'unknown',24,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',4,'critical account','4<=X<7',y,good
+'0<=X<200',36,'all credits at this bank paid back duly','<1',n,good
+'0<=X<200',24,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',18,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',6,'critical account','4<=X<7',n,good
+'0<=X<200',30,'no credits taken','1<=X<4',n,bad
+'<0',24,'all credits at this bank paid back duly','4<=X<7',n,good
+'0<=X<200',10,'all credits at this bank paid back duly','1<=X<4',y,good
+'unknown',21,'existing credits paid back duly till now','>=7',n,good
+'<0',24,'all credits at this bank paid back duly','1<=X<4',y,good
+'<0',39,'critical account','4<=X<7',n,good
+'<0',13,'critical account','<1',n,good
+'<0',15,'existing credits paid back duly till now','unemployed',n,good
+'<0',12,'existing credits paid back duly till now','<1',y,bad
+'unknown',21,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',15,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',6,'existing credits paid back duly till now','>=7',n,good
+'<0',18,'existing credits paid back duly till now','<1',n,bad
+'0<=X<200',12,'existing credits paid back duly till now','4<=X<7',y,good
+'unknown',30,'critical account','4<=X<7',n,good
+'unknown',12,'delay in paying off in the past','>=7',n,bad
+'<0',24,'existing credits paid back duly till now','4<=X<7',n,bad
+'>=200',6,'critical account','1<=X<4',y,good
+'>=200',15,'critical account','1<=X<4',n,bad
+'unknown',24,'existing credits paid back duly till now','1<=X<4',y,good
+'<0',12,'critical account','>=7',n,bad
+'unknown',15,'critical account','>=7',n,good
+'<0',18,'critical account','1<=X<4',y,bad
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',21,'critical account','>=7',n,bad
+'unknown',24,'critical account','4<=X<7',n,good
+'0<=X<200',12,'existing credits paid back duly till now','>=7',y,good
+'<0',30,'existing credits paid back duly till now','<1',n,bad
+'unknown',10,'existing credits paid back duly till now','<1',y,good
+'0<=X<200',12,'critical account','>=7',n,good
+'unknown',12,'critical account','>=7',y,good
+'<0',24,'existing credits paid back duly till now','>=7',y,good
+'<0',36,'critical account','1<=X<4',n,bad
+'unknown',21,'critical account','>=7',n,good
+'unknown',24,'critical account','>=7',n,good
+'>=200',12,'critical account','unemployed',n,good
+'<0',24,'existing credits paid back duly till now','1<=X<4',y,bad
+'unknown',36,'critical account','4<=X<7',n,good
+'<0',18,'existing credits paid back duly till now','4<=X<7',y,good
+'unknown',36,'critical account','>=7',n,good
+'0<=X<200',18,'existing credits paid back duly till now','unemployed',n,good
+'0<=X<200',39,'critical account','4<=X<7',y,bad
+'unknown',24,'critical account','>=7',y,good
+'0<=X<200',12,'no credits taken','1<=X<4',y,good
+'0<=X<200',12,'existing credits paid back duly till now','<1',n,bad
+'0<=X<200',20,'existing credits paid back duly till now','unemployed',y,good
+'0<=X<200',18,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',22,'existing credits paid back duly till now','>=7',n,good
+'unknown',48,'critical account','>=7',n,good
+'0<=X<200',48,'delay in paying off in the past','>=7',n,bad
+'<0',40,'critical account','1<=X<4',n,bad
+'0<=X<200',21,'existing credits paid back duly till now','>=7',n,bad
+'unknown',24,'existing credits paid back duly till now','>=7',n,good
+'unknown',6,'critical account','1<=X<4',n,good
+'>=200',24,'existing credits paid back duly till now','>=7',n,good
+'unknown',24,'existing credits paid back duly till now','>=7',n,good
+'unknown',9,'existing credits paid back duly till now','<1',n,good
+'<0',18,'existing credits paid back duly till now','>=7',n,bad
+'unknown',12,'critical account','<1',n,good
+'unknown',24,'delay in paying off in the past','>=7',n,good
+'0<=X<200',9,'existing credits paid back duly till now','<1',y,good
+'unknown',24,'critical account','>=7',n,good
+'0<=X<200',18,'critical account','>=7',y,good
+'<0',20,'critical account','>=7',n,good
+'unknown',12,'critical account','>=7',n,good
+'0<=X<200',12,'existing credits paid back duly till now','unemployed',y,good
+'<0',36,'existing credits paid back duly till now','4<=X<7',n,bad
+'0<=X<200',6,'existing credits paid back duly till now','<1',y,good
+'unknown',12,'critical account','>=7',y,good
+'0<=X<200',42,'all credits at this bank paid back duly','unemployed',n,good
+'0<=X<200',15,'no credits taken','<1',y,bad
+'0<=X<200',8,'existing credits paid back duly till now','<1',y,good
+'0<=X<200',6,'existing credits paid back duly till now','4<=X<7',y,good
+'<0',36,'critical account','4<=X<7',n,bad
+'<0',48,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',48,'existing credits paid back duly till now','4<=X<7',n,bad
+'0<=X<200',36,'delay in paying off in the past','1<=X<4',n,good
+'unknown',6,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',6,'critical account','4<=X<7',n,good
+'<0',36,'existing credits paid back duly till now','unemployed',n,good
+'<0',18,'existing credits paid back duly till now','1<=X<4',y,bad
+'unknown',12,'existing credits paid back duly till now','1<=X<4',y,good
+'>=200',12,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',36,'existing credits paid back duly till now','>=7',n,bad
+'<0',8,'critical account','>=7',y,good
+'unknown',18,'critical account','<1',n,good
+'<0',21,'critical account','>=7',n,good
+'<0',18,'critical account','>=7',y,bad
+'unknown',18,'no credits taken','1<=X<4',n,bad
+'<0',36,'existing credits paid back duly till now','>=7',n,bad
+'0<=X<200',48,'delay in paying off in the past','1<=X<4',n,good
+'unknown',24,'delay in paying off in the past','1<=X<4',n,good
+'<0',18,'existing credits paid back duly till now','<1',n,bad
+'<0',45,'no credits taken','>=7',n,bad
+'0<=X<200',24,'existing credits paid back duly till now','>=7',n,good
+'>=200',15,'existing credits paid back duly till now','<1',y,bad
+'<0',12,'no credits taken','1<=X<4',n,bad
+'unknown',12,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',4,'existing credits paid back duly till now','<1',y,good
+'<0',24,'critical account','>=7',n,good
+'unknown',24,'critical account','>=7',y,good
+'<0',36,'existing credits paid back duly till now','4<=X<7',n,bad
+'unknown',21,'delay in paying off in the past','1<=X<4',y,good
+'unknown',18,'existing credits paid back duly till now','<1',y,bad
+'unknown',24,'all credits at this bank paid back duly','4<=X<7',n,good
+'unknown',18,'existing credits paid back duly till now','>=7',n,good
+'0<=X<200',21,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',18,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',24,'existing credits paid back duly till now','<1',y,good
+'<0',9,'existing credits paid back duly till now','4<=X<7',y,good
+'<0',12,'existing credits paid back duly till now','>=7',y,bad
+'<0',20,'critical account','1<=X<4',n,bad
+'unknown',24,'critical account','4<=X<7',n,good
+'unknown',15,'critical account','1<=X<4',n,good
+'<0',18,'all credits at this bank paid back duly','4<=X<7',n,bad
+'unknown',36,'delay in paying off in the past','>=7',n,good
+'unknown',24,'existing credits paid back duly till now','<1',y,good
+'unknown',10,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',15,'critical account','1<=X<4',n,good
+'<0',15,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',9,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',24,'critical account','1<=X<4',y,good
+'unknown',18,'delay in paying off in the past','1<=X<4',n,bad
+'<0',24,'existing credits paid back duly till now','<1',y,bad
+'unknown',27,'critical account','<1',y,good
+'unknown',10,'existing credits paid back duly till now','1<=X<4',y,bad
+'unknown',15,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',18,'existing credits paid back duly till now','<1',n,good
+'unknown',12,'critical account','>=7',n,good
+'unknown',36,'existing credits paid back duly till now','>=7',n,good
+'<0',12,'existing credits paid back duly till now','>=7',n,good
+'unknown',36,'delay in paying off in the past','4<=X<7',n,good
+'>=200',6,'critical account','>=7',y,good
+'<0',24,'critical account','4<=X<7',y,good
+'unknown',15,'existing credits paid back duly till now','<1',y,good
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',11,'critical account','1<=X<4',n,good
+'<0',18,'all credits at this bank paid back duly','<1',n,good
+'unknown',36,'existing credits paid back duly till now','>=7',n,good
+'<0',9,'existing credits paid back duly till now','<1',n,bad
+'unknown',30,'critical account','4<=X<7',n,good
+'unknown',24,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',24,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',30,'critical account','>=7',y,good
+'unknown',18,'critical account','unemployed',n,good
+'0<=X<200',24,'existing credits paid back duly till now','4<=X<7',n,bad
+'<0',12,'existing credits paid back duly till now','<1',n,bad
+'0<=X<200',24,'critical account','4<=X<7',n,good
+'0<=X<200',48,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',36,'critical account','>=7',n,good
+'unknown',28,'all credits at this bank paid back duly','<1',y,good
+'<0',27,'critical account','>=7',n,good
+'unknown',15,'critical account','>=7',n,good
+'<0',12,'critical account','1<=X<4',n,good
+'0<=X<200',36,'critical account','1<=X<4',n,good
+'unknown',18,'critical account','1<=X<4',n,good
+'unknown',36,'delay in paying off in the past','4<=X<7',n,good
+'<0',21,'existing credits paid back duly till now','<1',n,good
+'unknown',12,'critical account','4<=X<7',n,good
+'unknown',15,'existing credits paid back duly till now','4<=X<7',y,good
+'<0',18,'existing credits paid back duly till now','1<=X<4',n,bad
+'<0',16,'critical account','>=7',n,bad
+'unknown',20,'critical account','<1',y,good
+'unknown',36,'critical account','>=7',n,good
+'unknown',15,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',24,'existing credits paid back duly till now','>=7',y,good
+'<0',12,'existing credits paid back duly till now','1<=X<4',y,good
+'<0',21,'existing credits paid back duly till now','4<=X<7',y,good
+'0<=X<200',36,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',15,'delay in paying off in the past','<1',n,good
+'0<=X<200',9,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',36,'delay in paying off in the past','1<=X<4',y,good
+'0<=X<200',24,'critical account','<1',n,bad
+'0<=X<200',30,'existing credits paid back duly till now','>=7',n,good
+'unknown',11,'existing credits paid back duly till now','>=7',y,good
+'<0',24,'all credits at this bank paid back duly','1<=X<4',n,bad
+'0<=X<200',48,'no credits taken','1<=X<4',n,bad
+'unknown',10,'existing credits paid back duly till now','1<=X<4',y,good
+'<0',6,'existing credits paid back duly till now','>=7',n,bad
+'<0',24,'existing credits paid back duly till now','unemployed',n,bad
+'<0',24,'existing credits paid back duly till now','>=7',n,bad
+'unknown',18,'critical account','1<=X<4',n,good
+'unknown',48,'delay in paying off in the past','4<=X<7',n,good
+'<0',9,'existing credits paid back duly till now','<1',n,bad
+'0<=X<200',12,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',24,'all credits at this bank paid back duly','<1',n,bad
+'<0',12,'all credits at this bank paid back duly','<1',n,bad
+'<0',18,'critical account','<1',n,good
+'<0',48,'existing credits paid back duly till now','4<=X<7',n,bad
+'unknown',30,'existing credits paid back duly till now','>=7',n,good
+'<0',12,'delay in paying off in the past','1<=X<4',y,good
+'<0',24,'existing credits paid back duly till now','<1',n,good
+'0<=X<200',9,'existing credits paid back duly till now','<1',n,bad
+'unknown',9,'critical account','1<=X<4',y,good
+'unknown',12,'critical account','>=7',n,good
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',30,'delay in paying off in the past','<1',n,bad
+'>=200',9,'existing credits paid back duly till now','1<=X<4',y,bad
+'0<=X<200',6,'existing credits paid back duly till now','<1',n,good
+'0<=X<200',60,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',24,'critical account','1<=X<4',n,good
+'unknown',12,'existing credits paid back duly till now','<1',n,good
+'unknown',10,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',24,'existing credits paid back duly till now','4<=X<7',n,good
+'unknown',4,'critical account','4<=X<7',y,good
+'<0',15,'existing credits paid back duly till now','<1',n,good
+'0<=X<200',48,'no credits taken','<1',n,good
+'<0',24,'all credits at this bank paid back duly','<1',n,bad
+'unknown',12,'existing credits paid back duly till now','unemployed',n,good
+'unknown',18,'existing credits paid back duly till now','<1',n,bad
+'unknown',24,'existing credits paid back duly till now','>=7',n,bad
+'0<=X<200',18,'critical account','unemployed',n,good
+'<0',36,'delay in paying off in the past','4<=X<7',n,bad
+'0<=X<200',24,'existing credits paid back duly till now','<1',n,bad
+'unknown',36,'existing credits paid back duly till now','unemployed',n,bad
+'<0',12,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',24,'critical account','>=7',n,good
+'>=200',30,'critical account','>=7',n,good
+'0<=X<200',9,'critical account','>=7',y,good
+'<0',28,'existing credits paid back duly till now','1<=X<4',n,bad
+'0<=X<200',24,'existing credits paid back duly till now','>=7',n,good
+'unknown',6,'critical account','>=7',y,good
+'0<=X<200',21,'delay in paying off in the past','1<=X<4',n,good
+'unknown',15,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',24,'existing credits paid back duly till now','>=7',n,bad
+'0<=X<200',6,'existing credits paid back duly till now','<1',n,good
+'0<=X<200',30,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',27,'critical account','1<=X<4',n,bad
+'unknown',15,'existing credits paid back duly till now','>=7',n,good
+'unknown',42,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',11,'critical account','1<=X<4',y,good
+'0<=X<200',15,'existing credits paid back duly till now','1<=X<4',y,good
+'unknown',24,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',24,'all credits at this bank paid back duly','unemployed',n,bad
+'<0',60,'existing credits paid back duly till now','>=7',n,bad
+'unknown',30,'critical account','1<=X<4',n,good
+'>=200',24,'existing credits paid back duly till now','1<=X<4',n,good
+'0<=X<200',6,'existing credits paid back duly till now','1<=X<4',y,good
+'0<=X<200',18,'delay in paying off in the past','>=7',n,good
+'unknown',24,'delay in paying off in the past','>=7',n,bad
+'0<=X<200',15,'all credits at this bank paid back duly','1<=X<4',n,bad
+'0<=X<200',30,'critical account','4<=X<7',n,bad
+'unknown',48,'existing credits paid back duly till now','unemployed',n,bad
+'>=200',21,'existing credits paid back duly till now','1<=X<4',n,good
+'<0',36,'existing credits paid back duly till now','1<=X<4',n,bad
+'unknown',24,'critical account','4<=X<7',n,good
+'<0',15,'critical account','1<=X<4',n,good
+'>=200',42,'no credits taken','<1',n,good
+'unknown',13,'existing credits paid back duly till now','unemployed',y,good
+'<0',24,'existing credits paid back duly till now','unemployed',n,good
+'0<=X<200',24,'critical account','>=7',n,good
+'unknown',12,'critical account','<1',n,good
+'unknown',15,'all credits at this bank paid back duly','>=7',n,good
+'<0',18,'existing credits paid back duly till now','4<=X<7',n,good
+'<0',36,'existing credits paid back duly till now','unemployed',n,good
+'unknown',12,'existing credits paid back duly till now','>=7',n,good
+'unknown',12,'existing credits paid back duly till now','4<=X<7',y,good
+'<0',30,'existing credits paid back duly till now','1<=X<4',n,good
+'unknown',12,'existing credits paid back duly till now','>=7',n,good
+'<0',45,'existing credits paid back duly till now','1<=X<4',n,bad
+'0<=X<200',45,'critical account','unemployed',n,good

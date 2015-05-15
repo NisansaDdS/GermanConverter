@@ -1,0 +1,1025 @@
+@relation german
+@attribute CHK_ACCT {'<0','0<=X<200','>=200','unknown'}
+@attribute DURATION real
+@attribute HISTORY {'no credits taken','all credits at this bank paid back duly','existing credits paid back duly till now','delay in paying off in the past','critical account'}
+@attribute PURPOSE {'EMPTY','NEW_CAR','USED_CAR','FURNITURE','RADIO/TV','EDUCATION','RETRAINING'}
+@attribute AMOUNT real
+@attribute SAV_ACCT {'<100','100<=X<500','500<=X<1000','>=1000','unknown'}
+@attribute EMPLOYMENT {'unemployed','<1','1<=X<4','4<=X<7','>=7'}
+@attribute INSTALL_RATE real
+@attribute MARITIAL {'EMPTY','MALE_DIV','MALE_SINGLE','MALE_MAR'}
+@attribute CO-APPLICANT { y , n }
+@attribute GUARANTOR { y , n }
+@attribute TIME_RES {'Dummy','<=1','1<X<=2','2<X<=3','>=4'}
+@attribute REAL_ESTATE { y , n }
+@attribute PROP_NONE { y , n }
+@attribute AGE real
+@attribute OTHER_INSTALL { y , n }
+@attribute HOUSE {'EMPTY','RENT','OWN_RES'}
+@attribute NUM_CREDITS real
+@attribute JOB {'unemployed/ unskilled  - non-resident','unskilled - resident','skilled employee / official','management/ self-employed/highly qualified employee/ officer'}
+@attribute NUM_DEPEND real
+@attribute TELEPHONE { y , n }
+@attribute FOREIGN { y , n }
+@attribute class { good , bad }
+@data
+'<0',6,'critical account','RADIO/TV',1169,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,67,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'0<=X<200',48,'existing credits paid back duly till now','RADIO/TV',5951,'<100','1<=X<4',2,EMPTY,n,n,'1<X<=2',y,n,22,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',12,'critical account','EDUCATION',2096,'<100','4<=X<7',2,MALE_SINGLE,n,n,'2<X<=3',y,n,49,n,OWN_RES,1,'unskilled - resident',2,n,n,good
+'<0',42,'existing credits paid back duly till now','FURNITURE',7882,'<100','4<=X<7',2,MALE_SINGLE,n,y,'>=4',n,n,45,n,EMPTY,1,'skilled employee / official',2,n,n,good
+'<0',24,'delay in paying off in the past','NEW_CAR',4870,'<100','1<=X<4',3,MALE_SINGLE,n,n,'>=4',n,y,53,n,EMPTY,2,'skilled employee / official',2,n,n,bad
+'unknown',36,'existing credits paid back duly till now','EDUCATION',9055,'unknown','1<=X<4',2,MALE_SINGLE,n,n,'>=4',n,y,35,n,EMPTY,1,'unskilled - resident',2,y,n,good
+'unknown',24,'existing credits paid back duly till now','FURNITURE',2835,'500<=X<1000','>=7',3,MALE_SINGLE,n,n,'>=4',n,n,53,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',36,'existing credits paid back duly till now','USED_CAR',6948,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,35,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',3059,'>=1000','4<=X<7',2,MALE_DIV,n,n,'>=4',y,n,61,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',30,'critical account','NEW_CAR',5234,'<100','unemployed',4,MALE_MAR,n,n,'1<X<=2',n,n,28,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,n,n,bad
+'0<=X<200',12,'existing credits paid back duly till now','NEW_CAR',1295,'<100','<1',3,EMPTY,n,n,'<=1',n,n,25,n,RENT,1,'skilled employee / official',1,n,n,bad
+'<0',48,'existing credits paid back duly till now','RETRAINING',4308,'<100','<1',3,EMPTY,n,n,'>=4',n,n,24,n,RENT,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',12,'existing credits paid back duly till now','RADIO/TV',1567,'<100','1<=X<4',1,EMPTY,n,n,'<=1',n,n,22,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',24,'critical account','NEW_CAR',1199,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,60,n,OWN_RES,2,'unskilled - resident',1,n,n,bad
+'<0',15,'existing credits paid back duly till now','NEW_CAR',1403,'<100','1<=X<4',2,EMPTY,n,n,'>=4',n,n,28,n,RENT,1,'skilled employee / official',1,n,n,good
+'<0',24,'existing credits paid back duly till now','RADIO/TV',1282,'100<=X<500','1<=X<4',4,EMPTY,n,n,'1<X<=2',n,n,32,n,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'unknown',24,'critical account','RADIO/TV',2424,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,53,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'<0',30,'no credits taken','RETRAINING',8072,'unknown','<1',2,MALE_SINGLE,n,n,'2<X<=3',n,n,25,y,OWN_RES,3,'skilled employee / official',1,n,n,good
+'0<=X<200',24,'existing credits paid back duly till now','USED_CAR',12579,'<100','>=7',4,EMPTY,n,n,'1<X<=2',n,y,44,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',3430,'500<=X<1000','>=7',3,MALE_SINGLE,n,n,'1<X<=2',n,n,31,n,OWN_RES,1,'skilled employee / official',2,y,n,good
+'unknown',9,'critical account','NEW_CAR',2134,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,n,48,n,OWN_RES,3,'skilled employee / official',1,y,n,good
+'<0',6,'existing credits paid back duly till now','RADIO/TV',2647,'500<=X<1000','1<=X<4',2,MALE_SINGLE,n,n,'2<X<=3',y,n,44,n,RENT,1,'skilled employee / official',2,n,n,good
+'<0',10,'critical account','NEW_CAR',2241,'<100','<1',1,MALE_SINGLE,n,n,'2<X<=3',y,n,48,n,RENT,2,'unskilled - resident',2,n,y,good
+'0<=X<200',12,'critical account','USED_CAR',1804,'100<=X<500','<1',3,MALE_SINGLE,n,n,'>=4',n,n,44,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',10,'critical account','FURNITURE',2069,'unknown','1<=X<4',2,MALE_MAR,n,n,'<=1',n,n,26,n,OWN_RES,2,'skilled employee / official',1,n,y,good
+'<0',6,'existing credits paid back duly till now','FURNITURE',1374,'<100','1<=X<4',1,MALE_SINGLE,n,n,'1<X<=2',y,n,36,y,OWN_RES,1,'unskilled - resident',1,y,n,good
+'unknown',6,'no credits taken','RADIO/TV',426,'<100','>=7',4,MALE_MAR,n,n,'>=4',n,n,39,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'>=200',12,'all credits at this bank paid back duly','RADIO/TV',409,'>=1000','1<=X<4',3,EMPTY,n,n,'2<X<=3',y,n,42,n,RENT,2,'skilled employee / official',1,n,n,good
+'0<=X<200',7,'existing credits paid back duly till now','RADIO/TV',2415,'<100','1<=X<4',3,MALE_SINGLE,n,y,'1<X<=2',y,n,34,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',60,'delay in paying off in the past','RETRAINING',6836,'<100','>=7',3,MALE_SINGLE,n,n,'>=4',n,y,63,n,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'0<=X<200',18,'existing credits paid back duly till now','RETRAINING',1913,'>=1000','<1',3,MALE_MAR,n,n,'2<X<=3',y,n,36,y,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',24,'existing credits paid back duly till now','FURNITURE',4020,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,27,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',18,'existing credits paid back duly till now','NEW_CAR',5866,'100<=X<500','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,30,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',12,'critical account','RETRAINING',1264,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,57,n,RENT,1,'unskilled - resident',1,n,n,good
+'>=200',12,'existing credits paid back duly till now','FURNITURE',1474,'<100','<1',4,EMPTY,n,n,'<=1',n,n,33,y,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',45,'critical account','RADIO/TV',4746,'<100','<1',4,MALE_SINGLE,n,n,'1<X<=2',n,n,25,n,OWN_RES,2,'unskilled - resident',1,n,n,bad
+'unknown',48,'critical account','EDUCATION',6110,'<100','1<=X<4',1,MALE_SINGLE,n,n,'2<X<=3',n,y,31,y,EMPTY,1,'skilled employee / official',1,y,n,good
+'>=200',18,'existing credits paid back duly till now','RADIO/TV',2100,'<100','1<=X<4',4,MALE_SINGLE,y,n,'1<X<=2',y,n,37,y,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'>=200',10,'existing credits paid back duly till now',EMPTY,1225,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,37,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',9,'existing credits paid back duly till now','RADIO/TV',458,'<100','1<=X<4',4,MALE_SINGLE,n,n,'2<X<=3',y,n,24,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',30,'existing credits paid back duly till now','RADIO/TV',2333,'500<=X<1000','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,30,y,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','RADIO/TV',1158,'500<=X<1000','1<=X<4',3,MALE_DIV,n,n,'<=1',n,n,26,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',18,'delay in paying off in the past',EMPTY,6204,'<100','1<=X<4',2,MALE_SINGLE,n,n,'>=4',y,n,44,n,OWN_RES,1,'unskilled - resident',2,y,n,good
+'<0',30,'critical account','USED_CAR',6187,'100<=X<500','4<=X<7',1,MALE_MAR,n,n,'>=4',n,n,24,n,RENT,2,'skilled employee / official',1,n,n,good
+'<0',48,'critical account','USED_CAR',6143,'<100','>=7',4,EMPTY,n,n,'>=4',n,y,58,y,EMPTY,2,'unskilled - resident',1,n,n,bad
+'unknown',11,'critical account','NEW_CAR',1393,'<100','<1',4,EMPTY,n,n,'>=4',n,n,35,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'unknown',36,'existing credits paid back duly till now','RADIO/TV',2299,'500<=X<1000','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,39,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',6,'existing credits paid back duly till now','USED_CAR',1352,'500<=X<1000','unemployed',1,EMPTY,n,n,'1<X<=2',n,n,23,n,RENT,1,'unemployed/ unskilled  - non-resident',1,y,n,good
+'unknown',11,'critical account','NEW_CAR',7228,'<100','1<=X<4',1,MALE_SINGLE,n,n,'>=4',n,n,39,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',2073,'100<=X<500','1<=X<4',4,EMPTY,y,n,'1<X<=2',y,n,28,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',24,'delay in paying off in the past','FURNITURE',2333,'unknown','<1',4,MALE_SINGLE,n,n,'1<X<=2',n,n,29,y,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',27,'delay in paying off in the past','USED_CAR',5965,'<100','>=7',1,MALE_SINGLE,n,n,'1<X<=2',n,n,30,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',1262,'<100','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',n,n,25,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',18,'existing credits paid back duly till now','USED_CAR',3378,'unknown','1<=X<4',2,MALE_SINGLE,n,n,'<=1',n,n,31,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',36,'delay in paying off in the past','NEW_CAR',2225,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,57,y,EMPTY,2,'skilled employee / official',1,y,n,bad
+'unknown',6,'all credits at this bank paid back duly','NEW_CAR',783,'unknown','1<=X<4',1,MALE_SINGLE,n,y,'1<X<=2',y,n,26,y,OWN_RES,1,'unskilled - resident',2,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','RADIO/TV',6468,'unknown','unemployed',2,MALE_SINGLE,n,n,'<=1',n,y,52,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',36,'critical account','RADIO/TV',9566,'<100','1<=X<4',2,EMPTY,n,n,'1<X<=2',n,n,31,y,OWN_RES,2,'skilled employee / official',1,n,n,good
+'>=200',18,'existing credits paid back duly till now','NEW_CAR',1961,'<100','>=7',3,EMPTY,n,n,'1<X<=2',n,n,23,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'<0',36,'critical account','FURNITURE',6229,'<100','<1',4,EMPTY,y,n,'>=4',n,y,23,n,RENT,2,'unskilled - resident',1,y,n,bad
+'0<=X<200',9,'existing credits paid back duly till now','RETRAINING',1391,'<100','1<=X<4',2,MALE_MAR,n,n,'<=1',y,n,27,y,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',15,'critical account','RADIO/TV',1537,'unknown','>=7',4,MALE_SINGLE,n,y,'>=4',y,n,50,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'0<=X<200',36,'no credits taken','RETRAINING',1953,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,61,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'0<=X<200',48,'no credits taken','RETRAINING',14421,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,25,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',3181,'<100','<1',4,EMPTY,n,n,'>=4',n,n,26,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',27,'existing credits paid back duly till now',EMPTY,5190,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,48,n,OWN_RES,4,'skilled employee / official',2,y,n,good
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',2171,'<100','<1',2,EMPTY,n,n,'1<X<=2',n,n,29,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','NEW_CAR',1007,'>=1000','1<=X<4',4,MALE_MAR,n,n,'<=1',y,n,22,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',36,'existing credits paid back duly till now','EDUCATION',1819,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,y,37,y,EMPTY,1,'skilled employee / official',1,y,n,bad
+'unknown',36,'existing credits paid back duly till now','RADIO/TV',2394,'unknown','1<=X<4',4,EMPTY,n,n,'>=4',n,n,25,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',36,'existing credits paid back duly till now','USED_CAR',8133,'<100','1<=X<4',1,EMPTY,n,n,'1<X<=2',n,n,30,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',7,'critical account','RADIO/TV',730,'unknown','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,46,n,RENT,2,'unskilled - resident',1,y,n,good
+'<0',8,'critical account',EMPTY,1164,'<100','>=7',3,MALE_SINGLE,n,n,'>=4',n,y,51,y,EMPTY,2,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'0<=X<200',42,'critical account','RETRAINING',5954,'<100','4<=X<7',2,EMPTY,n,n,'<=1',y,n,41,y,OWN_RES,2,'unskilled - resident',1,n,n,good
+'<0',36,'existing credits paid back duly till now','EDUCATION',1977,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,40,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'<0',12,'critical account','USED_CAR',1526,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,66,n,EMPTY,2,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'<0',42,'existing credits paid back duly till now','RADIO/TV',3965,'<100','<1',4,MALE_SINGLE,n,n,'2<X<=3',n,n,34,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',11,'delay in paying off in the past','RADIO/TV',4771,'<100','4<=X<7',2,MALE_SINGLE,n,n,'>=4',n,n,51,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',54,'no credits taken','USED_CAR',9436,'unknown','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,39,n,OWN_RES,1,'unskilled - resident',2,n,n,good
+'0<=X<200',30,'existing credits paid back duly till now','FURNITURE',3832,'<100','<1',2,MALE_MAR,n,n,'<=1',n,n,22,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',5943,'unknown','<1',1,EMPTY,n,n,'<=1',n,n,44,n,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'unknown',15,'existing credits paid back duly till now','RADIO/TV',1213,'500<=X<1000','>=7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,47,y,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',18,'existing credits paid back duly till now','RETRAINING',1568,'100<=X<500','1<=X<4',3,EMPTY,n,n,'>=4',n,n,24,n,RENT,1,'unskilled - resident',1,n,n,good
+'<0',24,'existing credits paid back duly till now',EMPTY,1755,'<100','>=7',4,EMPTY,n,y,'>=4',y,n,58,n,OWN_RES,1,'unskilled - resident',1,y,n,good
+'<0',10,'existing credits paid back duly till now','RADIO/TV',2315,'<100','>=7',3,MALE_SINGLE,n,n,'>=4',y,n,52,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'unknown',12,'critical account','RETRAINING',1412,'<100','1<=X<4',4,EMPTY,n,y,'1<X<=2',y,n,29,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',18,'critical account','FURNITURE',1295,'<100','<1',4,EMPTY,n,n,'<=1',n,n,27,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',36,'existing credits paid back duly till now','EDUCATION',12612,'100<=X<500','1<=X<4',1,MALE_SINGLE,n,n,'>=4',n,y,47,n,EMPTY,1,'skilled employee / official',2,y,n,bad
+'<0',18,'existing credits paid back duly till now','NEW_CAR',2249,'100<=X<500','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,30,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'<0',12,'no credits taken',EMPTY,1108,'<100','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',y,n,28,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'unknown',12,'critical account','RADIO/TV',618,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,56,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',12,'critical account','USED_CAR',1409,'<100','>=7',4,MALE_SINGLE,n,n,'2<X<=3',y,n,54,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',12,'critical account','RADIO/TV',797,'unknown','>=7',4,EMPTY,n,n,'2<X<=3',n,n,33,y,OWN_RES,1,'unskilled - resident',2,n,n,bad
+'>=200',24,'critical account','FURNITURE',3617,'unknown','>=7',4,MALE_SINGLE,y,n,'>=4',n,y,20,n,RENT,2,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','NEW_CAR',1318,'>=1000','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,54,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',54,'no credits taken','RETRAINING',15945,'<100','<1',3,MALE_SINGLE,n,n,'>=4',n,y,58,n,RENT,1,'skilled employee / official',1,y,n,bad
+'unknown',12,'critical account','EDUCATION',2012,'unknown','4<=X<7',4,EMPTY,n,n,'1<X<=2',n,n,61,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',18,'existing credits paid back duly till now','RETRAINING',2622,'100<=X<500','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,n,34,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',36,'critical account','RADIO/TV',2337,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,36,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',20,'delay in paying off in the past','USED_CAR',7057,'unknown','4<=X<7',3,MALE_SINGLE,n,n,'>=4',n,n,36,y,RENT,2,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'unknown',24,'existing credits paid back duly till now','NEW_CAR',1469,'100<=X<500','>=7',4,MALE_MAR,n,n,'>=4',y,n,41,n,RENT,1,'unskilled - resident',1,n,n,good
+'0<=X<200',36,'existing credits paid back duly till now','RADIO/TV',2323,'<100','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,n,24,n,RENT,1,'skilled employee / official',1,n,n,good
+'unknown',6,'delay in paying off in the past','RADIO/TV',932,'<100','1<=X<4',3,EMPTY,n,n,'1<X<=2',y,n,24,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',9,'critical account','FURNITURE',1919,'<100','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,35,n,RENT,1,'skilled employee / official',1,y,n,good
+'unknown',12,'existing credits paid back duly till now','USED_CAR',2445,'unknown','<1',2,MALE_MAR,n,n,'>=4',n,n,26,n,RENT,1,'skilled employee / official',1,y,n,good
+'0<=X<200',24,'critical account',EMPTY,11938,'<100','1<=X<4',2,MALE_SINGLE,y,n,'2<X<=3',n,n,39,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',2,y,n,bad
+'unknown',18,'all credits at this bank paid back duly','NEW_CAR',6458,'<100','>=7',2,MALE_SINGLE,n,n,'>=4',n,y,39,y,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',2,y,n,bad
+'0<=X<200',12,'existing credits paid back duly till now','NEW_CAR',6078,'<100','4<=X<7',2,MALE_SINGLE,n,n,'1<X<=2',n,n,32,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',24,'existing credits paid back duly till now','FURNITURE',7721,'unknown','<1',1,EMPTY,n,n,'1<X<=2',n,n,30,n,OWN_RES,1,'skilled employee / official',1,y,y,good
+'0<=X<200',14,'existing credits paid back duly till now','RETRAINING',1410,'500<=X<1000','>=7',1,MALE_MAR,n,n,'1<X<=2',y,n,35,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',6,'delay in paying off in the past','RETRAINING',1449,'100<=X<500','>=7',1,MALE_DIV,n,n,'1<X<=2',n,n,31,y,OWN_RES,2,'skilled employee / official',2,n,n,good
+'>=200',15,'existing credits paid back duly till now','EDUCATION',392,'<100','<1',4,EMPTY,n,n,'>=4',n,n,23,n,RENT,1,'skilled employee / official',1,y,n,good
+'0<=X<200',18,'existing credits paid back duly till now','NEW_CAR',6260,'<100','4<=X<7',3,MALE_SINGLE,n,n,'2<X<=3',y,n,28,n,RENT,1,'unskilled - resident',1,n,n,good
+'unknown',36,'critical account','NEW_CAR',7855,'<100','1<=X<4',4,EMPTY,n,n,'1<X<=2',y,n,25,y,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'<0',12,'existing credits paid back duly till now','RADIO/TV',1680,'500<=X<1000','>=7',3,MALE_MAR,n,n,'<=1',y,n,35,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',48,'critical account','RADIO/TV',3578,'unknown','>=7',4,MALE_SINGLE,n,n,'<=1',y,n,47,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',42,'existing credits paid back duly till now','RADIO/TV',7174,'unknown','4<=X<7',4,EMPTY,n,n,'2<X<=3',n,n,30,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'<0',10,'critical account','FURNITURE',2132,'unknown','<1',2,EMPTY,y,n,'2<X<=3',y,n,27,n,RENT,2,'skilled employee / official',1,n,y,good
+'<0',33,'critical account','FURNITURE',4281,'500<=X<1000','1<=X<4',1,EMPTY,n,n,'>=4',n,n,23,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'0<=X<200',12,'critical account','NEW_CAR',2366,'500<=X<1000','4<=X<7',3,MALE_DIV,n,n,'2<X<=3',n,n,36,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',21,'existing credits paid back duly till now','RADIO/TV',1835,'<100','1<=X<4',3,EMPTY,n,n,'1<X<=2',y,n,25,n,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'unknown',24,'critical account','USED_CAR',3868,'<100','>=7',4,EMPTY,n,n,'1<X<=2',n,n,41,n,RENT,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',12,'existing credits paid back duly till now','FURNITURE',1768,'<100','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',y,n,24,n,RENT,1,'unskilled - resident',1,n,n,good
+'>=200',10,'critical account','NEW_CAR',781,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,63,n,EMPTY,2,'skilled employee / official',1,y,n,good
+'0<=X<200',18,'existing credits paid back duly till now','FURNITURE',1924,'unknown','<1',4,EMPTY,n,n,'2<X<=3',y,n,27,n,RENT,1,'skilled employee / official',1,n,n,bad
+'<0',12,'critical account','NEW_CAR',2121,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,30,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'<0',12,'existing credits paid back duly till now','RADIO/TV',701,'<100','1<=X<4',4,MALE_MAR,n,n,'1<X<=2',y,n,40,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now',EMPTY,639,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,30,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',12,'critical account','USED_CAR',1860,'<100','unemployed',4,MALE_SINGLE,n,n,'1<X<=2',n,n,34,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',12,'critical account','NEW_CAR',3499,'<100','1<=X<4',3,EMPTY,y,n,'1<X<=2',y,n,29,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'0<=X<200',48,'existing credits paid back duly till now','NEW_CAR',8487,'unknown','4<=X<7',1,EMPTY,n,n,'1<X<=2',n,n,24,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',36,'delay in paying off in the past','EDUCATION',6887,'<100','1<=X<4',4,MALE_SINGLE,n,n,'2<X<=3',n,n,29,y,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'unknown',15,'existing credits paid back duly till now','FURNITURE',2708,'<100','<1',2,MALE_SINGLE,n,n,'2<X<=3',n,n,27,y,OWN_RES,2,'unskilled - resident',1,n,n,good
+'unknown',18,'existing credits paid back duly till now','FURNITURE',1984,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,y,47,y,EMPTY,2,'skilled employee / official',1,n,n,good
+'unknown',60,'existing credits paid back duly till now','RADIO/TV',10144,'100<=X<500','4<=X<7',2,EMPTY,n,n,'>=4',y,n,21,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',12,'critical account','RADIO/TV',1240,'unknown','>=7',4,EMPTY,n,n,'1<X<=2',y,n,38,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',27,'delay in paying off in the past','USED_CAR',8613,'>=1000','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,27,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','RADIO/TV',766,'500<=X<1000','1<=X<4',4,MALE_SINGLE,n,n,'2<X<=3',y,n,66,n,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'0<=X<200',15,'critical account','RADIO/TV',2728,'unknown','4<=X<7',4,MALE_SINGLE,n,y,'1<X<=2',y,n,35,y,OWN_RES,3,'skilled employee / official',1,y,n,good
+'>=200',12,'existing credits paid back duly till now','RADIO/TV',1881,'<100','1<=X<4',2,EMPTY,n,n,'1<X<=2',n,n,44,n,RENT,1,'unskilled - resident',1,y,n,good
+'>=200',6,'existing credits paid back duly till now','NEW_CAR',709,'>=1000','<1',2,MALE_MAR,n,n,'1<X<=2',y,n,27,n,OWN_RES,1,'unemployed/ unskilled  - non-resident',1,n,y,good
+'0<=X<200',36,'existing credits paid back duly till now','RADIO/TV',4795,'<100','<1',4,EMPTY,n,n,'<=1',n,y,30,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',27,'existing credits paid back duly till now','RADIO/TV',3416,'<100','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',n,n,27,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'<0',18,'existing credits paid back duly till now','FURNITURE',2462,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,22,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',21,'critical account','FURNITURE',2288,'<100','<1',4,EMPTY,n,n,'>=4',n,n,23,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',48,'all credits at this bank paid back duly','RETRAINING',3566,'100<=X<500','4<=X<7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,30,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',6,'critical account','NEW_CAR',860,'<100','>=7',1,EMPTY,n,n,'>=4',n,y,39,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',12,'critical account','NEW_CAR',682,'100<=X<500','4<=X<7',4,EMPTY,n,n,'2<X<=3',n,n,51,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'<0',36,'critical account','FURNITURE',5371,'<100','1<=X<4',3,MALE_SINGLE,n,y,'1<X<=2',n,n,28,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',18,'critical account','RADIO/TV',1582,'>=1000','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,46,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',6,'existing credits paid back duly till now','RADIO/TV',1346,'100<=X<500','>=7',2,MALE_SINGLE,n,n,'>=4',n,y,42,y,EMPTY,1,'skilled employee / official',2,y,n,good
+'unknown',10,'existing credits paid back duly till now','RADIO/TV',1924,'<100','1<=X<4',1,MALE_SINGLE,n,n,'>=4',n,n,38,n,OWN_RES,1,'skilled employee / official',1,y,y,good
+'>=200',36,'existing credits paid back duly till now','RADIO/TV',5848,'<100','1<=X<4',4,MALE_SINGLE,n,n,'<=1',n,n,24,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',24,'critical account','USED_CAR',7758,'>=1000','>=7',2,EMPTY,n,n,'>=4',n,y,29,n,RENT,1,'skilled employee / official',1,n,n,good
+'0<=X<200',24,'delay in paying off in the past','RETRAINING',6967,'100<=X<500','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,n,36,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',12,'existing credits paid back duly till now','FURNITURE',1282,'<100','1<=X<4',2,EMPTY,n,n,'>=4',n,n,20,n,RENT,1,'skilled employee / official',1,n,n,bad
+'<0',9,'critical account',EMPTY,1288,'100<=X<500','>=7',3,MALE_SINGLE,n,y,'>=4',y,n,48,n,OWN_RES,2,'skilled employee / official',2,n,y,good
+'<0',12,'all credits at this bank paid back duly',EMPTY,339,'<100','>=7',4,MALE_MAR,n,n,'<=1',n,n,45,y,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',24,'existing credits paid back duly till now','NEW_CAR',3512,'100<=X<500','4<=X<7',2,MALE_SINGLE,n,n,'2<X<=3',n,n,38,y,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',6,'critical account','RADIO/TV',1898,'unknown','1<=X<4',1,MALE_SINGLE,n,n,'1<X<=2',y,n,34,n,OWN_RES,2,'unskilled - resident',2,n,n,good
+'unknown',24,'critical account','RADIO/TV',2872,'100<=X<500','>=7',3,MALE_SINGLE,n,n,'>=4',y,n,36,n,OWN_RES,1,'skilled employee / official',2,y,n,good
+'unknown',18,'critical account','NEW_CAR',1055,'<100','<1',4,EMPTY,n,n,'<=1',n,n,30,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',15,'existing credits paid back duly till now',EMPTY,1262,'500<=X<1000','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,36,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'0<=X<200',10,'existing credits paid back duly till now','NEW_CAR',7308,'<100','unemployed',2,MALE_SINGLE,n,n,'>=4',n,y,70,y,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',36,'existing credits paid back duly till now','NEW_CAR',909,'500<=X<1000','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,36,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',6,'existing credits paid back duly till now','FURNITURE',2978,'500<=X<1000','1<=X<4',1,MALE_SINGLE,n,n,'1<X<=2',n,n,32,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',18,'existing credits paid back duly till now','FURNITURE',1131,'<100','unemployed',4,EMPTY,n,n,'1<X<=2',n,n,33,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',11,'existing credits paid back duly till now','FURNITURE',1577,'>=1000','<1',4,EMPTY,n,n,'<=1',y,n,20,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',24,'existing credits paid back duly till now','FURNITURE',3972,'<100','4<=X<7',2,EMPTY,n,n,'>=4',n,n,25,n,RENT,1,'skilled employee / official',1,y,n,good
+'0<=X<200',24,'critical account','RETRAINING',1935,'<100','>=7',4,MALE_DIV,n,n,'>=4',y,n,31,n,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'<0',15,'no credits taken','NEW_CAR',950,'<100','>=7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,33,n,RENT,2,'skilled employee / official',2,n,n,bad
+'unknown',12,'existing credits paid back duly till now','FURNITURE',763,'<100','1<=X<4',4,EMPTY,n,n,'<=1',y,n,26,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',24,'delay in paying off in the past','FURNITURE',2064,'<100','unemployed',3,EMPTY,n,n,'1<X<=2',n,n,34,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'0<=X<200',8,'existing credits paid back duly till now','RADIO/TV',1414,'<100','1<=X<4',4,MALE_SINGLE,n,y,'1<X<=2',y,n,33,n,OWN_RES,1,'skilled employee / official',1,n,y,good
+'<0',21,'delay in paying off in the past','EDUCATION',3414,'<100','<1',2,MALE_SINGLE,n,n,'<=1',n,n,26,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'unknown',30,'all credits at this bank paid back duly','USED_CAR',7485,'unknown','unemployed',4,EMPTY,n,n,'<=1',y,n,53,y,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'<0',12,'existing credits paid back duly till now','FURNITURE',2577,'<100','1<=X<4',2,MALE_DIV,n,n,'<=1',n,n,42,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',6,'critical account','RADIO/TV',338,'500<=X<1000','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,52,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',1963,'<100','4<=X<7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,31,n,RENT,2,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'<0',21,'critical account','NEW_CAR',571,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,65,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',36,'delay in paying off in the past','RETRAINING',9572,'<100','<1',1,MALE_DIV,n,n,'<=1',n,n,28,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'0<=X<200',36,'delay in paying off in the past','RETRAINING',4455,'<100','1<=X<4',2,MALE_DIV,n,n,'1<X<=2',y,n,30,y,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'<0',21,'all credits at this bank paid back duly','NEW_CAR',1647,'unknown','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,40,n,OWN_RES,2,'unskilled - resident',2,n,n,bad
+'unknown',24,'critical account','FURNITURE',3777,'>=1000','1<=X<4',4,MALE_SINGLE,n,n,'>=4',y,n,50,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',18,'critical account','NEW_CAR',884,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,36,y,OWN_RES,1,'skilled employee / official',2,y,n,bad
+'unknown',15,'critical account','RADIO/TV',1360,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,31,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',9,'all credits at this bank paid back duly','USED_CAR',5129,'<100','>=7',2,EMPTY,n,n,'>=4',n,y,74,y,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',2,y,n,bad
+'0<=X<200',16,'critical account','NEW_CAR',1175,'<100','unemployed',2,MALE_SINGLE,n,n,'2<X<=3',n,n,68,n,EMPTY,3,'unemployed/ unskilled  - non-resident',1,y,n,good
+'<0',12,'existing credits paid back duly till now','RADIO/TV',674,'100<=X<500','4<=X<7',4,MALE_MAR,n,n,'<=1',n,n,20,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',18,'no credits taken','FURNITURE',3244,'<100','1<=X<4',1,EMPTY,n,n,'>=4',n,n,33,y,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',24,'existing credits paid back duly till now','RETRAINING',4591,'>=1000','1<=X<4',2,MALE_SINGLE,n,n,'2<X<=3',n,n,54,n,OWN_RES,3,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'0<=X<200',48,'no credits taken','RETRAINING',3844,'100<=X<500','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,y,34,n,EMPTY,1,'unskilled - resident',2,n,n,bad
+'0<=X<200',27,'existing credits paid back duly till now','RETRAINING',3915,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,36,n,OWN_RES,1,'skilled employee / official',2,y,n,bad
+'unknown',6,'existing credits paid back duly till now','RADIO/TV',2108,'<100','4<=X<7',2,MALE_MAR,n,n,'1<X<=2',y,n,29,n,RENT,1,'skilled employee / official',1,n,n,good
+'0<=X<200',45,'existing credits paid back duly till now','RADIO/TV',3031,'100<=X<500','1<=X<4',4,MALE_SINGLE,n,y,'>=4',n,n,21,n,RENT,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',9,'critical account','EDUCATION',1501,'<100','>=7',2,EMPTY,n,n,'2<X<=3',n,n,34,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',6,'critical account','RADIO/TV',1382,'<100','1<=X<4',1,EMPTY,n,n,'<=1',n,n,28,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'0<=X<200',12,'existing credits paid back duly till now','FURNITURE',951,'100<=X<500','<1',4,EMPTY,n,n,'>=4',n,n,27,y,RENT,4,'skilled employee / official',1,n,n,bad
+'0<=X<200',24,'existing credits paid back duly till now','USED_CAR',2760,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,36,y,EMPTY,1,'skilled employee / official',1,y,n,good
+'0<=X<200',18,'delay in paying off in the past','FURNITURE',4297,'<100','>=7',4,MALE_DIV,n,n,'2<X<=3',n,y,40,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',9,'critical account','EDUCATION',936,'500<=X<1000','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,52,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'<0',12,'existing credits paid back duly till now','NEW_CAR',1168,'<100','1<=X<4',4,MALE_MAR,n,n,'2<X<=3',y,n,27,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'unknown',27,'delay in paying off in the past','RETRAINING',5117,'<100','4<=X<7',3,MALE_SINGLE,n,n,'>=4',n,n,26,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'<0',12,'existing credits paid back duly till now',EMPTY,902,'<100','4<=X<7',4,MALE_MAR,n,n,'>=4',n,n,21,n,RENT,1,'skilled employee / official',1,n,n,bad
+'unknown',12,'critical account','NEW_CAR',1495,'<100','>=7',4,MALE_SINGLE,n,n,'<=1',y,n,38,n,OWN_RES,2,'unskilled - resident',2,n,n,good
+'<0',30,'critical account','USED_CAR',10623,'<100','>=7',3,MALE_SINGLE,n,n,'>=4',n,y,38,n,EMPTY,3,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'unknown',12,'critical account','FURNITURE',1935,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,43,n,OWN_RES,3,'skilled employee / official',1,y,n,good
+'0<=X<200',12,'critical account',EMPTY,1424,'<100','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,26,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',24,'existing credits paid back duly till now','RETRAINING',6568,'<100','1<=X<4',2,MALE_MAR,n,n,'1<X<=2',n,n,21,y,OWN_RES,1,'unskilled - resident',1,n,n,good
+'unknown',12,'existing credits paid back duly till now','USED_CAR',1413,'>=1000','4<=X<7',3,MALE_SINGLE,n,n,'1<X<=2',n,n,55,n,OWN_RES,1,'skilled employee / official',1,n,y,good
+'unknown',9,'critical account','RADIO/TV',3074,'unknown','1<=X<4',1,MALE_SINGLE,n,n,'1<X<=2',y,n,33,n,OWN_RES,2,'skilled employee / official',2,n,n,good
+'unknown',36,'existing credits paid back duly till now','RADIO/TV',3835,'unknown','>=7',2,EMPTY,n,n,'>=4',y,n,45,n,OWN_RES,1,'unskilled - resident',1,y,n,good
+'<0',27,'no credits taken','RETRAINING',5293,'<100','unemployed',2,MALE_SINGLE,n,n,'>=4',n,n,50,y,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'>=200',30,'delay in paying off in the past','RETRAINING',1908,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,66,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',36,'critical account','RADIO/TV',3342,'unknown','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,51,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',6,'critical account',EMPTY,932,'unknown','4<=X<7',1,EMPTY,n,n,'2<X<=3',n,n,39,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'<0',18,'no credits taken','RETRAINING',3104,'<100','4<=X<7',3,MALE_SINGLE,n,n,'<=1',n,n,31,y,OWN_RES,1,'skilled employee / official',1,y,n,good
+'>=200',36,'existing credits paid back duly till now','RADIO/TV',3913,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',y,n,23,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',24,'existing credits paid back duly till now','FURNITURE',3021,'<100','1<=X<4',2,MALE_DIV,n,n,'1<X<=2',y,n,24,n,RENT,1,'unskilled - resident',1,n,n,good
+'unknown',10,'existing credits paid back duly till now','NEW_CAR',1364,'<100','1<=X<4',2,EMPTY,n,n,'>=4',n,n,64,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',12,'existing credits paid back duly till now','RADIO/TV',625,'<100','<1',4,MALE_MAR,n,y,'<=1',y,n,26,y,OWN_RES,1,'unskilled - resident',1,n,n,good
+'<0',12,'existing credits paid back duly till now','EDUCATION',1200,'unknown','1<=X<4',4,EMPTY,n,n,'>=4',n,n,23,y,RENT,1,'skilled employee / official',1,y,n,good
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',707,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',y,n,30,y,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',24,'delay in paying off in the past','RETRAINING',2978,'unknown','1<=X<4',4,MALE_SINGLE,n,n,'>=4',y,n,32,n,OWN_RES,2,'skilled employee / official',2,y,n,good
+'unknown',15,'existing credits paid back duly till now','USED_CAR',4657,'<100','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',n,n,30,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',36,'no credits taken',EMPTY,2613,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,27,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',48,'existing credits paid back duly till now','RADIO/TV',10961,'>=1000','4<=X<7',1,MALE_SINGLE,y,n,'1<X<=2',n,y,27,y,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'<0',12,'existing credits paid back duly till now','FURNITURE',7865,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,53,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',9,'existing credits paid back duly till now','RADIO/TV',1478,'<100','4<=X<7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,22,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'<0',24,'existing credits paid back duly till now','FURNITURE',3149,'<100','<1',4,MALE_SINGLE,n,n,'<=1',n,y,22,y,EMPTY,1,'skilled employee / official',1,n,n,good
+'>=200',36,'existing credits paid back duly till now','RADIO/TV',4210,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,26,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',9,'existing credits paid back duly till now','NEW_CAR',2507,'500<=X<1000','>=7',2,MALE_SINGLE,n,n,'>=4',n,y,51,n,EMPTY,1,'unskilled - resident',1,n,n,good
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',2141,'100<=X<500','4<=X<7',3,MALE_SINGLE,n,n,'<=1',n,y,35,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',18,'existing credits paid back duly till now','RADIO/TV',866,'<100','1<=X<4',4,MALE_MAR,n,y,'1<X<=2',y,n,25,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'unknown',4,'critical account','RADIO/TV',1544,'<100','4<=X<7',2,MALE_SINGLE,n,n,'<=1',y,n,42,n,OWN_RES,3,'unskilled - resident',2,n,n,good
+'<0',24,'existing credits paid back duly till now','RADIO/TV',1823,'<100','unemployed',4,MALE_SINGLE,n,n,'1<X<=2',n,n,30,y,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',2,n,n,bad
+'0<=X<200',6,'existing credits paid back duly till now','NEW_CAR',14555,'unknown','unemployed',1,MALE_SINGLE,n,n,'1<X<=2',n,n,23,n,OWN_RES,1,'unemployed/ unskilled  - non-resident',1,y,n,bad
+'0<=X<200',21,'existing credits paid back duly till now','RETRAINING',2767,'100<=X<500','>=7',4,MALE_DIV,n,n,'1<X<=2',n,n,61,y,RENT,2,'unskilled - resident',1,n,n,bad
+'unknown',12,'critical account','RADIO/TV',1291,'<100','1<=X<4',4,EMPTY,n,n,'1<X<=2',n,n,35,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'<0',30,'existing credits paid back duly till now','RADIO/TV',2522,'<100','>=7',1,MALE_SINGLE,n,y,'2<X<=3',n,n,39,n,OWN_RES,1,'skilled employee / official',2,n,n,good
+'<0',24,'existing credits paid back duly till now','NEW_CAR',915,'unknown','>=7',4,EMPTY,n,n,'1<X<=2',n,n,29,y,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',6,'existing credits paid back duly till now','RADIO/TV',1595,'<100','4<=X<7',3,MALE_SINGLE,n,n,'1<X<=2',n,n,51,n,OWN_RES,1,'skilled employee / official',2,n,n,good
+'<0',48,'no credits taken','USED_CAR',4605,'<100','>=7',3,MALE_SINGLE,n,n,'>=4',n,y,24,n,EMPTY,2,'skilled employee / official',2,n,n,bad
+'unknown',12,'critical account','RETRAINING',1185,'<100','1<=X<4',3,EMPTY,n,n,'1<X<=2',y,n,27,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',12,'all credits at this bank paid back duly',EMPTY,3447,'500<=X<1000','1<=X<4',4,EMPTY,n,n,'2<X<=3',y,n,35,n,OWN_RES,1,'unskilled - resident',2,n,n,good
+'unknown',24,'existing credits paid back duly till now','RETRAINING',1258,'<100','4<=X<7',4,MALE_SINGLE,n,n,'<=1',y,n,25,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',12,'critical account','RADIO/TV',717,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,52,n,OWN_RES,3,'skilled employee / official',1,n,n,good
+'unknown',6,'no credits taken','NEW_CAR',1204,'100<=X<500','1<=X<4',4,MALE_SINGLE,n,n,'<=1',n,y,35,y,RENT,1,'skilled employee / official',1,n,y,good
+'>=200',24,'existing credits paid back duly till now','FURNITURE',1925,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',y,n,26,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',18,'existing credits paid back duly till now','RADIO/TV',433,'<100','unemployed',3,EMPTY,y,n,'>=4',y,n,22,n,RENT,1,'skilled employee / official',1,n,n,bad
+'<0',6,'critical account','NEW_CAR',666,'>=1000','4<=X<7',3,EMPTY,n,n,'>=4',y,n,39,n,OWN_RES,2,'unskilled - resident',1,y,n,good
+'>=200',12,'existing credits paid back duly till now','FURNITURE',2251,'<100','1<=X<4',1,EMPTY,n,n,'1<X<=2',n,n,46,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',30,'existing credits paid back duly till now','NEW_CAR',2150,'<100','1<=X<4',4,EMPTY,n,y,'1<X<=2',n,y,24,y,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',24,'delay in paying off in the past','FURNITURE',4151,'100<=X<500','1<=X<4',2,MALE_SINGLE,n,n,'2<X<=3',n,n,35,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',9,'existing credits paid back duly till now','FURNITURE',2030,'unknown','4<=X<7',2,MALE_SINGLE,n,n,'<=1',n,n,24,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',60,'delay in paying off in the past','RADIO/TV',7418,'unknown','1<=X<4',1,MALE_SINGLE,n,n,'<=1',y,n,27,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'unknown',24,'critical account','RADIO/TV',2684,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',y,n,35,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'<0',12,'all credits at this bank paid back duly','RADIO/TV',2149,'<100','1<=X<4',4,MALE_DIV,n,n,'<=1',n,y,29,n,EMPTY,1,'skilled employee / official',1,n,n,bad
+'unknown',15,'existing credits paid back duly till now','USED_CAR',3812,'100<=X<500','<1',1,EMPTY,n,n,'>=4',n,n,23,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',11,'critical account','RADIO/TV',1154,'100<=X<500','unemployed',4,EMPTY,n,n,'>=4',y,n,57,n,OWN_RES,3,'unskilled - resident',1,n,n,good
+'<0',12,'existing credits paid back duly till now','FURNITURE',1657,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',y,n,27,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',24,'existing credits paid back duly till now','RADIO/TV',1603,'<100','>=7',4,EMPTY,n,n,'>=4',n,n,55,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',18,'critical account','NEW_CAR',5302,'<100','>=7',2,MALE_SINGLE,n,n,'>=4',n,y,36,n,EMPTY,3,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',12,'critical account','EDUCATION',2748,'<100','>=7',2,EMPTY,n,n,'>=4',n,y,57,y,EMPTY,3,'unskilled - resident',1,n,n,good
+'unknown',10,'critical account','NEW_CAR',1231,'<100','>=7',3,MALE_SINGLE,n,n,'>=4',y,n,32,n,OWN_RES,2,'unskilled - resident',2,n,y,good
+'0<=X<200',15,'existing credits paid back duly till now','RADIO/TV',802,'<100','>=7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,37,n,OWN_RES,1,'skilled employee / official',2,n,n,bad
+'unknown',36,'critical account','RETRAINING',6304,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,36,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',1533,'<100','<1',4,EMPTY,n,n,'2<X<=3',n,n,38,y,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',14,'existing credits paid back duly till now','NEW_CAR',8978,'<100','>=7',1,MALE_DIV,n,n,'>=4',n,n,45,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,y,bad
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',999,'unknown','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,25,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',18,'existing credits paid back duly till now','NEW_CAR',2662,'unknown','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,32,n,OWN_RES,1,'skilled employee / official',1,n,y,good
+'unknown',12,'critical account','FURNITURE',1402,'500<=X<1000','4<=X<7',3,EMPTY,n,n,'>=4',n,n,37,n,RENT,1,'skilled employee / official',1,y,n,good
+'0<=X<200',48,'all credits at this bank paid back duly','NEW_CAR',12169,'unknown','unemployed',4,MALE_SINGLE,y,n,'>=4',n,y,36,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',48,'existing credits paid back duly till now','RADIO/TV',3060,'<100','4<=X<7',4,MALE_SINGLE,n,n,'>=4',y,n,28,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'<0',30,'existing credits paid back duly till now',EMPTY,11998,'<100','<1',1,MALE_DIV,n,n,'<=1',n,y,34,n,OWN_RES,1,'unskilled - resident',1,y,n,bad
+'unknown',9,'existing credits paid back duly till now','RADIO/TV',2697,'<100','1<=X<4',1,MALE_SINGLE,n,n,'1<X<=2',y,n,32,n,OWN_RES,1,'skilled employee / official',2,n,n,good
+'unknown',18,'critical account','RADIO/TV',2404,'<100','1<=X<4',2,EMPTY,n,n,'1<X<=2',n,n,26,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'<0',12,'existing credits paid back duly till now','FURNITURE',1262,'unknown','>=7',2,MALE_DIV,n,n,'>=4',n,n,49,n,OWN_RES,1,'unskilled - resident',1,y,n,good
+'unknown',6,'existing credits paid back duly till now','FURNITURE',4611,'<100','<1',1,EMPTY,n,n,'>=4',n,n,32,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',1901,'100<=X<500','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,n,29,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',15,'critical account','USED_CAR',3368,'>=1000','>=7',3,MALE_SINGLE,n,n,'>=4',n,y,23,n,RENT,2,'skilled employee / official',1,y,n,good
+'unknown',12,'existing credits paid back duly till now','FURNITURE',1574,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',y,n,50,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'>=200',18,'all credits at this bank paid back duly','RADIO/TV',1445,'unknown','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,n,49,y,OWN_RES,1,'unskilled - resident',1,n,n,good
+'unknown',15,'critical account','FURNITURE',1520,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,63,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',24,'critical account','NEW_CAR',3878,'100<=X<500','<1',4,MALE_DIV,n,n,'1<X<=2',n,n,37,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',47,'existing credits paid back duly till now','NEW_CAR',10722,'<100','<1',1,EMPTY,n,n,'<=1',y,n,35,n,OWN_RES,1,'unskilled - resident',1,y,n,good
+'<0',48,'existing credits paid back duly till now','USED_CAR',4788,'<100','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,26,n,OWN_RES,1,'skilled employee / official',2,n,n,good
+'0<=X<200',48,'delay in paying off in the past',EMPTY,7582,'100<=X<500','unemployed',2,MALE_SINGLE,n,n,'>=4',n,y,31,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',12,'existing credits paid back duly till now','RADIO/TV',1092,'<100','1<=X<4',4,EMPTY,n,y,'>=4',y,n,49,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'<0',24,'delay in paying off in the past','RADIO/TV',1024,'<100','<1',4,MALE_MAR,n,n,'>=4',y,n,48,y,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',12,'existing credits paid back duly till now','RETRAINING',1076,'<100','1<=X<4',2,MALE_MAR,n,n,'1<X<=2',y,n,26,n,OWN_RES,1,'skilled employee / official',1,y,y,good
+'0<=X<200',36,'existing credits paid back duly till now','USED_CAR',9398,'<100','<1',1,MALE_MAR,n,n,'>=4',n,n,28,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'<0',24,'critical account','USED_CAR',6419,'<100','>=7',2,EMPTY,n,n,'>=4',n,y,44,n,EMPTY,2,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'>=200',42,'critical account','USED_CAR',4796,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,56,n,EMPTY,1,'skilled employee / official',1,n,n,good
+'unknown',48,'critical account','RETRAINING',7629,'unknown','>=7',4,MALE_DIV,n,n,'1<X<=2',n,n,46,y,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',2,n,n,good
+'0<=X<200',48,'existing credits paid back duly till now','FURNITURE',9960,'<100','<1',1,EMPTY,n,n,'1<X<=2',n,n,26,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'unknown',12,'existing credits paid back duly till now','USED_CAR',4675,'unknown','<1',1,EMPTY,n,n,'>=4',n,n,20,n,RENT,1,'skilled employee / official',1,n,n,good
+'unknown',10,'existing credits paid back duly till now','NEW_CAR',1287,'unknown','>=7',4,MALE_SINGLE,y,n,'1<X<=2',n,n,45,n,OWN_RES,1,'unskilled - resident',1,n,y,good
+'unknown',18,'existing credits paid back duly till now','FURNITURE',2515,'<100','1<=X<4',3,MALE_SINGLE,n,n,'>=4',y,n,43,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',21,'critical account','FURNITURE',2745,'>=1000','4<=X<7',3,MALE_SINGLE,n,n,'1<X<=2',n,n,32,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',6,'existing credits paid back duly till now','NEW_CAR',672,'<100','unemployed',1,EMPTY,n,n,'>=4',y,n,54,n,OWN_RES,1,'unemployed/ unskilled  - non-resident',1,y,n,good
+'0<=X<200',36,'no credits taken','RADIO/TV',3804,'<100','1<=X<4',4,EMPTY,n,n,'<=1',n,n,42,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'>=200',24,'critical account','NEW_CAR',1344,'unknown','4<=X<7',4,MALE_SINGLE,n,n,'1<X<=2',y,n,37,y,OWN_RES,2,'unskilled - resident',2,n,n,bad
+'<0',10,'critical account','NEW_CAR',1038,'<100','4<=X<7',4,MALE_SINGLE,y,n,'2<X<=3',n,n,49,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',48,'critical account','NEW_CAR',10127,'500<=X<1000','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,y,44,y,EMPTY,1,'skilled employee / official',1,n,n,bad
+'unknown',6,'existing credits paid back duly till now','FURNITURE',1543,'>=1000','1<=X<4',4,MALE_DIV,n,n,'1<X<=2',y,n,33,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',30,'existing credits paid back duly till now','USED_CAR',4811,'unknown','4<=X<7',2,EMPTY,n,n,'>=4',n,n,24,y,RENT,1,'unskilled - resident',1,n,n,good
+'<0',12,'existing credits paid back duly till now','RADIO/TV',727,'100<=X<500','<1',4,MALE_MAR,n,n,'2<X<=3',n,y,33,n,OWN_RES,1,'unskilled - resident',1,y,n,bad
+'0<=X<200',8,'existing credits paid back duly till now','FURNITURE',1237,'<100','1<=X<4',3,EMPTY,n,n,'>=4',y,n,24,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',9,'existing credits paid back duly till now','NEW_CAR',276,'<100','1<=X<4',4,MALE_MAR,n,n,'>=4',y,n,22,n,RENT,1,'unskilled - resident',1,n,n,good
+'0<=X<200',48,'existing credits paid back duly till now',EMPTY,5381,'unknown','unemployed',3,MALE_SINGLE,n,n,'>=4',n,y,40,y,EMPTY,1,'unemployed/ unskilled  - non-resident',1,y,n,good
+'unknown',24,'existing credits paid back duly till now','FURNITURE',5511,'100<=X<500','1<=X<4',4,MALE_SINGLE,n,n,'<=1',n,n,25,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'>=200',24,'existing credits paid back duly till now','FURNITURE',3749,'<100','<1',2,EMPTY,n,n,'>=4',n,n,26,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','NEW_CAR',685,'<100','4<=X<7',2,MALE_MAR,n,n,'2<X<=3',n,n,25,y,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'>=200',4,'existing credits paid back duly till now','NEW_CAR',1494,'unknown','<1',1,MALE_SINGLE,n,n,'1<X<=2',y,n,29,n,OWN_RES,1,'unskilled - resident',2,n,y,good
+'<0',36,'all credits at this bank paid back duly','FURNITURE',2746,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,31,y,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'<0',12,'existing credits paid back duly till now','FURNITURE',708,'<100','1<=X<4',2,MALE_SINGLE,n,y,'2<X<=3',n,n,38,n,OWN_RES,1,'unskilled - resident',2,n,n,good
+'0<=X<200',24,'existing credits paid back duly till now','FURNITURE',4351,'unknown','1<=X<4',1,EMPTY,n,n,'>=4',n,n,48,n,OWN_RES,1,'unskilled - resident',1,y,n,good
+'unknown',12,'critical account','EDUCATION',701,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,32,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'<0',15,'delay in paying off in the past','FURNITURE',3643,'<100','>=7',1,EMPTY,n,n,'>=4',n,n,27,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'0<=X<200',30,'critical account','NEW_CAR',4249,'<100','unemployed',4,MALE_MAR,n,n,'1<X<=2',n,n,28,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,n,n,bad
+'<0',24,'existing credits paid back duly till now','RADIO/TV',1938,'<100','<1',4,MALE_DIV,n,n,'2<X<=3',n,n,32,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'<0',24,'existing credits paid back duly till now','USED_CAR',2910,'<100','4<=X<7',2,MALE_SINGLE,n,n,'<=1',n,y,34,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',18,'existing credits paid back duly till now','FURNITURE',2659,'>=1000','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,28,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',18,'critical account','NEW_CAR',1028,'<100','1<=X<4',4,EMPTY,n,n,'2<X<=3',y,n,36,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'<0',8,'critical account','NEW_CAR',3398,'<100','4<=X<7',1,MALE_SINGLE,n,n,'>=4',y,n,39,n,OWN_RES,2,'unskilled - resident',1,n,y,good
+'unknown',12,'critical account','FURNITURE',5801,'unknown','>=7',2,MALE_SINGLE,n,n,'>=4',n,n,49,n,RENT,1,'skilled employee / official',1,y,n,good
+'unknown',24,'existing credits paid back duly till now','NEW_CAR',1525,'>=1000','4<=X<7',4,EMPTY,n,n,'2<X<=3',n,n,34,n,OWN_RES,1,'skilled employee / official',2,y,n,good
+'>=200',36,'existing credits paid back duly till now','RADIO/TV',4473,'<100','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,31,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',6,'existing credits paid back duly till now','RADIO/TV',1068,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,28,n,OWN_RES,1,'skilled employee / official',2,n,n,good
+'<0',24,'critical account','USED_CAR',6615,'<100','unemployed',2,MALE_SINGLE,n,n,'>=4',n,y,75,n,EMPTY,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',18,'critical account','EDUCATION',1864,'100<=X<500','1<=X<4',4,EMPTY,n,n,'1<X<=2',y,n,30,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'0<=X<200',60,'existing credits paid back duly till now','NEW_CAR',7408,'100<=X<500','<1',4,EMPTY,n,n,'1<X<=2',n,n,24,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,n,n,bad
+'unknown',48,'critical account','USED_CAR',11590,'100<=X<500','1<=X<4',2,EMPTY,n,n,'>=4',n,n,24,y,RENT,2,'unskilled - resident',1,n,n,bad
+'<0',24,'no credits taken','FURNITURE',4110,'<100','>=7',3,MALE_SINGLE,n,n,'>=4',n,y,23,y,RENT,2,'skilled employee / official',2,n,n,bad
+'<0',6,'critical account','FURNITURE',3384,'<100','1<=X<4',1,MALE_DIV,n,n,'>=4',y,n,44,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'0<=X<200',13,'existing credits paid back duly till now','RADIO/TV',2101,'<100','<1',2,EMPTY,n,y,'>=4',n,n,23,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'<0',15,'existing credits paid back duly till now',EMPTY,1275,'unknown','1<=X<4',4,EMPTY,n,n,'1<X<=2',n,n,24,n,RENT,1,'skilled employee / official',1,n,n,bad
+'<0',24,'existing credits paid back duly till now','FURNITURE',4169,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,n,28,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',10,'existing credits paid back duly till now','FURNITURE',1521,'<100','1<=X<4',4,MALE_DIV,n,n,'1<X<=2',n,n,31,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',24,'critical account','EDUCATION',5743,'<100','<1',2,EMPTY,n,n,'>=4',n,y,24,n,EMPTY,2,'skilled employee / official',1,y,n,good
+'<0',21,'existing credits paid back duly till now','FURNITURE',3599,'<100','4<=X<7',1,EMPTY,n,n,'>=4',n,n,26,n,RENT,1,'unskilled - resident',1,n,n,good
+'0<=X<200',18,'existing credits paid back duly till now','RADIO/TV',3213,'500<=X<1000','<1',1,MALE_MAR,n,n,'2<X<=3',y,n,25,n,RENT,1,'skilled employee / official',1,n,n,good
+'0<=X<200',18,'existing credits paid back duly till now','RETRAINING',4439,'<100','>=7',1,MALE_SINGLE,y,n,'<=1',y,n,33,y,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'>=200',10,'existing credits paid back duly till now','NEW_CAR',3949,'<100','<1',1,MALE_SINGLE,n,y,'<=1',n,n,37,n,OWN_RES,1,'unskilled - resident',2,n,n,good
+'unknown',15,'critical account','RADIO/TV',1459,'<100','1<=X<4',4,EMPTY,n,n,'1<X<=2',n,n,43,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',13,'critical account','RADIO/TV',882,'<100','<1',4,MALE_SINGLE,n,y,'>=4',y,n,23,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',24,'existing credits paid back duly till now','RADIO/TV',3758,'500<=X<1000','unemployed',1,EMPTY,n,n,'>=4',n,y,23,n,RENT,1,'unemployed/ unskilled  - non-resident',1,n,n,good
+'unknown',6,'delay in paying off in the past','RETRAINING',1743,'100<=X<500','1<=X<4',1,MALE_SINGLE,n,n,'1<X<=2',y,n,34,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'0<=X<200',9,'critical account','EDUCATION',1136,'>=1000','>=7',4,MALE_SINGLE,n,n,'2<X<=3',n,y,32,n,EMPTY,2,'skilled employee / official',2,n,n,bad
+'unknown',9,'existing credits paid back duly till now',EMPTY,1236,'<100','<1',1,EMPTY,n,n,'>=4',y,n,23,n,RENT,1,'skilled employee / official',1,y,n,good
+'0<=X<200',9,'existing credits paid back duly till now','FURNITURE',959,'<100','1<=X<4',1,EMPTY,n,n,'1<X<=2',n,n,29,n,OWN_RES,1,'skilled employee / official',1,n,y,bad
+'unknown',18,'critical account','USED_CAR',3229,'unknown','unemployed',2,MALE_SINGLE,n,n,'>=4',n,y,38,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',12,'no credits taken','RADIO/TV',6199,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,28,n,RENT,2,'skilled employee / official',1,y,n,bad
+'unknown',10,'existing credits paid back duly till now','EDUCATION',727,'500<=X<1000','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,46,n,EMPTY,1,'skilled employee / official',1,y,n,good
+'0<=X<200',24,'existing credits paid back duly till now','NEW_CAR',1246,'<100','<1',4,MALE_SINGLE,n,n,'1<X<=2',y,n,23,y,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'unknown',12,'critical account','RADIO/TV',2331,'unknown','>=7',1,MALE_SINGLE,y,n,'>=4',y,n,49,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',36,'delay in paying off in the past','RADIO/TV',4463,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,26,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',776,'<100','1<=X<4',4,MALE_MAR,n,n,'1<X<=2',y,n,28,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',30,'existing credits paid back duly till now','FURNITURE',2406,'<100','4<=X<7',4,EMPTY,n,n,'>=4',y,n,23,n,RENT,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',18,'existing credits paid back duly till now','EDUCATION',1239,'unknown','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,y,61,n,EMPTY,1,'skilled employee / official',1,n,n,good
+'>=200',12,'existing credits paid back duly till now','RADIO/TV',3399,'unknown','>=7',2,MALE_SINGLE,n,n,'2<X<=3',n,n,37,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'>=200',12,'delay in paying off in the past','NEW_CAR',2247,'<100','1<=X<4',2,EMPTY,n,n,'1<X<=2',n,n,36,y,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',6,'existing credits paid back duly till now','FURNITURE',1766,'<100','1<=X<4',1,MALE_MAR,n,n,'1<X<=2',n,n,21,n,RENT,1,'skilled employee / official',1,n,n,good
+'<0',18,'existing credits paid back duly till now','FURNITURE',2473,'<100','unemployed',4,MALE_SINGLE,n,n,'<=1',n,n,25,n,OWN_RES,1,'unemployed/ unskilled  - non-resident',1,n,n,bad
+'unknown',12,'existing credits paid back duly till now','RETRAINING',1542,'<100','4<=X<7',2,MALE_SINGLE,n,n,'>=4',n,n,36,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',18,'critical account','USED_CAR',3850,'<100','4<=X<7',3,MALE_SINGLE,n,n,'<=1',n,n,27,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'<0',18,'existing credits paid back duly till now','FURNITURE',3650,'<100','<1',1,EMPTY,n,n,'>=4',n,n,22,n,RENT,1,'skilled employee / official',1,n,n,good
+'<0',36,'existing credits paid back duly till now','FURNITURE',3446,'<100','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,42,n,OWN_RES,1,'skilled employee / official',2,n,n,bad
+'0<=X<200',18,'existing credits paid back duly till now','FURNITURE',3001,'<100','4<=X<7',2,EMPTY,n,n,'>=4',y,n,40,n,RENT,1,'skilled employee / official',1,n,n,good
+'unknown',36,'existing credits paid back duly till now','NEW_CAR',3079,'unknown','1<=X<4',4,MALE_SINGLE,n,n,'>=4',y,n,36,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',18,'critical account','RADIO/TV',6070,'<100','>=7',3,MALE_SINGLE,n,n,'>=4',n,n,33,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',10,'critical account','FURNITURE',2146,'<100','<1',1,EMPTY,n,n,'2<X<=3',y,n,23,n,RENT,2,'skilled employee / official',1,n,n,good
+'unknown',60,'critical account','NEW_CAR',13756,'unknown','>=7',2,MALE_SINGLE,n,n,'>=4',n,y,63,y,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',60,'all credits at this bank paid back duly',EMPTY,14782,'100<=X<500','>=7',3,EMPTY,n,n,'>=4',n,y,60,y,EMPTY,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'<0',48,'all credits at this bank paid back duly','RETRAINING',7685,'<100','4<=X<7',2,EMPTY,n,y,'>=4',n,n,37,n,RENT,1,'skilled employee / official',1,n,n,bad
+'unknown',18,'delay in paying off in the past','RADIO/TV',2320,'<100','unemployed',2,MALE_MAR,n,n,'2<X<=3',y,n,34,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',7,'delay in paying off in the past','RADIO/TV',846,'unknown','>=7',3,MALE_SINGLE,n,n,'>=4',n,y,36,n,EMPTY,1,'skilled employee / official',1,n,n,good
+'0<=X<200',36,'existing credits paid back duly till now','NEW_CAR',14318,'<100','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,y,57,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',6,'critical account','NEW_CAR',362,'100<=X<500','1<=X<4',4,EMPTY,n,n,'>=4',n,n,52,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'<0',20,'existing credits paid back duly till now','FURNITURE',2212,'unknown','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,n,39,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',18,'existing credits paid back duly till now','USED_CAR',12976,'<100','unemployed',3,EMPTY,n,n,'>=4',n,y,38,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',22,'existing credits paid back duly till now','NEW_CAR',1283,'unknown','4<=X<7',4,EMPTY,n,n,'>=4',n,n,25,n,RENT,1,'skilled employee / official',1,n,n,good
+'>=200',12,'existing credits paid back duly till now','NEW_CAR',1330,'<100','<1',4,MALE_SINGLE,n,n,'<=1',y,n,26,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',30,'delay in paying off in the past','RETRAINING',4272,'100<=X<500','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,26,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'unknown',18,'critical account','RADIO/TV',2238,'<100','1<=X<4',2,EMPTY,n,n,'<=1',n,n,25,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',18,'existing credits paid back duly till now','RADIO/TV',1126,'unknown','<1',4,EMPTY,n,n,'1<X<=2',y,n,21,n,RENT,1,'skilled employee / official',1,y,n,good
+'0<=X<200',18,'critical account','FURNITURE',7374,'<100','unemployed',4,MALE_SINGLE,n,n,'>=4',n,n,40,y,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',15,'critical account','RETRAINING',2326,'500<=X<1000','1<=X<4',2,MALE_SINGLE,n,n,'>=4',n,n,27,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',9,'existing credits paid back duly till now','RETRAINING',1449,'<100','4<=X<7',3,EMPTY,n,n,'1<X<=2',n,n,27,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',18,'existing credits paid back duly till now','NEW_CAR',1820,'<100','1<=X<4',2,MALE_MAR,n,n,'1<X<=2',n,n,30,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',12,'existing credits paid back duly till now','FURNITURE',983,'>=1000','<1',1,EMPTY,n,n,'>=4',y,n,19,n,RENT,1,'unskilled - resident',1,n,n,good
+'<0',36,'existing credits paid back duly till now','NEW_CAR',3249,'<100','4<=X<7',2,MALE_SINGLE,n,n,'>=4',n,y,39,y,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'<0',6,'critical account','RADIO/TV',1957,'<100','4<=X<7',1,EMPTY,n,n,'>=4',n,n,31,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',9,'critical account','FURNITURE',2406,'<100','unemployed',2,MALE_SINGLE,n,n,'2<X<=3',n,n,31,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'0<=X<200',39,'delay in paying off in the past','EDUCATION',11760,'100<=X<500','4<=X<7',2,MALE_SINGLE,n,n,'2<X<=3',n,y,32,n,RENT,1,'skilled employee / official',1,y,n,good
+'<0',12,'existing credits paid back duly till now','FURNITURE',2578,'<100','unemployed',3,EMPTY,n,n,'>=4',n,y,55,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'<0',36,'critical account','FURNITURE',2348,'<100','1<=X<4',3,MALE_MAR,n,n,'1<X<=2',n,n,46,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'0<=X<200',12,'existing credits paid back duly till now','NEW_CAR',1223,'<100','>=7',1,MALE_DIV,n,n,'<=1',y,n,46,n,RENT,2,'skilled employee / official',1,n,n,bad
+'unknown',24,'critical account','RADIO/TV',1516,'>=1000','1<=X<4',4,EMPTY,n,n,'<=1',y,n,43,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'unknown',18,'existing credits paid back duly till now','RADIO/TV',1473,'<100','<1',3,MALE_MAR,n,n,'>=4',y,n,39,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',18,'critical account','RETRAINING',1887,'unknown','1<=X<4',4,MALE_MAR,n,n,'>=4',y,n,28,y,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',24,'delay in paying off in the past','RETRAINING',8648,'<100','<1',2,MALE_SINGLE,n,n,'1<X<=2',n,n,27,y,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'unknown',14,'delay in paying off in the past','NEW_CAR',802,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,27,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'0<=X<200',18,'delay in paying off in the past','NEW_CAR',2899,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,43,n,OWN_RES,1,'skilled employee / official',2,n,n,good
+'0<=X<200',24,'existing credits paid back duly till now','RADIO/TV',2039,'<100','<1',1,MALE_MAR,n,n,'<=1',n,n,22,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'unknown',24,'critical account','USED_CAR',2197,'unknown','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,n,43,n,OWN_RES,2,'skilled employee / official',2,y,n,good
+'<0',15,'existing credits paid back duly till now','RADIO/TV',1053,'<100','<1',4,MALE_MAR,n,n,'1<X<=2',y,n,27,n,OWN_RES,1,'skilled employee / official',1,n,y,good
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',3235,'500<=X<1000','>=7',3,MALE_DIV,n,n,'1<X<=2',n,n,26,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'>=200',12,'critical account','NEW_CAR',939,'500<=X<1000','4<=X<7',4,MALE_MAR,n,n,'1<X<=2',y,n,28,n,OWN_RES,3,'skilled employee / official',1,y,n,bad
+'0<=X<200',24,'existing credits paid back duly till now','RADIO/TV',1967,'<100','>=7',4,EMPTY,n,n,'>=4',n,n,20,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',33,'critical account','USED_CAR',7253,'<100','4<=X<7',3,MALE_SINGLE,n,n,'1<X<=2',n,n,35,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',12,'critical account','RETRAINING',2292,'<100','unemployed',4,MALE_SINGLE,n,n,'1<X<=2',n,n,42,y,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',10,'existing credits paid back duly till now','NEW_CAR',1597,'500<=X<1000','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',n,y,40,n,RENT,1,'unskilled - resident',2,n,y,good
+'<0',24,'existing credits paid back duly till now','NEW_CAR',1381,'unknown','1<=X<4',4,EMPTY,n,n,'1<X<=2',n,n,35,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',36,'critical account','USED_CAR',5842,'<100','>=7',2,MALE_SINGLE,n,n,'1<X<=2',n,n,35,n,OWN_RES,2,'skilled employee / official',2,y,n,good
+'<0',12,'existing credits paid back duly till now','NEW_CAR',2579,'<100','<1',4,MALE_SINGLE,n,n,'<=1',y,n,33,n,OWN_RES,1,'unskilled - resident',2,n,n,bad
+'<0',18,'delay in paying off in the past','EDUCATION',8471,'unknown','1<=X<4',1,EMPTY,n,n,'1<X<=2',n,n,23,n,RENT,2,'skilled employee / official',1,y,n,good
+'unknown',21,'existing credits paid back duly till now','NEW_CAR',2782,'500<=X<1000','4<=X<7',1,EMPTY,n,n,'1<X<=2',n,n,31,y,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'0<=X<200',18,'existing credits paid back duly till now','NEW_CAR',1042,'unknown','1<=X<4',4,EMPTY,n,n,'1<X<=2',n,n,33,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',15,'existing credits paid back duly till now','NEW_CAR',3186,'>=1000','4<=X<7',2,EMPTY,n,n,'2<X<=3',n,n,20,n,RENT,1,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','USED_CAR',2028,'unknown','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,30,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'critical account','NEW_CAR',958,'<100','4<=X<7',2,MALE_SINGLE,n,n,'2<X<=3',y,n,47,n,OWN_RES,2,'unskilled - resident',2,n,n,good
+'unknown',21,'delay in paying off in the past','FURNITURE',1591,'100<=X<500','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',y,n,34,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','FURNITURE',2762,'unknown','>=7',1,EMPTY,n,n,'1<X<=2',n,n,25,y,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'0<=X<200',18,'existing credits paid back duly till now','USED_CAR',2779,'<100','1<=X<4',1,MALE_MAR,n,n,'2<X<=3',n,n,21,n,RENT,1,'skilled employee / official',1,y,n,good
+'unknown',28,'critical account','RADIO/TV',2743,'<100','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,29,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',18,'critical account','RADIO/TV',1149,'>=1000','1<=X<4',4,MALE_SINGLE,n,n,'2<X<=3',y,n,46,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',9,'existing credits paid back duly till now','FURNITURE',1313,'<100','>=7',1,MALE_SINGLE,n,n,'>=4',n,n,20,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',18,'critical account',EMPTY,1190,'<100','unemployed',2,EMPTY,n,n,'>=4',n,y,55,n,EMPTY,3,'unemployed/ unskilled  - non-resident',2,n,n,bad
+'unknown',5,'existing credits paid back duly till now','RETRAINING',3448,'<100','4<=X<7',1,MALE_SINGLE,n,n,'>=4',y,n,74,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',24,'existing credits paid back duly till now',EMPTY,11328,'<100','1<=X<4',2,MALE_SINGLE,y,n,'2<X<=3',n,n,29,y,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'<0',6,'critical account','FURNITURE',1872,'<100','unemployed',4,MALE_SINGLE,n,n,'>=4',n,y,36,n,EMPTY,3,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',24,'critical account',EMPTY,2058,'<100','1<=X<4',4,MALE_DIV,n,n,'1<X<=2',y,n,33,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'<0',9,'existing credits paid back duly till now','FURNITURE',2136,'<100','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',y,n,25,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','RADIO/TV',1484,'unknown','1<=X<4',2,MALE_MAR,n,n,'<=1',y,n,25,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'unknown',6,'existing credits paid back duly till now',EMPTY,660,'500<=X<1000','4<=X<7',2,MALE_MAR,n,n,'>=4',y,n,23,n,RENT,1,'unskilled - resident',1,n,n,good
+'unknown',24,'critical account','NEW_CAR',1287,'>=1000','>=7',4,EMPTY,n,n,'>=4',y,n,37,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'<0',42,'critical account',EMPTY,3394,'<100','unemployed',4,MALE_SINGLE,y,n,'>=4',n,n,65,n,OWN_RES,2,'unemployed/ unskilled  - non-resident',1,n,n,good
+'>=200',12,'all credits at this bank paid back duly','RETRAINING',609,'<100','<1',4,EMPTY,n,n,'<=1',y,n,26,n,OWN_RES,1,'unemployed/ unskilled  - non-resident',1,n,n,bad
+'unknown',12,'existing credits paid back duly till now','NEW_CAR',1884,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,39,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',12,'existing credits paid back duly till now','FURNITURE',1620,'<100','1<=X<4',2,EMPTY,y,n,'2<X<=3',n,n,30,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',20,'delay in paying off in the past',EMPTY,2629,'<100','1<=X<4',2,MALE_SINGLE,n,n,'2<X<=3',n,n,29,y,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',12,'existing credits paid back duly till now','EDUCATION',719,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,41,y,OWN_RES,1,'unskilled - resident',2,n,n,bad
+'0<=X<200',48,'critical account','FURNITURE',5096,'<100','1<=X<4',2,EMPTY,n,n,'2<X<=3',n,n,30,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',9,'critical account','EDUCATION',1244,'unknown','>=7',4,EMPTY,n,n,'>=4',n,n,41,n,RENT,2,'unskilled - resident',1,n,n,good
+'<0',36,'existing credits paid back duly till now','NEW_CAR',1842,'<100','<1',4,EMPTY,n,n,'>=4',n,n,34,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'0<=X<200',7,'existing credits paid back duly till now','RADIO/TV',2576,'<100','1<=X<4',2,MALE_SINGLE,n,y,'1<X<=2',y,n,35,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'>=200',12,'existing credits paid back duly till now','FURNITURE',1424,'unknown','>=7',3,EMPTY,n,n,'>=4',y,n,55,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',15,'delay in paying off in the past',EMPTY,1512,'>=1000','1<=X<4',3,MALE_MAR,n,n,'2<X<=3',n,n,61,y,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'unknown',36,'critical account','USED_CAR',11054,'unknown','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,30,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',6,'existing credits paid back duly till now','RADIO/TV',518,'<100','1<=X<4',3,EMPTY,n,n,'<=1',y,n,29,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',12,'no credits taken','FURNITURE',2759,'<100','>=7',2,MALE_SINGLE,n,n,'>=4',n,n,34,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',24,'existing credits paid back duly till now','USED_CAR',2670,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,35,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',24,'existing credits paid back duly till now','NEW_CAR',4817,'<100','4<=X<7',2,MALE_SINGLE,y,n,'2<X<=3',n,n,31,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'unknown',24,'existing credits paid back duly till now','USED_CAR',2679,'<100','<1',4,EMPTY,n,n,'<=1',n,y,29,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',11,'critical account','NEW_CAR',3905,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',y,n,36,n,RENT,2,'skilled employee / official',2,n,n,good
+'<0',12,'existing credits paid back duly till now','USED_CAR',3386,'<100','>=7',3,MALE_SINGLE,n,n,'>=4',n,y,35,n,EMPTY,1,'skilled employee / official',1,y,n,bad
+'<0',6,'existing credits paid back duly till now',EMPTY,343,'<100','<1',4,EMPTY,n,n,'<=1',y,n,27,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',18,'existing credits paid back duly till now','RADIO/TV',4594,'<100','<1',3,MALE_SINGLE,n,n,'1<X<=2',n,n,32,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',36,'existing credits paid back duly till now','FURNITURE',3620,'<100','1<=X<4',1,MALE_SINGLE,n,y,'1<X<=2',n,n,37,n,OWN_RES,1,'skilled employee / official',2,n,n,good
+'<0',15,'existing credits paid back duly till now','NEW_CAR',1721,'<100','<1',2,MALE_SINGLE,n,n,'2<X<=3',y,n,36,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','FURNITURE',3017,'<100','<1',3,EMPTY,n,n,'<=1',y,n,34,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now',EMPTY,754,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,38,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',18,'existing credits paid back duly till now','RETRAINING',1950,'<100','4<=X<7',4,MALE_SINGLE,n,n,'<=1',n,n,34,y,OWN_RES,2,'skilled employee / official',1,y,n,good
+'<0',24,'existing credits paid back duly till now','USED_CAR',2924,'<100','1<=X<4',3,MALE_SINGLE,n,y,'>=4',n,y,63,y,OWN_RES,1,'skilled employee / official',2,y,n,good
+'<0',24,'delay in paying off in the past','RADIO/TV',1659,'<100','<1',4,EMPTY,n,n,'1<X<=2',n,n,29,n,RENT,1,'unskilled - resident',1,y,n,bad
+'unknown',48,'delay in paying off in the past','RADIO/TV',7238,'unknown','>=7',3,MALE_SINGLE,n,n,'2<X<=3',n,n,32,y,OWN_RES,2,'skilled employee / official',2,n,n,good
+'unknown',33,'delay in paying off in the past','RETRAINING',2764,'<100','1<=X<4',2,EMPTY,n,n,'1<X<=2',n,n,26,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',24,'delay in paying off in the past','USED_CAR',4679,'<100','4<=X<7',3,MALE_SINGLE,n,n,'2<X<=3',n,n,35,n,OWN_RES,2,'unskilled - resident',1,y,n,good
+'0<=X<200',24,'existing credits paid back duly till now','RADIO/TV',3092,'100<=X<500','<1',3,MALE_MAR,n,n,'1<X<=2',n,n,22,n,RENT,1,'skilled employee / official',1,y,n,bad
+'<0',6,'existing credits paid back duly till now','EDUCATION',448,'<100','<1',4,EMPTY,n,n,'>=4',n,n,23,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'<0',9,'existing credits paid back duly till now','NEW_CAR',654,'<100','1<=X<4',4,MALE_SINGLE,n,n,'2<X<=3',n,n,28,n,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'unknown',6,'existing credits paid back duly till now',EMPTY,1238,'unknown','unemployed',4,MALE_SINGLE,n,n,'>=4',n,n,36,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'0<=X<200',18,'critical account','RADIO/TV',1245,'<100','1<=X<4',4,MALE_MAR,n,n,'1<X<=2',n,n,33,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'<0',18,'no credits taken','FURNITURE',3114,'<100','<1',1,EMPTY,n,n,'>=4',n,n,26,n,RENT,1,'skilled employee / official',1,n,n,bad
+'unknown',39,'existing credits paid back duly till now','USED_CAR',2569,'500<=X<1000','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,n,24,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'>=200',24,'existing credits paid back duly till now','RADIO/TV',5152,'<100','4<=X<7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,25,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','RETRAINING',1037,'100<=X<500','4<=X<7',3,MALE_SINGLE,n,n,'>=4',y,n,39,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'<0',15,'critical account','FURNITURE',1478,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,44,n,OWN_RES,2,'skilled employee / official',2,y,n,good
+'0<=X<200',12,'critical account','RADIO/TV',3573,'<100','1<=X<4',1,EMPTY,n,n,'<=1',y,n,23,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',24,'existing credits paid back duly till now','NEW_CAR',1201,'<100','<1',4,MALE_SINGLE,n,n,'<=1',n,n,26,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',30,'existing credits paid back duly till now','FURNITURE',3622,'>=1000','>=7',4,EMPTY,n,n,'>=4',n,n,57,n,RENT,2,'skilled employee / official',1,y,n,good
+'unknown',15,'delay in paying off in the past','FURNITURE',960,'>=1000','4<=X<7',3,EMPTY,n,n,'1<X<=2',n,n,30,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',12,'critical account','NEW_CAR',1163,'500<=X<1000','1<=X<4',4,MALE_SINGLE,n,n,'>=4',y,n,44,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',6,'delay in paying off in the past','NEW_CAR',1209,'<100','unemployed',4,MALE_SINGLE,n,n,'>=4',n,n,47,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',3077,'<100','1<=X<4',2,MALE_SINGLE,n,n,'>=4',n,n,52,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',24,'existing credits paid back duly till now','NEW_CAR',3757,'<100','>=7',4,EMPTY,y,n,'>=4',n,y,62,n,EMPTY,1,'skilled employee / official',1,y,n,good
+'unknown',10,'existing credits paid back duly till now','NEW_CAR',1418,'100<=X<500','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',y,n,35,n,RENT,1,'unskilled - resident',1,n,y,good
+'unknown',6,'existing credits paid back duly till now','NEW_CAR',3518,'<100','1<=X<4',2,MALE_SINGLE,n,y,'2<X<=3',n,n,26,n,RENT,1,'skilled employee / official',1,n,n,good
+'unknown',12,'critical account','RADIO/TV',1934,'<100','>=7',2,MALE_SINGLE,n,n,'1<X<=2',n,y,26,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',27,'no credits taken','RETRAINING',8318,'<100','>=7',2,EMPTY,n,n,'>=4',n,y,42,n,EMPTY,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',6,'critical account','RADIO/TV',1237,'100<=X<500','1<=X<4',1,EMPTY,n,n,'<=1',n,n,27,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',6,'existing credits paid back duly till now','RADIO/TV',368,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,38,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',12,'critical account','NEW_CAR',2122,'<100','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',y,n,39,n,RENT,2,'unskilled - resident',2,n,y,good
+'<0',24,'existing credits paid back duly till now','FURNITURE',2996,'unknown','1<=X<4',2,MALE_MAR,n,n,'>=4',n,n,20,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',36,'existing credits paid back duly till now','FURNITURE',9034,'100<=X<500','<1',4,MALE_SINGLE,y,n,'<=1',n,y,29,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',24,'critical account','FURNITURE',1585,'<100','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,40,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',18,'existing credits paid back duly till now','RADIO/TV',1301,'<100','>=7',4,MALE_MAR,n,y,'1<X<=2',y,n,32,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'>=200',6,'critical account','NEW_CAR',1323,'100<=X<500','>=7',2,MALE_DIV,n,n,'>=4',n,n,28,n,OWN_RES,2,'skilled employee / official',2,y,n,good
+'<0',24,'existing credits paid back duly till now','NEW_CAR',3123,'<100','<1',4,EMPTY,n,n,'<=1',n,n,27,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'<0',36,'existing credits paid back duly till now','USED_CAR',5493,'<100','>=7',2,MALE_SINGLE,n,n,'>=4',n,y,42,n,EMPTY,1,'skilled employee / official',2,n,n,good
+'>=200',9,'existing credits paid back duly till now','RADIO/TV',1126,'100<=X<500','>=7',2,MALE_DIV,n,n,'>=4',y,n,49,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',24,'critical account','RADIO/TV',1216,'100<=X<500','<1',4,MALE_SINGLE,n,n,'>=4',n,y,38,y,OWN_RES,2,'skilled employee / official',2,n,n,bad
+'<0',24,'existing credits paid back duly till now','NEW_CAR',1207,'<100','<1',4,EMPTY,n,n,'>=4',n,n,24,n,RENT,1,'skilled employee / official',1,n,n,bad
+'unknown',10,'existing credits paid back duly till now','NEW_CAR',1309,'unknown','1<=X<4',4,MALE_SINGLE,n,y,'>=4',n,n,27,n,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'>=200',15,'critical account','USED_CAR',2360,'500<=X<1000','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,36,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',15,'all credits at this bank paid back duly','NEW_CAR',6850,'100<=X<500','unemployed',1,MALE_SINGLE,n,n,'1<X<=2',n,n,34,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',2,y,n,bad
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',1413,'<100','1<=X<4',4,MALE_MAR,n,n,'1<X<=2',n,n,28,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',39,'existing credits paid back duly till now','USED_CAR',8588,'100<=X<500','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,45,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',12,'existing credits paid back duly till now','NEW_CAR',759,'<100','4<=X<7',4,MALE_SINGLE,n,n,'1<X<=2',y,n,26,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',36,'existing credits paid back duly till now','USED_CAR',4686,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,y,32,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'>=200',15,'existing credits paid back duly till now','RETRAINING',2687,'<100','4<=X<7',2,MALE_SINGLE,n,n,'>=4',n,n,26,n,RENT,1,'skilled employee / official',1,y,n,good
+'0<=X<200',12,'delay in paying off in the past','RADIO/TV',585,'<100','1<=X<4',4,MALE_MAR,y,n,'>=4',y,n,20,n,RENT,2,'skilled employee / official',1,n,n,good
+'unknown',24,'existing credits paid back duly till now','NEW_CAR',2255,'unknown','<1',4,MALE_SINGLE,n,n,'<=1',n,n,54,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',6,'critical account','NEW_CAR',609,'<100','4<=X<7',4,EMPTY,n,n,'2<X<=3',n,n,37,n,OWN_RES,2,'skilled employee / official',1,n,y,good
+'<0',6,'critical account','NEW_CAR',1361,'<100','<1',2,MALE_SINGLE,n,n,'>=4',y,n,40,n,OWN_RES,1,'unskilled - resident',2,n,y,good
+'unknown',36,'critical account','FURNITURE',7127,'<100','<1',2,EMPTY,n,n,'>=4',n,n,23,n,RENT,2,'skilled employee / official',1,y,n,bad
+'<0',6,'existing credits paid back duly till now','NEW_CAR',1203,'100<=X<500','>=7',3,MALE_SINGLE,n,n,'1<X<=2',n,n,43,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',6,'critical account','RADIO/TV',700,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,36,n,EMPTY,2,'skilled employee / official',1,n,n,good
+'unknown',24,'critical account',EMPTY,5507,'<100','>=7',3,MALE_SINGLE,n,n,'>=4',n,y,44,n,EMPTY,2,'skilled employee / official',1,n,n,good
+'<0',18,'existing credits paid back duly till now','RADIO/TV',3190,'<100','1<=X<4',2,EMPTY,n,n,'1<X<=2',y,n,24,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'<0',48,'no credits taken','FURNITURE',7119,'<100','1<=X<4',3,MALE_SINGLE,n,n,'>=4',n,y,53,n,EMPTY,2,'skilled employee / official',2,n,n,bad
+'unknown',24,'existing credits paid back duly till now','USED_CAR',3488,'100<=X<500','4<=X<7',3,EMPTY,n,n,'>=4',n,n,23,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',18,'existing credits paid back duly till now','RADIO/TV',1113,'<100','1<=X<4',4,EMPTY,n,y,'>=4',y,n,26,n,OWN_RES,1,'unskilled - resident',2,n,n,good
+'0<=X<200',26,'existing credits paid back duly till now','USED_CAR',7966,'<100','<1',2,MALE_SINGLE,n,n,'2<X<=3',n,n,30,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',15,'critical account','EDUCATION',1532,'100<=X<500','1<=X<4',4,EMPTY,n,n,'2<X<=3',n,n,31,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',4,'critical account','RADIO/TV',1503,'<100','4<=X<7',2,MALE_SINGLE,n,n,'<=1',y,n,42,n,OWN_RES,2,'unskilled - resident',2,n,n,good
+'<0',36,'existing credits paid back duly till now','RADIO/TV',2302,'<100','1<=X<4',4,MALE_DIV,n,n,'>=4',n,n,31,n,RENT,1,'skilled employee / official',1,n,n,bad
+'<0',6,'existing credits paid back duly till now','NEW_CAR',662,'<100','<1',3,MALE_SINGLE,n,n,'>=4',y,n,41,n,OWN_RES,1,'unskilled - resident',2,y,n,good
+'0<=X<200',36,'existing credits paid back duly till now','EDUCATION',2273,'<100','4<=X<7',3,MALE_SINGLE,n,n,'<=1',n,n,32,n,OWN_RES,2,'skilled employee / official',2,n,n,good
+'0<=X<200',15,'existing credits paid back duly till now','NEW_CAR',2631,'100<=X<500','1<=X<4',2,EMPTY,n,n,'>=4',n,n,28,n,RENT,2,'skilled employee / official',1,y,n,bad
+'unknown',12,'delay in paying off in the past','USED_CAR',1503,'<100','1<=X<4',4,MALE_MAR,n,n,'>=4',y,n,41,n,RENT,1,'skilled employee / official',1,n,n,good
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',1311,'100<=X<500','4<=X<7',4,MALE_MAR,n,n,'2<X<=3',n,n,26,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',3105,'unknown','<1',4,MALE_SINGLE,n,n,'1<X<=2',n,n,25,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'>=200',21,'critical account','EDUCATION',2319,'<100','<1',2,MALE_DIV,n,n,'<=1',n,n,33,n,RENT,1,'skilled employee / official',1,n,n,bad
+'<0',6,'existing credits paid back duly till now','NEW_CAR',1374,'unknown','unemployed',4,EMPTY,n,n,'2<X<=3',n,n,75,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',18,'critical account','FURNITURE',3612,'<100','>=7',3,EMPTY,n,n,'>=4',n,n,37,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',48,'existing credits paid back duly till now','NEW_CAR',7763,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,42,y,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,n,n,bad
+'>=200',18,'existing credits paid back duly till now','FURNITURE',3049,'<100','<1',1,EMPTY,n,n,'<=1',n,n,45,y,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','RADIO/TV',1534,'<100','<1',1,MALE_MAR,n,n,'<=1',y,n,23,n,RENT,1,'skilled employee / official',1,n,n,bad
+'unknown',24,'delay in paying off in the past','NEW_CAR',2032,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,60,n,EMPTY,2,'skilled employee / official',1,y,n,good
+'<0',30,'existing credits paid back duly till now','FURNITURE',6350,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,31,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'>=200',18,'existing credits paid back duly till now','FURNITURE',2864,'<100','1<=X<4',2,MALE_SINGLE,n,n,'<=1',y,n,34,n,OWN_RES,1,'unskilled - resident',2,n,n,bad
+'unknown',12,'critical account','NEW_CAR',1255,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,61,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'<0',24,'delay in paying off in the past','NEW_CAR',1333,'<100','unemployed',4,MALE_SINGLE,n,n,'1<X<=2',y,n,43,n,EMPTY,2,'skilled employee / official',2,n,n,bad
+'unknown',24,'critical account','NEW_CAR',2022,'<100','1<=X<4',4,EMPTY,n,n,'>=4',n,n,37,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',1552,'<100','4<=X<7',3,MALE_SINGLE,n,n,'<=1',n,n,32,y,OWN_RES,1,'skilled employee / official',2,n,n,good
+'<0',12,'all credits at this bank paid back duly','RADIO/TV',626,'<100','1<=X<4',4,EMPTY,n,n,'>=4',y,n,24,y,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'unknown',48,'critical account','USED_CAR',8858,'unknown','4<=X<7',2,MALE_SINGLE,n,n,'<=1',n,y,35,n,EMPTY,2,'skilled employee / official',1,y,n,good
+'unknown',12,'critical account',EMPTY,996,'unknown','4<=X<7',4,EMPTY,n,n,'>=4',y,n,23,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',6,'all credits at this bank paid back duly','RADIO/TV',1750,'500<=X<1000','>=7',2,MALE_SINGLE,n,n,'>=4',n,n,45,y,OWN_RES,1,'unskilled - resident',2,n,n,good
+'<0',48,'existing credits paid back duly till now','RADIO/TV',6999,'<100','4<=X<7',1,MALE_MAR,n,y,'<=1',y,n,34,n,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'0<=X<200',12,'critical account','NEW_CAR',1995,'100<=X<500','<1',4,MALE_SINGLE,n,n,'<=1',n,n,27,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',9,'existing credits paid back duly till now','EDUCATION',1199,'<100','4<=X<7',4,EMPTY,n,n,'>=4',n,n,67,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',12,'existing credits paid back duly till now','RADIO/TV',1331,'<100','<1',2,MALE_SINGLE,n,n,'<=1',n,n,22,y,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',18,'no credits taken','NEW_CAR',2278,'100<=X<500','<1',3,EMPTY,n,n,'2<X<=3',n,n,28,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'unknown',21,'no credits taken','NEW_CAR',5003,'unknown','1<=X<4',1,EMPTY,n,n,'>=4',n,n,29,y,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'<0',24,'all credits at this bank paid back duly','FURNITURE',3552,'<100','4<=X<7',3,MALE_SINGLE,n,n,'>=4',n,n,27,y,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',18,'critical account','FURNITURE',1928,'<100','<1',2,MALE_SINGLE,n,n,'1<X<=2',y,n,31,n,OWN_RES,2,'unskilled - resident',1,n,n,bad
+'<0',24,'existing credits paid back duly till now','USED_CAR',2964,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,49,y,EMPTY,1,'skilled employee / official',2,y,n,good
+'<0',24,'all credits at this bank paid back duly','RADIO/TV',1546,'<100','4<=X<7',4,MALE_SINGLE,n,y,'>=4',n,n,24,y,RENT,1,'unskilled - resident',1,n,n,bad
+'>=200',6,'delay in paying off in the past','RADIO/TV',683,'<100','<1',2,EMPTY,n,n,'<=1',n,n,29,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',36,'existing credits paid back duly till now','NEW_CAR',12389,'unknown','1<=X<4',1,MALE_SINGLE,n,n,'>=4',n,y,37,n,EMPTY,1,'skilled employee / official',1,y,n,bad
+'0<=X<200',24,'delay in paying off in the past','RETRAINING',4712,'unknown','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,37,y,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',24,'delay in paying off in the past','RADIO/TV',1553,'100<=X<500','4<=X<7',3,EMPTY,n,n,'1<X<=2',n,n,23,n,RENT,2,'skilled employee / official',1,y,n,good
+'<0',12,'existing credits paid back duly till now','NEW_CAR',1372,'<100','4<=X<7',2,MALE_DIV,n,n,'2<X<=3',n,n,36,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',24,'critical account','RADIO/TV',2578,'>=1000','>=7',2,MALE_SINGLE,n,n,'1<X<=2',n,n,34,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',48,'existing credits paid back duly till now','RADIO/TV',3979,'unknown','4<=X<7',4,MALE_SINGLE,n,n,'<=1',n,n,41,n,OWN_RES,2,'skilled employee / official',2,y,n,good
+'<0',48,'existing credits paid back duly till now','RADIO/TV',6758,'<100','1<=X<4',3,EMPTY,n,n,'1<X<=2',n,n,31,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'<0',24,'existing credits paid back duly till now','FURNITURE',3234,'<100','<1',4,EMPTY,n,n,'>=4',y,n,23,n,RENT,1,'unskilled - resident',1,y,n,bad
+'unknown',30,'critical account','RADIO/TV',5954,'<100','4<=X<7',3,MALE_SINGLE,y,n,'1<X<=2',n,n,38,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',24,'existing credits paid back duly till now','USED_CAR',5433,'unknown','unemployed',2,EMPTY,n,n,'>=4',n,n,26,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',15,'existing credits paid back duly till now','RETRAINING',806,'<100','1<=X<4',4,EMPTY,n,n,'>=4',n,n,22,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',9,'existing credits paid back duly till now','RADIO/TV',1082,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,27,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'unknown',15,'critical account','FURNITURE',2788,'<100','4<=X<7',2,EMPTY,y,n,'2<X<=3',n,n,24,y,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','RADIO/TV',2930,'<100','4<=X<7',2,EMPTY,n,n,'<=1',y,n,27,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',24,'critical account','EDUCATION',1927,'unknown','1<=X<4',3,EMPTY,n,n,'1<X<=2',n,n,33,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'0<=X<200',36,'critical account','NEW_CAR',2820,'<100','<1',4,MALE_DIV,n,n,'>=4',n,n,27,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'unknown',24,'existing credits paid back duly till now',EMPTY,937,'<100','<1',4,MALE_MAR,n,n,'2<X<=3',n,n,27,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'0<=X<200',18,'critical account','NEW_CAR',1056,'<100','>=7',3,MALE_SINGLE,n,y,'2<X<=3',y,n,30,y,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'0<=X<200',12,'critical account','NEW_CAR',3124,'<100','<1',1,MALE_SINGLE,n,n,'2<X<=3',y,n,49,y,OWN_RES,2,'unskilled - resident',2,n,n,good
+'unknown',9,'existing credits paid back duly till now','FURNITURE',1388,'<100','1<=X<4',4,EMPTY,n,n,'1<X<=2',y,n,26,n,RENT,1,'skilled employee / official',1,n,n,good
+'0<=X<200',36,'existing credits paid back duly till now',EMPTY,2384,'<100','<1',4,MALE_SINGLE,n,n,'<=1',n,y,33,n,RENT,1,'unskilled - resident',1,n,n,bad
+'unknown',12,'existing credits paid back duly till now','NEW_CAR',2133,'unknown','>=7',4,EMPTY,n,n,'>=4',n,y,52,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',18,'existing credits paid back duly till now','FURNITURE',2039,'<100','1<=X<4',1,EMPTY,n,n,'>=4',y,n,20,y,RENT,1,'skilled employee / official',1,n,n,bad
+'<0',9,'critical account','NEW_CAR',2799,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',y,n,36,n,RENT,2,'skilled employee / official',2,n,n,good
+'<0',12,'existing credits paid back duly till now','FURNITURE',1289,'<100','1<=X<4',4,MALE_SINGLE,n,y,'<=1',n,n,21,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'<0',18,'existing credits paid back duly till now',EMPTY,1217,'<100','1<=X<4',4,MALE_MAR,n,n,'2<X<=3',y,n,47,n,OWN_RES,1,'unskilled - resident',1,y,n,bad
+'<0',12,'critical account','FURNITURE',2246,'<100','>=7',3,MALE_SINGLE,n,n,'2<X<=3',n,n,60,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'<0',12,'critical account','RADIO/TV',385,'<100','4<=X<7',4,EMPTY,n,n,'2<X<=3',y,n,58,n,OWN_RES,4,'unskilled - resident',1,y,n,good
+'0<=X<200',24,'delay in paying off in the past','NEW_CAR',1965,'unknown','1<=X<4',4,EMPTY,n,n,'>=4',n,n,42,n,RENT,2,'skilled employee / official',1,y,n,good
+'unknown',21,'existing credits paid back duly till now','RETRAINING',1572,'>=1000','>=7',4,EMPTY,n,n,'>=4',y,n,36,y,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',24,'existing credits paid back duly till now','NEW_CAR',2718,'<100','1<=X<4',3,EMPTY,n,n,'>=4',n,n,20,n,RENT,1,'unskilled - resident',1,y,n,bad
+'<0',24,'all credits at this bank paid back duly',EMPTY,1358,'unknown','>=7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,40,y,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'0<=X<200',6,'all credits at this bank paid back duly','NEW_CAR',931,'100<=X<500','<1',1,EMPTY,n,n,'<=1',n,n,32,y,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'<0',24,'existing credits paid back duly till now','NEW_CAR',1442,'<100','4<=X<7',4,EMPTY,n,n,'>=4',n,n,23,n,RENT,2,'skilled employee / official',1,n,n,bad
+'0<=X<200',24,'no credits taken','RETRAINING',4241,'<100','1<=X<4',1,MALE_SINGLE,n,n,'>=4',y,n,36,n,OWN_RES,3,'unskilled - resident',1,y,n,bad
+'unknown',18,'critical account','NEW_CAR',2775,'<100','4<=X<7',2,MALE_SINGLE,n,n,'1<X<=2',n,n,31,y,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'unknown',24,'delay in paying off in the past','RETRAINING',3863,'<100','1<=X<4',1,MALE_SINGLE,n,n,'1<X<=2',n,y,32,n,EMPTY,1,'skilled employee / official',1,n,n,good
+'0<=X<200',7,'existing credits paid back duly till now','RADIO/TV',2329,'<100','<1',1,EMPTY,n,y,'<=1',y,n,45,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',9,'existing credits paid back duly till now','FURNITURE',918,'<100','1<=X<4',4,EMPTY,n,n,'<=1',n,n,30,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',24,'all credits at this bank paid back duly','EDUCATION',1837,'<100','4<=X<7',4,EMPTY,n,n,'>=4',n,y,34,y,EMPTY,1,'unskilled - resident',1,n,n,bad
+'unknown',36,'existing credits paid back duly till now','FURNITURE',3349,'<100','1<=X<4',4,EMPTY,n,n,'1<X<=2',n,n,28,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'>=200',10,'existing credits paid back duly till now','FURNITURE',1275,'<100','<1',4,EMPTY,n,n,'1<X<=2',n,n,23,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',24,'all credits at this bank paid back duly','FURNITURE',2828,'500<=X<1000','1<=X<4',4,MALE_SINGLE,n,n,'>=4',y,n,22,y,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',24,'critical account','RETRAINING',4526,'<100','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',y,n,74,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',36,'existing credits paid back duly till now','RADIO/TV',2671,'100<=X<500','1<=X<4',4,EMPTY,y,n,'>=4',n,y,50,n,EMPTY,1,'skilled employee / official',1,n,n,bad
+'unknown',18,'existing credits paid back duly till now','RADIO/TV',2051,'<100','<1',4,MALE_SINGLE,n,n,'<=1',y,n,33,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',15,'existing credits paid back duly till now','USED_CAR',1300,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,45,y,EMPTY,1,'skilled employee / official',2,n,n,good
+'<0',12,'existing credits paid back duly till now',EMPTY,741,'100<=X<500','unemployed',4,EMPTY,n,n,'2<X<=3',n,n,22,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'>=200',10,'existing credits paid back duly till now','NEW_CAR',1240,'100<=X<500','>=7',1,EMPTY,n,n,'>=4',n,y,48,n,EMPTY,1,'unskilled - resident',2,n,n,bad
+'<0',21,'existing credits paid back duly till now','RADIO/TV',3357,'>=1000','<1',4,EMPTY,n,n,'1<X<=2',n,n,29,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',24,'all credits at this bank paid back duly','USED_CAR',3632,'<100','1<=X<4',1,EMPTY,n,y,'>=4',n,n,22,y,RENT,1,'skilled employee / official',1,n,y,good
+'unknown',18,'delay in paying off in the past','FURNITURE',1808,'<100','4<=X<7',4,EMPTY,n,n,'<=1',y,n,22,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',48,'no credits taken','RETRAINING',12204,'unknown','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,48,y,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',60,'delay in paying off in the past','RADIO/TV',9157,'unknown','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,y,27,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'<0',6,'critical account','NEW_CAR',3676,'<100','1<=X<4',1,MALE_SINGLE,n,n,'2<X<=3',y,n,37,n,RENT,3,'skilled employee / official',2,n,n,good
+'0<=X<200',30,'existing credits paid back duly till now','FURNITURE',3441,'100<=X<500','1<=X<4',2,EMPTY,y,n,'>=4',n,n,21,n,RENT,1,'skilled employee / official',1,n,n,bad
+'unknown',12,'existing credits paid back duly till now','NEW_CAR',640,'<100','1<=X<4',4,MALE_DIV,n,n,'1<X<=2',y,n,49,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',21,'critical account','RETRAINING',3652,'<100','4<=X<7',2,MALE_SINGLE,n,n,'2<X<=3',n,n,27,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',18,'critical account','NEW_CAR',1530,'<100','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',n,n,32,y,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'unknown',48,'existing credits paid back duly till now','RETRAINING',3914,'unknown','1<=X<4',4,MALE_DIV,n,n,'1<X<=2',y,n,38,y,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'<0',12,'existing credits paid back duly till now','FURNITURE',1858,'<100','<1',4,EMPTY,n,n,'<=1',n,n,22,n,RENT,1,'skilled employee / official',1,n,n,good
+'<0',18,'existing credits paid back duly till now','RADIO/TV',2600,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,y,65,n,EMPTY,2,'skilled employee / official',1,n,n,bad
+'unknown',15,'existing credits paid back duly till now','RADIO/TV',1979,'unknown','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,35,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'>=200',6,'existing credits paid back duly till now','FURNITURE',2116,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',y,n,41,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',9,'all credits at this bank paid back duly','NEW_CAR',1437,'100<=X<500','4<=X<7',2,MALE_SINGLE,n,n,'2<X<=3',n,y,29,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',42,'critical account','FURNITURE',4042,'500<=X<1000','1<=X<4',4,MALE_SINGLE,n,n,'>=4',y,n,36,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',9,'existing credits paid back duly till now','EDUCATION',3832,'unknown','>=7',1,MALE_SINGLE,n,n,'>=4',y,n,64,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'<0',24,'existing credits paid back duly till now','RADIO/TV',3660,'<100','1<=X<4',2,EMPTY,n,n,'>=4',n,n,28,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',18,'all credits at this bank paid back duly','FURNITURE',1553,'<100','1<=X<4',4,MALE_SINGLE,n,n,'2<X<=3',n,n,44,y,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',15,'existing credits paid back duly till now','RADIO/TV',1444,'unknown','<1',4,MALE_SINGLE,n,n,'<=1',n,n,23,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',9,'existing credits paid back duly till now','FURNITURE',1980,'<100','<1',2,EMPTY,y,n,'1<X<=2',n,n,19,n,RENT,2,'skilled employee / official',1,n,n,bad
+'0<=X<200',24,'existing credits paid back duly till now','NEW_CAR',1355,'<100','<1',3,EMPTY,n,n,'>=4',n,n,25,n,OWN_RES,1,'unskilled - resident',1,y,n,bad
+'unknown',12,'existing credits paid back duly till now','EDUCATION',1393,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,47,y,OWN_RES,3,'skilled employee / official',2,y,n,good
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',1376,'500<=X<1000','4<=X<7',4,EMPTY,n,n,'<=1',n,n,28,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',60,'delay in paying off in the past','RADIO/TV',15653,'<100','4<=X<7',2,MALE_SINGLE,n,n,'>=4',n,n,21,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',1493,'<100','<1',4,EMPTY,n,n,'2<X<=3',n,n,34,n,OWN_RES,1,'skilled employee / official',2,n,n,good
+'<0',42,'delay in paying off in the past','RADIO/TV',4370,'<100','4<=X<7',3,MALE_SINGLE,n,n,'1<X<=2',n,n,26,y,OWN_RES,2,'skilled employee / official',2,y,n,bad
+'<0',18,'existing credits paid back duly till now','EDUCATION',750,'<100','unemployed',4,EMPTY,n,n,'<=1',y,n,27,n,OWN_RES,1,'unemployed/ unskilled  - non-resident',1,n,n,bad
+'0<=X<200',15,'existing credits paid back duly till now',EMPTY,1308,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,38,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'unknown',15,'existing credits paid back duly till now','EDUCATION',4623,'100<=X<500','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',n,n,40,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',24,'critical account','RADIO/TV',1851,'<100','4<=X<7',4,MALE_MAR,n,y,'1<X<=2',n,n,33,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'<0',18,'critical account','RADIO/TV',1880,'<100','4<=X<7',4,MALE_MAR,n,n,'<=1',n,n,32,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',36,'delay in paying off in the past','RETRAINING',7980,'unknown','<1',4,MALE_SINGLE,n,n,'>=4',n,n,27,n,RENT,2,'skilled employee / official',1,y,n,bad
+'<0',30,'no credits taken','FURNITURE',4583,'<100','1<=X<4',2,MALE_DIV,n,y,'1<X<=2',y,n,32,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',12,'existing credits paid back duly till now','NEW_CAR',1386,'500<=X<1000','1<=X<4',2,EMPTY,n,n,'1<X<=2',n,n,26,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'>=200',24,'existing credits paid back duly till now','NEW_CAR',947,'<100','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',n,y,38,y,EMPTY,1,'skilled employee / official',2,n,n,bad
+'<0',12,'existing credits paid back duly till now','EDUCATION',684,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,n,40,n,RENT,1,'unskilled - resident',2,n,n,bad
+'<0',48,'existing credits paid back duly till now','EDUCATION',7476,'<100','4<=X<7',4,MALE_SINGLE,n,n,'<=1',n,y,50,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',12,'existing credits paid back duly till now','FURNITURE',1922,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,37,n,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'<0',24,'existing credits paid back duly till now','NEW_CAR',2303,'<100','>=7',4,MALE_SINGLE,y,n,'<=1',y,n,45,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',36,'delay in paying off in the past','NEW_CAR',8086,'100<=X<500','>=7',2,MALE_SINGLE,n,n,'>=4',n,n,42,n,OWN_RES,4,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',24,'critical account','USED_CAR',2346,'<100','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,35,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'<0',14,'existing credits paid back duly till now','NEW_CAR',3973,'<100','unemployed',1,MALE_SINGLE,n,n,'>=4',n,y,22,n,EMPTY,1,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','NEW_CAR',888,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,41,y,OWN_RES,1,'unskilled - resident',2,n,n,bad
+'unknown',48,'existing credits paid back duly till now','RADIO/TV',10222,'unknown','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,37,y,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',30,'no credits taken','RETRAINING',4221,'<100','1<=X<4',2,EMPTY,n,n,'<=1',n,n,28,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',18,'critical account','FURNITURE',6361,'<100','>=7',2,MALE_SINGLE,n,n,'<=1',n,y,41,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'>=200',12,'existing credits paid back duly till now','RADIO/TV',1297,'<100','1<=X<4',3,MALE_MAR,n,n,'>=4',y,n,23,n,RENT,1,'skilled employee / official',1,n,n,good
+'<0',12,'existing credits paid back duly till now','NEW_CAR',900,'unknown','1<=X<4',4,MALE_MAR,n,n,'1<X<=2',n,n,23,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',21,'existing credits paid back duly till now','FURNITURE',2241,'<100','>=7',4,MALE_SINGLE,n,n,'1<X<=2',y,n,50,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',6,'delay in paying off in the past','FURNITURE',1050,'<100','unemployed',4,MALE_SINGLE,n,n,'<=1',n,n,35,y,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'>=200',6,'critical account','EDUCATION',1047,'<100','1<=X<4',2,EMPTY,n,n,'>=4',n,n,50,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'unknown',24,'critical account',EMPTY,6314,'<100','unemployed',4,MALE_SINGLE,y,n,'1<X<=2',n,y,27,y,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',30,'all credits at this bank paid back duly','FURNITURE',3496,'>=1000','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,34,y,OWN_RES,1,'skilled employee / official',2,y,n,good
+'unknown',48,'all credits at this bank paid back duly','RETRAINING',3609,'<100','1<=X<4',1,EMPTY,n,n,'<=1',y,n,27,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',12,'critical account','NEW_CAR',4843,'<100','>=7',3,MALE_SINGLE,y,n,'>=4',n,n,43,n,RENT,2,'skilled employee / official',1,y,n,bad
+'>=200',30,'critical account','RADIO/TV',3017,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,47,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',24,'critical account','RETRAINING',4139,'100<=X<500','1<=X<4',3,MALE_SINGLE,n,n,'2<X<=3',n,n,27,n,OWN_RES,2,'unskilled - resident',1,y,n,good
+'unknown',36,'existing credits paid back duly till now','RETRAINING',5742,'100<=X<500','4<=X<7',2,MALE_SINGLE,n,n,'1<X<=2',n,n,31,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',60,'existing credits paid back duly till now','NEW_CAR',10366,'<100','>=7',2,MALE_SINGLE,n,n,'>=4',n,n,42,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',6,'critical account','NEW_CAR',2080,'500<=X<1000','1<=X<4',1,MALE_MAR,n,n,'1<X<=2',n,n,24,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',21,'delay in paying off in the past','RETRAINING',2580,'500<=X<1000','<1',4,MALE_SINGLE,n,n,'1<X<=2',y,n,41,y,OWN_RES,1,'unskilled - resident',2,n,n,bad
+'unknown',30,'critical account','RADIO/TV',4530,'<100','4<=X<7',4,EMPTY,n,n,'>=4',n,n,26,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',24,'critical account','FURNITURE',5150,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,33,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',72,'existing credits paid back duly till now','RADIO/TV',5595,'100<=X<500','1<=X<4',2,MALE_MAR,n,n,'1<X<=2',n,n,24,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'<0',24,'existing credits paid back duly till now','RADIO/TV',2384,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,64,y,RENT,1,'unskilled - resident',1,n,n,good
+'unknown',18,'existing credits paid back duly till now','RADIO/TV',1453,'<100','<1',3,EMPTY,n,n,'<=1',y,n,26,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',6,'existing credits paid back duly till now','EDUCATION',1538,'<100','<1',1,EMPTY,n,n,'1<X<=2',n,y,56,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',2279,'unknown','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,y,37,n,EMPTY,1,'skilled employee / official',1,y,n,good
+'unknown',15,'delay in paying off in the past','RADIO/TV',1478,'<100','1<=X<4',4,MALE_MAR,n,n,'2<X<=3',y,n,33,y,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',24,'critical account','RADIO/TV',5103,'<100','<1',3,MALE_MAR,n,n,'2<X<=3',n,y,47,n,EMPTY,3,'skilled employee / official',1,y,n,good
+'0<=X<200',36,'delay in paying off in the past','RETRAINING',9857,'100<=X<500','4<=X<7',1,MALE_SINGLE,n,n,'2<X<=3',n,n,31,n,OWN_RES,2,'unskilled - resident',2,y,n,good
+'unknown',60,'existing credits paid back duly till now','NEW_CAR',6527,'unknown','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,y,34,n,EMPTY,1,'skilled employee / official',2,y,n,good
+'>=200',10,'critical account','RADIO/TV',1347,'unknown','4<=X<7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,27,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'0<=X<200',36,'delay in paying off in the past','NEW_CAR',2862,'100<=X<500','>=7',4,MALE_SINGLE,n,n,'2<X<=3',n,y,30,n,EMPTY,1,'skilled employee / official',1,n,n,good
+'unknown',9,'existing credits paid back duly till now','RADIO/TV',2753,'100<=X<500','>=7',3,MALE_SINGLE,y,n,'>=4',n,n,35,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',12,'existing credits paid back duly till now','NEW_CAR',3651,'>=1000','1<=X<4',1,MALE_SINGLE,n,n,'2<X<=3',n,n,31,n,OWN_RES,1,'skilled employee / official',2,n,n,good
+'<0',15,'critical account','FURNITURE',975,'<100','1<=X<4',2,MALE_DIV,n,n,'2<X<=3',n,n,25,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',15,'existing credits paid back duly till now',EMPTY,2631,'100<=X<500','1<=X<4',3,EMPTY,n,n,'1<X<=2',y,n,25,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',24,'existing credits paid back duly till now','RADIO/TV',2896,'100<=X<500','<1',2,MALE_SINGLE,n,n,'<=1',n,n,29,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',6,'critical account','NEW_CAR',4716,'unknown','<1',1,MALE_SINGLE,n,n,'2<X<=3',y,n,44,n,OWN_RES,2,'unskilled - resident',2,n,n,good
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',2284,'<100','4<=X<7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,28,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',6,'existing credits paid back duly till now','USED_CAR',1236,'500<=X<1000','1<=X<4',2,MALE_SINGLE,n,n,'>=4',n,n,50,n,RENT,1,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','RADIO/TV',1103,'<100','4<=X<7',4,MALE_SINGLE,n,y,'2<X<=3',y,n,29,n,OWN_RES,2,'skilled employee / official',1,n,y,good
+'unknown',12,'critical account','NEW_CAR',926,'<100','unemployed',1,EMPTY,n,n,'1<X<=2',n,n,38,n,OWN_RES,1,'unemployed/ unskilled  - non-resident',1,n,n,good
+'unknown',18,'critical account','RADIO/TV',1800,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,24,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'>=200',15,'existing credits paid back duly till now','EDUCATION',1905,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,40,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',12,'existing credits paid back duly till now','FURNITURE',1123,'500<=X<1000','1<=X<4',4,EMPTY,n,n,'>=4',n,n,29,n,RENT,1,'unskilled - resident',1,n,n,bad
+'<0',48,'critical account','USED_CAR',6331,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,46,n,EMPTY,2,'skilled employee / official',1,y,n,bad
+'>=200',24,'existing credits paid back duly till now','RADIO/TV',1377,'100<=X<500','>=7',4,EMPTY,n,n,'1<X<=2',n,y,47,n,EMPTY,1,'skilled employee / official',1,y,n,good
+'0<=X<200',30,'delay in paying off in the past','RETRAINING',2503,'100<=X<500','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,41,y,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',27,'existing credits paid back duly till now','RETRAINING',2528,'<100','<1',4,EMPTY,n,n,'<=1',n,n,32,n,OWN_RES,1,'skilled employee / official',2,y,n,good
+'unknown',15,'existing credits paid back duly till now','NEW_CAR',5324,'500<=X<1000','>=7',1,EMPTY,n,n,'>=4',n,y,35,n,EMPTY,1,'skilled employee / official',1,n,n,good
+'0<=X<200',48,'existing credits paid back duly till now','NEW_CAR',6560,'100<=X<500','4<=X<7',3,MALE_SINGLE,n,n,'1<X<=2',n,n,24,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',12,'no credits taken','FURNITURE',2969,'<100','<1',4,EMPTY,n,n,'2<X<=3',n,n,25,n,RENT,2,'skilled employee / official',1,n,n,bad
+'0<=X<200',9,'existing credits paid back duly till now','RADIO/TV',1206,'<100','>=7',4,EMPTY,n,n,'>=4',y,n,25,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',9,'existing credits paid back duly till now','RADIO/TV',2118,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',y,n,37,n,OWN_RES,1,'unskilled - resident',2,n,n,good
+'unknown',18,'critical account','RADIO/TV',629,'500<=X<1000','>=7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,32,y,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',6,'all credits at this bank paid back duly','EDUCATION',1198,'<100','>=7',4,EMPTY,n,n,'>=4',n,y,35,n,EMPTY,1,'skilled employee / official',1,n,n,bad
+'unknown',21,'existing credits paid back duly till now','USED_CAR',2476,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,46,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',9,'critical account','RADIO/TV',1138,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',y,n,25,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'0<=X<200',60,'existing credits paid back duly till now','NEW_CAR',14027,'<100','4<=X<7',4,MALE_SINGLE,n,n,'1<X<=2',n,y,27,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',30,'critical account','USED_CAR',7596,'unknown','>=7',1,MALE_SINGLE,n,n,'>=4',n,n,63,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',30,'critical account','RADIO/TV',3077,'unknown','>=7',3,MALE_SINGLE,n,n,'1<X<=2',n,n,40,n,OWN_RES,2,'skilled employee / official',2,y,n,good
+'unknown',18,'existing credits paid back duly till now','RADIO/TV',1505,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,y,32,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'>=200',24,'critical account','RADIO/TV',3148,'unknown','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',n,n,31,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'0<=X<200',20,'no credits taken','USED_CAR',6148,'100<=X<500','>=7',3,MALE_MAR,n,n,'>=4',n,n,31,y,OWN_RES,2,'skilled employee / official',1,y,n,good
+'>=200',9,'no credits taken','RADIO/TV',1337,'<100','<1',4,MALE_SINGLE,n,n,'1<X<=2',n,n,34,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'0<=X<200',6,'all credits at this bank paid back duly','EDUCATION',433,'>=1000','<1',4,EMPTY,n,n,'1<X<=2',n,n,24,y,RENT,1,'skilled employee / official',2,n,n,bad
+'<0',12,'existing credits paid back duly till now','NEW_CAR',1228,'<100','1<=X<4',4,EMPTY,n,n,'1<X<=2',y,n,24,n,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'0<=X<200',9,'existing credits paid back duly till now','RADIO/TV',790,'500<=X<1000','1<=X<4',4,EMPTY,n,n,'2<X<=3',y,n,66,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'unknown',27,'existing credits paid back duly till now','NEW_CAR',2570,'<100','1<=X<4',3,EMPTY,n,n,'2<X<=3',y,n,21,n,RENT,1,'skilled employee / official',1,n,n,bad
+'unknown',6,'critical account','NEW_CAR',250,'>=1000','1<=X<4',2,EMPTY,n,n,'1<X<=2',y,n,41,y,OWN_RES,2,'unskilled - resident',1,n,n,good
+'unknown',15,'critical account','RADIO/TV',1316,'500<=X<1000','1<=X<4',2,MALE_MAR,n,n,'1<X<=2',n,n,47,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'<0',18,'existing credits paid back duly till now','RADIO/TV',1882,'<100','1<=X<4',4,EMPTY,n,n,'>=4',n,n,25,y,RENT,2,'skilled employee / official',1,n,n,bad
+'0<=X<200',48,'all credits at this bank paid back duly','RETRAINING',6416,'<100','>=7',4,EMPTY,n,n,'2<X<=3',n,y,59,n,RENT,1,'skilled employee / official',1,n,n,bad
+'>=200',24,'critical account','RETRAINING',1275,'>=1000','1<=X<4',2,MALE_DIV,n,n,'>=4',y,n,36,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'0<=X<200',24,'delay in paying off in the past','RADIO/TV',6403,'<100','<1',1,MALE_SINGLE,n,n,'1<X<=2',n,n,33,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',24,'existing credits paid back duly till now','RADIO/TV',1987,'<100','1<=X<4',2,MALE_SINGLE,n,n,'>=4',y,n,21,n,RENT,1,'unskilled - resident',2,n,n,bad
+'0<=X<200',8,'existing credits paid back duly till now','RADIO/TV',760,'<100','4<=X<7',4,EMPTY,n,y,'1<X<=2',y,n,44,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'unknown',24,'existing credits paid back duly till now','USED_CAR',2603,'>=1000','1<=X<4',2,EMPTY,n,n,'>=4',n,n,28,n,RENT,1,'skilled employee / official',1,y,n,good
+'unknown',4,'critical account','NEW_CAR',3380,'<100','4<=X<7',1,EMPTY,n,n,'<=1',y,n,37,n,OWN_RES,1,'skilled employee / official',2,n,n,good
+'0<=X<200',36,'all credits at this bank paid back duly',EMPTY,3990,'unknown','<1',3,EMPTY,n,n,'1<X<=2',n,y,29,y,OWN_RES,1,'unemployed/ unskilled  - non-resident',1,n,n,good
+'0<=X<200',24,'existing credits paid back duly till now','USED_CAR',11560,'<100','1<=X<4',1,EMPTY,n,n,'>=4',n,n,23,n,RENT,2,'management/ self-employed/highly qualified employee/ officer',1,n,n,bad
+'<0',18,'existing credits paid back duly till now','NEW_CAR',4380,'100<=X<500','1<=X<4',3,MALE_SINGLE,n,n,'>=4',n,n,35,n,OWN_RES,1,'unskilled - resident',2,y,n,good
+'unknown',6,'critical account','NEW_CAR',6761,'<100','4<=X<7',1,MALE_SINGLE,n,n,'2<X<=3',n,y,45,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'0<=X<200',30,'no credits taken','RETRAINING',4280,'100<=X<500','1<=X<4',4,EMPTY,n,n,'>=4',n,n,26,n,RENT,2,'unskilled - resident',1,n,n,bad
+'<0',24,'all credits at this bank paid back duly','NEW_CAR',2325,'100<=X<500','4<=X<7',2,MALE_SINGLE,n,n,'2<X<=3',n,n,32,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',10,'all credits at this bank paid back duly','RADIO/TV',1048,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',y,n,23,y,OWN_RES,1,'unskilled - resident',1,n,n,good
+'unknown',21,'existing credits paid back duly till now','RADIO/TV',3160,'unknown','>=7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,41,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',24,'all credits at this bank paid back duly','FURNITURE',2483,'500<=X<1000','1<=X<4',4,MALE_SINGLE,n,n,'>=4',y,n,22,y,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',39,'critical account','FURNITURE',14179,'unknown','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,n,30,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',13,'critical account','RETRAINING',1797,'<100','<1',3,MALE_SINGLE,n,n,'<=1',n,n,28,y,OWN_RES,2,'unskilled - resident',1,n,n,good
+'<0',15,'existing credits paid back duly till now','NEW_CAR',2511,'<100','unemployed',1,EMPTY,n,n,'>=4',n,n,23,n,RENT,1,'skilled employee / official',1,n,n,good
+'<0',12,'existing credits paid back duly till now','NEW_CAR',1274,'<100','<1',3,EMPTY,n,n,'<=1',y,n,37,n,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'unknown',21,'existing credits paid back duly till now','USED_CAR',5248,'unknown','1<=X<4',1,MALE_SINGLE,n,n,'2<X<=3',n,n,26,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',15,'existing credits paid back duly till now','USED_CAR',3029,'<100','4<=X<7',2,MALE_SINGLE,n,n,'1<X<=2',n,n,33,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',6,'existing credits paid back duly till now','FURNITURE',428,'<100','>=7',2,EMPTY,n,n,'<=1',n,n,49,y,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',18,'existing credits paid back duly till now','NEW_CAR',976,'<100','<1',1,EMPTY,n,n,'1<X<=2',n,n,23,n,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'0<=X<200',12,'existing credits paid back duly till now','RETRAINING',841,'100<=X<500','4<=X<7',2,EMPTY,n,n,'>=4',y,n,23,n,RENT,1,'unskilled - resident',1,n,n,good
+'unknown',30,'critical account','RADIO/TV',5771,'<100','4<=X<7',4,EMPTY,n,n,'1<X<=2',n,n,25,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',12,'delay in paying off in the past',EMPTY,1555,'>=1000','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,55,n,EMPTY,2,'skilled employee / official',2,n,n,bad
+'<0',24,'existing credits paid back duly till now','NEW_CAR',1285,'unknown','4<=X<7',4,EMPTY,n,n,'>=4',n,y,32,n,RENT,1,'skilled employee / official',1,n,n,bad
+'>=200',6,'critical account','NEW_CAR',1299,'<100','1<=X<4',1,MALE_SINGLE,n,n,'<=1',y,n,74,n,OWN_RES,3,'unemployed/ unskilled  - non-resident',2,n,y,good
+'>=200',15,'critical account','RADIO/TV',1271,'unknown','1<=X<4',3,MALE_SINGLE,n,n,'>=4',n,y,39,n,EMPTY,2,'skilled employee / official',1,y,n,bad
+'unknown',24,'existing credits paid back duly till now','NEW_CAR',1393,'<100','1<=X<4',2,MALE_SINGLE,n,y,'1<X<=2',y,n,31,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',12,'critical account','NEW_CAR',691,'<100','>=7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,35,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'unknown',15,'critical account','NEW_CAR',5045,'unknown','>=7',1,EMPTY,n,n,'>=4',n,n,59,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',18,'critical account','FURNITURE',2124,'<100','1<=X<4',4,EMPTY,n,n,'>=4',y,n,24,n,RENT,2,'skilled employee / official',1,n,n,bad
+'<0',12,'existing credits paid back duly till now','RADIO/TV',2214,'<100','1<=X<4',4,MALE_SINGLE,n,n,'2<X<=3',n,n,24,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'unknown',21,'critical account','NEW_CAR',12680,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,30,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',24,'critical account','NEW_CAR',2463,'100<=X<500','4<=X<7',4,MALE_MAR,n,n,'2<X<=3',n,n,27,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'0<=X<200',12,'existing credits paid back duly till now','RADIO/TV',1155,'<100','>=7',3,MALE_MAR,n,y,'2<X<=3',y,n,40,y,OWN_RES,2,'unskilled - resident',1,n,n,good
+'<0',30,'existing credits paid back duly till now','FURNITURE',3108,'<100','<1',2,MALE_DIV,n,n,'>=4',n,n,31,n,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'unknown',10,'existing credits paid back duly till now','USED_CAR',2901,'unknown','<1',1,EMPTY,n,n,'>=4',y,n,31,n,RENT,1,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'critical account','FURNITURE',3617,'<100','>=7',1,MALE_SINGLE,n,n,'>=4',n,n,28,n,RENT,3,'skilled employee / official',1,y,n,good
+'unknown',12,'critical account','RADIO/TV',1655,'<100','>=7',2,MALE_SINGLE,n,n,'>=4',y,n,63,n,OWN_RES,2,'unskilled - resident',1,y,n,good
+'<0',24,'existing credits paid back duly till now','USED_CAR',2812,'unknown','>=7',2,EMPTY,n,n,'>=4',y,n,26,n,RENT,1,'skilled employee / official',1,n,n,good
+'<0',36,'critical account','EDUCATION',8065,'<100','1<=X<4',3,EMPTY,n,n,'1<X<=2',n,y,25,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',21,'critical account','USED_CAR',3275,'<100','>=7',1,MALE_SINGLE,n,n,'>=4',n,n,36,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',24,'critical account','RADIO/TV',2223,'100<=X<500','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,52,y,OWN_RES,2,'skilled employee / official',1,n,n,good
+'>=200',12,'critical account','NEW_CAR',1480,'500<=X<1000','unemployed',2,MALE_SINGLE,n,n,'>=4',n,y,66,y,EMPTY,3,'unemployed/ unskilled  - non-resident',1,n,n,good
+'<0',24,'existing credits paid back duly till now','NEW_CAR',1371,'unknown','1<=X<4',4,EMPTY,n,n,'>=4',y,n,25,n,RENT,1,'skilled employee / official',1,n,n,bad
+'unknown',36,'critical account','NEW_CAR',3535,'<100','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,n,37,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'<0',18,'existing credits paid back duly till now','RADIO/TV',3509,'<100','4<=X<7',4,EMPTY,n,y,'<=1',y,n,25,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',36,'critical account','USED_CAR',5711,'>=1000','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,38,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',18,'existing credits paid back duly till now',EMPTY,3872,'<100','unemployed',2,EMPTY,n,n,'>=4',n,n,67,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',39,'critical account','RADIO/TV',4933,'<100','4<=X<7',2,MALE_SINGLE,n,y,'1<X<=2',y,n,25,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'unknown',24,'critical account','NEW_CAR',1940,'>=1000','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,60,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',12,'no credits taken',EMPTY,1410,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',y,n,31,n,OWN_RES,1,'unskilled - resident',1,y,n,good
+'0<=X<200',12,'existing credits paid back duly till now','NEW_CAR',836,'100<=X<500','<1',4,EMPTY,n,n,'1<X<=2',n,n,23,y,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'0<=X<200',20,'existing credits paid back duly till now','USED_CAR',6468,'unknown','unemployed',1,MALE_DIV,n,n,'>=4',y,n,60,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',18,'existing credits paid back duly till now','RETRAINING',1941,'>=1000','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,35,n,OWN_RES,1,'unskilled - resident',1,y,n,good
+'unknown',22,'existing credits paid back duly till now','RADIO/TV',2675,'500<=X<1000','>=7',3,MALE_SINGLE,n,n,'>=4',n,n,40,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',48,'critical account','USED_CAR',2751,'unknown','>=7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,38,n,OWN_RES,2,'skilled employee / official',2,y,n,good
+'0<=X<200',48,'delay in paying off in the past','EDUCATION',6224,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,50,n,EMPTY,1,'skilled employee / official',1,n,n,bad
+'<0',40,'critical account','EDUCATION',5998,'<100','1<=X<4',4,MALE_SINGLE,n,n,'2<X<=3',n,y,27,y,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'0<=X<200',21,'existing credits paid back duly till now','RETRAINING',1188,'<100','>=7',2,EMPTY,n,n,'>=4',n,n,39,n,OWN_RES,1,'skilled employee / official',2,n,n,bad
+'unknown',24,'existing credits paid back duly till now','USED_CAR',6313,'unknown','>=7',3,MALE_SINGLE,n,n,'>=4',n,n,41,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'unknown',6,'critical account','FURNITURE',1221,'unknown','1<=X<4',1,MALE_MAR,n,n,'1<X<=2',n,n,27,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'>=200',24,'existing credits paid back duly till now','FURNITURE',2892,'<100','>=7',3,MALE_DIV,n,n,'>=4',n,y,51,n,EMPTY,1,'skilled employee / official',1,n,n,good
+'unknown',24,'existing credits paid back duly till now','FURNITURE',3062,'500<=X<1000','>=7',4,MALE_SINGLE,n,n,'2<X<=3',n,y,32,n,RENT,1,'skilled employee / official',1,y,n,good
+'unknown',9,'existing credits paid back duly till now','FURNITURE',2301,'100<=X<500','<1',2,EMPTY,n,n,'>=4',n,n,22,n,RENT,1,'skilled employee / official',1,n,n,good
+'<0',18,'existing credits paid back duly till now','USED_CAR',7511,'unknown','>=7',1,MALE_SINGLE,n,n,'>=4',n,n,51,n,EMPTY,1,'skilled employee / official',2,y,n,bad
+'unknown',12,'critical account','FURNITURE',1258,'<100','<1',2,EMPTY,n,n,'>=4',n,n,22,n,RENT,2,'unskilled - resident',1,n,n,good
+'unknown',24,'delay in paying off in the past','NEW_CAR',717,'unknown','>=7',4,MALE_MAR,n,n,'>=4',n,n,54,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'0<=X<200',9,'existing credits paid back duly till now','NEW_CAR',1549,'unknown','<1',4,MALE_SINGLE,n,n,'1<X<=2',y,n,35,n,OWN_RES,1,'unemployed/ unskilled  - non-resident',1,n,n,good
+'unknown',24,'critical account','EDUCATION',1597,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,54,n,EMPTY,2,'skilled employee / official',2,n,n,good
+'0<=X<200',18,'critical account','RADIO/TV',1795,'<100','>=7',3,EMPTY,n,y,'>=4',y,n,48,y,RENT,2,'unskilled - resident',1,y,n,good
+'<0',20,'critical account','FURNITURE',4272,'<100','>=7',1,EMPTY,n,n,'>=4',n,n,24,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',12,'critical account','RADIO/TV',976,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,35,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',12,'existing credits paid back duly till now','NEW_CAR',7472,'unknown','unemployed',1,EMPTY,n,n,'1<X<=2',y,n,24,n,RENT,1,'unemployed/ unskilled  - non-resident',1,n,n,good
+'<0',36,'existing credits paid back duly till now','NEW_CAR',9271,'<100','4<=X<7',2,MALE_SINGLE,n,n,'<=1',n,n,24,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'0<=X<200',6,'existing credits paid back duly till now','RADIO/TV',590,'<100','<1',3,MALE_MAR,n,n,'2<X<=3',y,n,26,n,OWN_RES,1,'unskilled - resident',1,n,y,good
+'unknown',12,'critical account','RADIO/TV',930,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,65,n,OWN_RES,4,'skilled employee / official',1,n,n,good
+'0<=X<200',42,'all credits at this bank paid back duly','USED_CAR',9283,'<100','unemployed',1,MALE_SINGLE,n,n,'1<X<=2',n,y,55,y,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',15,'no credits taken','NEW_CAR',1778,'<100','<1',2,EMPTY,n,n,'<=1',y,n,26,n,RENT,2,'unemployed/ unskilled  - non-resident',1,n,n,bad
+'0<=X<200',8,'existing credits paid back duly till now','RETRAINING',907,'<100','<1',3,MALE_MAR,n,n,'1<X<=2',y,n,26,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'0<=X<200',6,'existing credits paid back duly till now','RADIO/TV',484,'<100','4<=X<7',3,MALE_MAR,n,y,'2<X<=3',y,n,28,y,OWN_RES,1,'unskilled - resident',1,n,n,good
+'<0',36,'critical account','USED_CAR',9629,'<100','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,n,24,n,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'<0',48,'existing credits paid back duly till now',EMPTY,3051,'<100','1<=X<4',3,MALE_SINGLE,n,n,'>=4',n,n,54,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'<0',48,'existing credits paid back duly till now','NEW_CAR',3931,'<100','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,y,46,n,EMPTY,1,'skilled employee / official',2,n,n,bad
+'0<=X<200',36,'delay in paying off in the past','NEW_CAR',7432,'<100','1<=X<4',2,EMPTY,n,n,'1<X<=2',n,n,54,n,RENT,1,'skilled employee / official',1,n,n,good
+'unknown',6,'existing credits paid back duly till now',EMPTY,1338,'500<=X<1000','1<=X<4',1,MALE_DIV,n,n,'>=4',y,n,62,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',6,'critical account','RADIO/TV',1554,'<100','4<=X<7',1,EMPTY,n,n,'1<X<=2',n,n,24,n,RENT,2,'skilled employee / official',1,y,n,good
+'<0',36,'existing credits paid back duly till now',EMPTY,15857,'<100','unemployed',2,MALE_DIV,y,n,'2<X<=3',n,n,43,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,n,n,good
+'<0',18,'existing credits paid back duly till now','RADIO/TV',1345,'<100','1<=X<4',4,MALE_MAR,n,n,'2<X<=3',y,n,26,y,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',12,'existing credits paid back duly till now','NEW_CAR',1101,'<100','1<=X<4',3,MALE_MAR,n,n,'1<X<=2',y,n,27,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'>=200',12,'existing credits paid back duly till now','RADIO/TV',3016,'<100','1<=X<4',3,MALE_MAR,n,n,'<=1',n,n,24,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',36,'existing credits paid back duly till now','FURNITURE',2712,'<100','>=7',2,MALE_SINGLE,n,n,'1<X<=2',n,n,41,y,OWN_RES,1,'skilled employee / official',2,n,n,bad
+'<0',8,'critical account','NEW_CAR',731,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,47,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'unknown',18,'critical account','FURNITURE',3780,'<100','<1',3,MALE_DIV,n,n,'1<X<=2',n,n,35,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',21,'critical account','NEW_CAR',1602,'<100','>=7',4,MALE_MAR,n,n,'2<X<=3',n,n,30,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'<0',18,'critical account','NEW_CAR',3966,'<100','>=7',1,EMPTY,n,n,'>=4',y,n,33,y,RENT,3,'skilled employee / official',1,y,n,bad
+'unknown',18,'no credits taken','RETRAINING',4165,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,36,y,OWN_RES,2,'skilled employee / official',2,n,n,bad
+'<0',36,'existing credits paid back duly till now','USED_CAR',8335,'unknown','>=7',3,MALE_SINGLE,n,n,'>=4',n,y,47,n,EMPTY,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',48,'delay in paying off in the past','RETRAINING',6681,'unknown','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,y,38,n,EMPTY,1,'skilled employee / official',2,y,n,good
+'unknown',24,'delay in paying off in the past','RETRAINING',2375,'500<=X<1000','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,44,n,OWN_RES,2,'skilled employee / official',2,y,n,good
+'<0',18,'existing credits paid back duly till now','NEW_CAR',1216,'<100','<1',4,EMPTY,n,n,'2<X<=3',n,n,23,n,RENT,1,'skilled employee / official',1,y,n,bad
+'<0',45,'no credits taken','RETRAINING',11816,'<100','>=7',2,MALE_SINGLE,n,n,'>=4',n,n,29,n,RENT,2,'skilled employee / official',1,n,n,bad
+'0<=X<200',24,'existing credits paid back duly till now','RADIO/TV',5084,'unknown','>=7',2,EMPTY,n,n,'>=4',n,n,42,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'>=200',15,'existing credits paid back duly till now','RADIO/TV',2327,'<100','<1',2,EMPTY,n,n,'2<X<=3',y,n,25,n,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'<0',12,'no credits taken','NEW_CAR',1082,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,n,48,y,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',886,'unknown','1<=X<4',4,EMPTY,n,n,'1<X<=2',n,n,21,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',4,'existing credits paid back duly till now','FURNITURE',601,'<100','<1',1,EMPTY,n,n,'2<X<=3',y,n,23,n,RENT,1,'unskilled - resident',2,n,n,good
+'<0',24,'critical account','USED_CAR',2957,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,63,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',24,'critical account','RADIO/TV',2611,'<100','>=7',4,MALE_MAR,y,n,'2<X<=3',y,n,46,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'<0',36,'existing credits paid back duly till now','FURNITURE',5179,'<100','4<=X<7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,29,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',21,'delay in paying off in the past','USED_CAR',2993,'<100','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',y,n,28,y,OWN_RES,2,'unskilled - resident',1,n,n,good
+'unknown',18,'existing credits paid back duly till now',EMPTY,1943,'<100','<1',4,EMPTY,n,n,'>=4',y,n,23,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',24,'all credits at this bank paid back duly','RETRAINING',1559,'<100','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,n,50,y,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',18,'existing credits paid back duly till now','FURNITURE',3422,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,47,y,OWN_RES,3,'skilled employee / official',2,y,n,good
+'0<=X<200',21,'existing credits paid back duly till now','FURNITURE',3976,'unknown','4<=X<7',2,MALE_SINGLE,n,n,'2<X<=3',n,n,35,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',18,'existing credits paid back duly till now','NEW_CAR',6761,'unknown','1<=X<4',2,MALE_SINGLE,n,n,'>=4',n,n,68,n,RENT,2,'skilled employee / official',1,n,n,bad
+'unknown',24,'existing credits paid back duly till now','NEW_CAR',1249,'<100','<1',4,MALE_MAR,n,n,'1<X<=2',y,n,28,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',9,'existing credits paid back duly till now','RADIO/TV',1364,'<100','4<=X<7',3,MALE_SINGLE,n,n,'>=4',y,n,59,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',12,'existing credits paid back duly till now','RADIO/TV',709,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,57,y,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'<0',20,'critical account','NEW_CAR',2235,'<100','1<=X<4',4,MALE_MAR,n,y,'1<X<=2',n,n,33,y,RENT,2,'skilled employee / official',1,n,y,bad
+'unknown',24,'critical account','USED_CAR',4042,'unknown','4<=X<7',3,MALE_SINGLE,n,n,'>=4',n,n,43,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',15,'critical account','RADIO/TV',1471,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,y,35,n,EMPTY,2,'skilled employee / official',1,y,n,good
+'<0',18,'all credits at this bank paid back duly','NEW_CAR',1442,'<100','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,y,32,n,EMPTY,2,'unskilled - resident',2,n,n,bad
+'unknown',36,'delay in paying off in the past','NEW_CAR',10875,'<100','>=7',2,MALE_SINGLE,n,n,'1<X<=2',n,n,45,n,OWN_RES,2,'skilled employee / official',2,y,n,good
+'unknown',24,'existing credits paid back duly till now','NEW_CAR',1474,'100<=X<500','<1',4,MALE_MAR,n,n,'2<X<=3',y,n,33,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',10,'existing credits paid back duly till now',EMPTY,894,'unknown','4<=X<7',4,EMPTY,n,n,'2<X<=3',n,n,40,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',15,'critical account','FURNITURE',3343,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,y,28,n,EMPTY,1,'skilled employee / official',1,y,n,good
+'<0',15,'existing credits paid back duly till now','NEW_CAR',3959,'<100','1<=X<4',3,EMPTY,n,n,'1<X<=2',n,n,29,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'unknown',9,'existing credits paid back duly till now','NEW_CAR',3577,'100<=X<500','1<=X<4',1,MALE_SINGLE,n,y,'1<X<=2',y,n,26,n,RENT,1,'skilled employee / official',2,n,y,good
+'unknown',24,'critical account','USED_CAR',5804,'>=1000','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',y,n,27,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',18,'delay in paying off in the past','RETRAINING',2169,'<100','1<=X<4',4,MALE_MAR,n,n,'1<X<=2',n,n,28,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'<0',24,'existing credits paid back duly till now','RADIO/TV',2439,'<100','<1',4,EMPTY,n,n,'>=4',y,n,35,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'unknown',27,'critical account','FURNITURE',4526,'>=1000','<1',4,MALE_SINGLE,n,n,'1<X<=2',y,n,32,y,OWN_RES,2,'unskilled - resident',2,y,n,good
+'unknown',10,'existing credits paid back duly till now','FURNITURE',2210,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',y,n,25,y,RENT,1,'unskilled - resident',1,n,n,bad
+'unknown',15,'existing credits paid back duly till now','FURNITURE',2221,'500<=X<1000','1<=X<4',2,EMPTY,n,n,'>=4',n,n,20,n,RENT,1,'skilled employee / official',1,n,n,good
+'<0',18,'existing credits paid back duly till now','RADIO/TV',2389,'<100','<1',4,EMPTY,n,n,'<=1',n,n,27,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',12,'critical account','FURNITURE',3331,'<100','>=7',2,MALE_SINGLE,n,n,'>=4',n,n,42,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',36,'existing credits paid back duly till now','RETRAINING',7409,'unknown','>=7',3,MALE_SINGLE,n,n,'1<X<=2',n,n,37,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'<0',12,'existing credits paid back duly till now','FURNITURE',652,'<100','>=7',4,EMPTY,n,n,'>=4',n,n,24,n,RENT,1,'skilled employee / official',1,n,n,good
+'unknown',36,'delay in paying off in the past','FURNITURE',7678,'500<=X<1000','4<=X<7',2,EMPTY,n,n,'>=4',n,n,40,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'>=200',6,'critical account','NEW_CAR',1343,'<100','>=7',1,MALE_SINGLE,n,n,'>=4',y,n,46,n,OWN_RES,2,'skilled employee / official',2,n,y,good
+'<0',24,'critical account','RETRAINING',1382,'100<=X<500','4<=X<7',4,MALE_SINGLE,n,n,'<=1',y,n,26,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',15,'existing credits paid back duly till now',EMPTY,874,'unknown','<1',4,EMPTY,n,n,'<=1',y,n,24,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',12,'existing credits paid back duly till now','FURNITURE',3590,'<100','1<=X<4',2,MALE_SINGLE,y,n,'1<X<=2',n,n,29,n,OWN_RES,1,'unskilled - resident',2,n,n,good
+'0<=X<200',11,'critical account','NEW_CAR',1322,'>=1000','1<=X<4',4,EMPTY,n,n,'>=4',n,n,40,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'<0',18,'all credits at this bank paid back duly','RADIO/TV',1940,'<100','<1',3,MALE_SINGLE,y,n,'>=4',n,y,36,y,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',36,'existing credits paid back duly till now','RADIO/TV',3595,'<100','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,28,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',9,'existing credits paid back duly till now','NEW_CAR',1422,'<100','<1',3,MALE_SINGLE,n,n,'1<X<=2',n,y,27,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',30,'critical account','RADIO/TV',6742,'unknown','4<=X<7',2,MALE_SINGLE,n,n,'2<X<=3',n,n,36,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',24,'existing credits paid back duly till now','USED_CAR',7814,'<100','4<=X<7',3,MALE_SINGLE,n,n,'2<X<=3',n,n,38,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',24,'existing credits paid back duly till now','USED_CAR',9277,'unknown','1<=X<4',2,MALE_DIV,n,n,'>=4',n,y,48,n,EMPTY,1,'skilled employee / official',1,y,n,good
+'0<=X<200',30,'critical account','NEW_CAR',2181,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',y,n,36,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',18,'critical account','RADIO/TV',1098,'<100','unemployed',4,EMPTY,n,n,'>=4',n,n,65,n,OWN_RES,2,'unemployed/ unskilled  - non-resident',1,n,n,good
+'0<=X<200',24,'existing credits paid back duly till now','FURNITURE',4057,'<100','4<=X<7',3,MALE_DIV,n,n,'2<X<=3',n,n,43,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'<0',12,'existing credits paid back duly till now','EDUCATION',795,'<100','<1',4,EMPTY,n,n,'>=4',n,n,53,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',24,'critical account','RETRAINING',2825,'unknown','4<=X<7',4,MALE_SINGLE,n,n,'2<X<=3',n,y,34,n,OWN_RES,2,'skilled employee / official',2,y,n,good
+'0<=X<200',48,'existing credits paid back duly till now','RETRAINING',15672,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,23,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'unknown',36,'critical account','NEW_CAR',6614,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,34,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',28,'all credits at this bank paid back duly','USED_CAR',7824,'unknown','<1',3,MALE_SINGLE,n,y,'>=4',y,n,40,y,RENT,2,'skilled employee / official',2,y,n,good
+'<0',27,'critical account','RETRAINING',2442,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,43,y,OWN_RES,4,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'unknown',15,'critical account','RADIO/TV',1829,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,46,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'<0',12,'critical account','NEW_CAR',2171,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,n,38,y,OWN_RES,2,'unskilled - resident',1,n,y,good
+'0<=X<200',36,'critical account','USED_CAR',5800,'<100','1<=X<4',3,MALE_SINGLE,n,n,'>=4',n,n,34,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',18,'critical account','RADIO/TV',1169,'unknown','1<=X<4',4,MALE_SINGLE,n,n,'2<X<=3',n,n,29,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',36,'delay in paying off in the past','USED_CAR',8947,'unknown','4<=X<7',3,MALE_SINGLE,n,n,'1<X<=2',n,n,31,y,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'<0',21,'existing credits paid back duly till now','RADIO/TV',2606,'<100','<1',4,EMPTY,n,n,'>=4',n,n,28,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',12,'critical account','FURNITURE',1592,'>=1000','4<=X<7',3,EMPTY,n,n,'1<X<=2',n,n,35,n,OWN_RES,1,'skilled employee / official',1,n,y,good
+'unknown',15,'existing credits paid back duly till now','FURNITURE',2186,'unknown','4<=X<7',1,EMPTY,n,n,'>=4',y,n,33,y,RENT,1,'unskilled - resident',1,n,n,good
+'<0',18,'existing credits paid back duly till now','FURNITURE',4153,'<100','1<=X<4',2,MALE_SINGLE,y,n,'2<X<=3',n,n,42,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'<0',16,'critical account','NEW_CAR',2625,'<100','>=7',2,MALE_SINGLE,n,y,'>=4',n,n,43,y,RENT,1,'skilled employee / official',1,y,n,bad
+'unknown',20,'critical account','NEW_CAR',3485,'unknown','<1',2,MALE_DIV,n,n,'>=4',y,n,44,n,OWN_RES,2,'skilled employee / official',1,y,n,good
+'unknown',36,'critical account','USED_CAR',10477,'unknown','>=7',2,MALE_SINGLE,n,n,'>=4',n,y,42,n,EMPTY,2,'skilled employee / official',1,n,n,good
+'unknown',15,'existing credits paid back duly till now','RADIO/TV',1386,'unknown','1<=X<4',4,MALE_MAR,n,n,'1<X<=2',y,n,40,n,RENT,1,'skilled employee / official',1,y,n,good
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',1278,'<100','>=7',4,MALE_SINGLE,n,n,'<=1',y,n,36,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',12,'existing credits paid back duly till now','RADIO/TV',1107,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',y,n,20,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'<0',21,'existing credits paid back duly till now','NEW_CAR',3763,'unknown','4<=X<7',2,MALE_SINGLE,y,n,'1<X<=2',y,n,24,n,OWN_RES,1,'unskilled - resident',1,n,y,good
+'0<=X<200',36,'existing credits paid back duly till now','EDUCATION',3711,'unknown','1<=X<4',2,MALE_MAR,n,n,'1<X<=2',n,n,27,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',15,'delay in paying off in the past','USED_CAR',3594,'<100','<1',1,EMPTY,n,n,'1<X<=2',n,n,46,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'0<=X<200',9,'existing credits paid back duly till now','NEW_CAR',3195,'unknown','1<=X<4',1,EMPTY,n,n,'1<X<=2',y,n,33,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'unknown',36,'delay in paying off in the past','RADIO/TV',4454,'<100','1<=X<4',4,EMPTY,n,n,'>=4',y,n,34,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'0<=X<200',24,'critical account','FURNITURE',4736,'<100','<1',2,EMPTY,n,n,'>=4',n,n,25,y,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'0<=X<200',30,'existing credits paid back duly till now','RADIO/TV',2991,'unknown','>=7',2,EMPTY,n,n,'>=4',n,n,25,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',11,'existing credits paid back duly till now','RETRAINING',2142,'>=1000','>=7',1,MALE_DIV,n,n,'1<X<=2',y,n,28,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',24,'all credits at this bank paid back duly','RETRAINING',3161,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,31,n,RENT,1,'skilled employee / official',1,y,n,bad
+'0<=X<200',48,'no credits taken',EMPTY,18424,'<100','1<=X<4',1,EMPTY,n,n,'1<X<=2',n,n,32,y,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,y,bad
+'unknown',10,'existing credits paid back duly till now','USED_CAR',2848,'100<=X<500','1<=X<4',1,MALE_SINGLE,y,n,'1<X<=2',y,n,32,n,OWN_RES,1,'skilled employee / official',2,n,n,good
+'<0',6,'existing credits paid back duly till now','NEW_CAR',14896,'<100','>=7',1,MALE_SINGLE,n,n,'>=4',n,y,68,y,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'<0',24,'existing credits paid back duly till now','FURNITURE',2359,'100<=X<500','unemployed',1,MALE_DIV,n,n,'<=1',n,n,33,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'<0',24,'existing credits paid back duly till now','FURNITURE',3345,'<100','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,39,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'unknown',18,'critical account','FURNITURE',1817,'<100','1<=X<4',4,EMPTY,n,n,'1<X<=2',n,y,28,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',48,'delay in paying off in the past','RADIO/TV',12749,'500<=X<1000','4<=X<7',4,MALE_SINGLE,n,n,'<=1',n,n,37,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',9,'existing credits paid back duly till now','RADIO/TV',1366,'<100','<1',3,EMPTY,n,n,'>=4',n,n,22,n,RENT,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',12,'existing credits paid back duly till now','NEW_CAR',2002,'<100','4<=X<7',3,MALE_SINGLE,n,n,'>=4',n,n,30,n,RENT,1,'skilled employee / official',2,y,n,good
+'<0',24,'all credits at this bank paid back duly','FURNITURE',6872,'<100','<1',2,MALE_DIV,n,n,'<=1',n,n,55,y,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'<0',12,'all credits at this bank paid back duly','NEW_CAR',697,'<100','<1',4,MALE_SINGLE,n,n,'1<X<=2',n,n,46,y,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'<0',18,'critical account','FURNITURE',1049,'<100','<1',4,EMPTY,n,n,'>=4',n,n,21,n,RENT,1,'skilled employee / official',1,n,n,good
+'<0',48,'existing credits paid back duly till now','USED_CAR',10297,'<100','4<=X<7',4,MALE_SINGLE,n,n,'>=4',n,y,39,y,EMPTY,3,'skilled employee / official',2,y,n,bad
+'unknown',30,'existing credits paid back duly till now','RADIO/TV',1867,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,58,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',12,'delay in paying off in the past','NEW_CAR',1344,'<100','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',y,n,43,n,OWN_RES,2,'unskilled - resident',2,n,n,good
+'<0',24,'existing credits paid back duly till now','FURNITURE',1747,'<100','<1',4,MALE_SINGLE,y,n,'<=1',n,n,24,n,OWN_RES,1,'unskilled - resident',1,n,y,good
+'0<=X<200',9,'existing credits paid back duly till now','RADIO/TV',1670,'<100','<1',4,EMPTY,n,n,'1<X<=2',n,n,22,n,OWN_RES,1,'skilled employee / official',1,y,n,bad
+'unknown',9,'critical account','NEW_CAR',1224,'<100','1<=X<4',3,MALE_SINGLE,n,n,'<=1',y,n,30,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',12,'critical account','RADIO/TV',522,'500<=X<1000','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,42,n,OWN_RES,2,'skilled employee / official',2,y,n,good
+'<0',12,'existing credits paid back duly till now','RADIO/TV',1498,'<100','1<=X<4',4,EMPTY,n,n,'<=1',n,n,23,y,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',30,'delay in paying off in the past','RADIO/TV',1919,'100<=X<500','<1',4,MALE_SINGLE,n,n,'2<X<=3',n,y,30,y,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,n,n,bad
+'>=200',9,'existing credits paid back duly till now','RADIO/TV',745,'<100','1<=X<4',3,EMPTY,n,n,'1<X<=2',y,n,28,n,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'0<=X<200',6,'existing credits paid back duly till now','RADIO/TV',2063,'<100','<1',4,MALE_MAR,n,n,'2<X<=3',n,n,30,n,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',60,'existing credits paid back duly till now','EDUCATION',6288,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,y,42,n,EMPTY,1,'skilled employee / official',1,n,n,bad
+'unknown',24,'critical account','USED_CAR',6842,'unknown','1<=X<4',2,MALE_SINGLE,n,n,'>=4',n,n,46,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'unknown',12,'existing credits paid back duly till now','NEW_CAR',3527,'unknown','<1',2,MALE_SINGLE,n,n,'2<X<=3',n,n,45,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',2,y,n,good
+'unknown',10,'existing credits paid back duly till now','NEW_CAR',1546,'<100','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',y,n,31,n,OWN_RES,1,'unskilled - resident',2,n,y,good
+'unknown',24,'existing credits paid back duly till now','FURNITURE',929,'unknown','4<=X<7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,31,y,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',4,'critical account','NEW_CAR',1455,'<100','4<=X<7',2,MALE_SINGLE,n,n,'<=1',y,n,42,n,OWN_RES,3,'unskilled - resident',2,n,n,good
+'<0',15,'existing credits paid back duly till now','FURNITURE',1845,'<100','<1',4,EMPTY,n,y,'<=1',n,n,46,n,RENT,1,'skilled employee / official',1,n,n,good
+'0<=X<200',48,'no credits taken','NEW_CAR',8358,'500<=X<1000','<1',1,EMPTY,n,n,'<=1',n,n,30,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'<0',24,'all credits at this bank paid back duly','FURNITURE',3349,'500<=X<1000','<1',4,MALE_SINGLE,n,n,'>=4',n,y,30,n,EMPTY,1,'skilled employee / official',2,y,n,bad
+'unknown',12,'existing credits paid back duly till now','NEW_CAR',2859,'unknown','unemployed',4,MALE_SINGLE,n,n,'>=4',n,y,38,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',18,'existing credits paid back duly till now','FURNITURE',1533,'<100','<1',4,MALE_MAR,y,n,'<=1',n,n,43,n,OWN_RES,1,'unskilled - resident',2,n,n,bad
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',3621,'100<=X<500','>=7',2,MALE_SINGLE,n,n,'>=4',n,n,31,n,OWN_RES,2,'skilled employee / official',1,n,n,bad
+'0<=X<200',18,'critical account','RETRAINING',3590,'<100','unemployed',3,MALE_MAR,n,n,'2<X<=3',n,n,40,n,OWN_RES,3,'unemployed/ unskilled  - non-resident',2,y,n,good
+'<0',36,'delay in paying off in the past','RETRAINING',2145,'<100','4<=X<7',2,MALE_SINGLE,n,n,'<=1',n,n,24,n,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'0<=X<200',24,'existing credits paid back duly till now','USED_CAR',4113,'500<=X<1000','<1',3,EMPTY,n,n,'>=4',n,n,28,n,RENT,1,'skilled employee / official',1,n,n,bad
+'unknown',36,'existing credits paid back duly till now','FURNITURE',10974,'<100','unemployed',4,EMPTY,n,n,'1<X<=2',n,n,26,n,OWN_RES,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'<0',12,'existing credits paid back duly till now','NEW_CAR',1893,'<100','1<=X<4',4,EMPTY,n,y,'>=4',n,n,29,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'<0',24,'critical account','RADIO/TV',1231,'>=1000','>=7',4,EMPTY,n,n,'>=4',n,n,57,n,RENT,2,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'>=200',30,'critical account','RADIO/TV',3656,'unknown','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,49,y,OWN_RES,2,'unskilled - resident',1,n,n,good
+'0<=X<200',9,'critical account','RADIO/TV',1154,'<100','>=7',2,MALE_SINGLE,n,n,'>=4',y,n,37,n,OWN_RES,3,'unskilled - resident',1,n,n,good
+'<0',28,'existing credits paid back duly till now','NEW_CAR',4006,'<100','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',n,n,45,n,OWN_RES,1,'unskilled - resident',1,n,n,bad
+'0<=X<200',24,'existing credits paid back duly till now','FURNITURE',3069,'100<=X<500','>=7',4,MALE_SINGLE,n,n,'>=4',n,y,30,n,EMPTY,1,'skilled employee / official',1,n,n,good
+'unknown',6,'critical account','RADIO/TV',1740,'<100','>=7',2,MALE_MAR,n,n,'1<X<=2',y,n,30,n,RENT,2,'skilled employee / official',1,n,n,good
+'0<=X<200',21,'delay in paying off in the past','NEW_CAR',2353,'<100','1<=X<4',1,MALE_DIV,n,n,'>=4',n,n,47,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',15,'existing credits paid back duly till now','NEW_CAR',3556,'unknown','1<=X<4',3,MALE_SINGLE,n,n,'1<X<=2',n,y,29,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',24,'existing credits paid back duly till now','RADIO/TV',2397,'500<=X<1000','>=7',3,MALE_SINGLE,n,n,'1<X<=2',n,n,35,y,OWN_RES,2,'skilled employee / official',1,y,n,bad
+'0<=X<200',6,'existing credits paid back duly till now',EMPTY,454,'<100','<1',3,MALE_MAR,n,n,'<=1',n,n,22,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',30,'existing credits paid back duly till now','RADIO/TV',1715,'unknown','1<=X<4',4,EMPTY,n,n,'<=1',n,n,26,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',27,'critical account','RADIO/TV',2520,'500<=X<1000','1<=X<4',4,MALE_SINGLE,n,n,'1<X<=2',n,n,23,n,OWN_RES,2,'unskilled - resident',1,n,n,bad
+'unknown',15,'existing credits paid back duly till now','RADIO/TV',3568,'<100','>=7',4,EMPTY,n,n,'1<X<=2',n,n,54,y,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',42,'existing credits paid back duly till now','RADIO/TV',7166,'unknown','4<=X<7',2,MALE_MAR,n,n,'>=4',n,n,29,n,RENT,1,'skilled employee / official',1,y,n,good
+'<0',11,'critical account','NEW_CAR',3939,'<100','1<=X<4',1,MALE_SINGLE,n,n,'1<X<=2',y,n,40,n,OWN_RES,2,'unskilled - resident',2,n,n,good
+'0<=X<200',15,'existing credits paid back duly till now',EMPTY,1514,'100<=X<500','1<=X<4',4,MALE_SINGLE,n,y,'1<X<=2',y,n,22,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'unknown',24,'existing credits paid back duly till now','NEW_CAR',7393,'<100','1<=X<4',1,MALE_SINGLE,n,n,'>=4',n,n,43,n,OWN_RES,1,'unskilled - resident',2,n,n,good
+'<0',24,'all credits at this bank paid back duly','NEW_CAR',1193,'<100','unemployed',1,EMPTY,y,n,'>=4',n,y,29,n,RENT,2,'unemployed/ unskilled  - non-resident',1,n,n,bad
+'<0',60,'existing credits paid back duly till now','RETRAINING',7297,'<100','>=7',4,MALE_SINGLE,y,n,'>=4',n,y,36,n,RENT,1,'skilled employee / official',1,n,n,bad
+'unknown',30,'critical account','RADIO/TV',2831,'<100','1<=X<4',4,EMPTY,n,n,'1<X<=2',n,n,33,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'>=200',24,'existing credits paid back duly till now','RADIO/TV',1258,'500<=X<1000','1<=X<4',3,EMPTY,n,n,'2<X<=3',n,n,57,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'0<=X<200',6,'existing credits paid back duly till now','RADIO/TV',753,'<100','1<=X<4',2,EMPTY,n,y,'2<X<=3',y,n,64,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'0<=X<200',18,'delay in paying off in the past','RETRAINING',2427,'unknown','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,42,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',24,'delay in paying off in the past','NEW_CAR',2538,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,47,n,OWN_RES,2,'unskilled - resident',2,n,n,bad
+'0<=X<200',15,'all credits at this bank paid back duly','NEW_CAR',1264,'100<=X<500','1<=X<4',2,MALE_MAR,n,n,'1<X<=2',n,n,25,n,RENT,1,'skilled employee / official',1,n,n,bad
+'0<=X<200',30,'critical account','FURNITURE',8386,'<100','4<=X<7',2,MALE_SINGLE,n,n,'1<X<=2',n,n,49,n,OWN_RES,1,'skilled employee / official',1,n,n,bad
+'unknown',48,'existing credits paid back duly till now','RETRAINING',4844,'<100','unemployed',3,MALE_SINGLE,n,n,'1<X<=2',n,n,33,y,RENT,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,bad
+'>=200',21,'existing credits paid back duly till now','NEW_CAR',2923,'100<=X<500','1<=X<4',1,EMPTY,n,n,'<=1',n,n,28,y,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'<0',36,'existing credits paid back duly till now','USED_CAR',8229,'<100','1<=X<4',2,MALE_SINGLE,n,n,'1<X<=2',n,n,26,n,OWN_RES,1,'skilled employee / official',2,n,n,bad
+'unknown',24,'critical account','FURNITURE',2028,'<100','4<=X<7',2,MALE_SINGLE,n,n,'1<X<=2',n,n,30,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'<0',15,'critical account','FURNITURE',1433,'<100','1<=X<4',4,EMPTY,n,n,'2<X<=3',n,n,25,n,RENT,2,'skilled employee / official',1,n,n,good
+'>=200',42,'no credits taken','RETRAINING',6289,'<100','<1',2,MALE_DIV,n,n,'<=1',n,n,33,n,OWN_RES,2,'skilled employee / official',1,n,n,good
+'unknown',13,'existing credits paid back duly till now','RADIO/TV',1409,'100<=X<500','unemployed',2,EMPTY,n,n,'>=4',y,n,64,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',24,'existing credits paid back duly till now','USED_CAR',6579,'<100','unemployed',4,MALE_SINGLE,n,n,'1<X<=2',n,y,29,n,EMPTY,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'0<=X<200',24,'critical account','RADIO/TV',1743,'<100','>=7',4,MALE_SINGLE,n,n,'1<X<=2',n,n,48,n,OWN_RES,2,'unskilled - resident',1,n,n,good
+'unknown',12,'critical account','EDUCATION',3565,'unknown','<1',2,MALE_SINGLE,n,n,'<=1',n,n,37,n,OWN_RES,2,'unskilled - resident',2,n,n,good
+'unknown',15,'all credits at this bank paid back duly','RADIO/TV',1569,'100<=X<500','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,34,y,OWN_RES,1,'unskilled - resident',2,n,n,good
+'<0',18,'existing credits paid back duly till now','RADIO/TV',1936,'unknown','4<=X<7',2,MALE_MAR,n,n,'>=4',n,n,23,n,RENT,2,'unskilled - resident',1,n,n,good
+'<0',36,'existing credits paid back duly till now','FURNITURE',3959,'<100','unemployed',4,MALE_SINGLE,n,n,'2<X<=3',n,n,30,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',12,'existing credits paid back duly till now','NEW_CAR',2390,'unknown','>=7',4,MALE_SINGLE,n,n,'2<X<=3',n,n,50,n,OWN_RES,1,'skilled employee / official',1,y,n,good
+'unknown',12,'existing credits paid back duly till now','FURNITURE',1736,'<100','4<=X<7',3,EMPTY,n,n,'>=4',y,n,31,n,OWN_RES,1,'unskilled - resident',1,n,n,good
+'<0',30,'existing credits paid back duly till now','USED_CAR',3857,'<100','1<=X<4',4,MALE_DIV,n,n,'>=4',n,n,40,n,OWN_RES,1,'management/ self-employed/highly qualified employee/ officer',1,y,n,good
+'unknown',12,'existing credits paid back duly till now','RADIO/TV',804,'<100','>=7',4,MALE_SINGLE,n,n,'>=4',n,n,38,n,OWN_RES,1,'skilled employee / official',1,n,n,good
+'<0',45,'existing credits paid back duly till now','RADIO/TV',1845,'<100','1<=X<4',4,MALE_SINGLE,n,n,'>=4',n,y,23,n,EMPTY,1,'skilled employee / official',1,y,n,bad
+'0<=X<200',45,'critical account','USED_CAR',4576,'100<=X<500','unemployed',3,MALE_SINGLE,n,n,'>=4',n,n,27,n,OWN_RES,1,'skilled employee / official',1,n,n,good

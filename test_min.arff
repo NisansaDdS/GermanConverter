@@ -1,0 +1,9 @@
+@relation german
+@attribute CHK_ACCT {'<0','0<=X<200','>=200','unknown'}
+@attribute DURATION real
+@attribute HISTORY {'no credits taken','all credits at this bank paid back duly','existing credits paid back duly till now','delay in paying off in the past','critical account'}
+@attribute EMPLOYMENT {'unemployed','<1','1<=X<4','4<=X<7','>=7'}
+@attribute REAL_ESTATE { y , n }
+@attribute class { good , bad }
+@data
+'0<=X<200',20,'delay in paying off in the past','1<=X<4',n,good
